@@ -1,0 +1,372 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     2006new-weka.filters.unsupervised.attribute.Remove-R2-7,10-13,15-16,18,21,23,25,31-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    29504
+Attributes:   18
+              ID
+              Number_of_Vehicles
+              Number_of_Casualties
+              Time
+              1st_Road_Class
+              Road_Type
+              Speed_limit
+              Junction_Control
+              2nd_Road_Number
+              Pedestrian_Crossing-Physical_Facilities
+              Light_Conditions
+              Weather_Conditions
+              Road_Surface_Conditions
+              Special_Conditions_at_Site
+              Urban_or_Rural_Area
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(19): Accident_Severity 
+Number_of_Vehicles(12): Accident_Severity 
+Number_of_Casualties(14): Accident_Severity 
+Time(10): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(9): Accident_Severity 
+Speed_limit(11): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(25): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(11): Accident_Severity 
+Light_Conditions(9): Accident_Severity 
+Weather_Conditions(17): Accident_Severity 
+Road_Surface_Conditions(9): Accident_Severity 
+Special_Conditions_at_Site(9): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(37): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -598154.1018648136
+LogScore BDeu: -600585.1069538541
+LogScore MDL: -600855.7431573712
+LogScore ENTROPY: -597711.4512732695
+LogScore AIC: -598322.4512732695
+
+
+Weight: 1.31
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(18): Accident_Severity 
+Number_of_Vehicles(12): Accident_Severity 
+Number_of_Casualties(11): Accident_Severity 
+Time(8): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(9): Accident_Severity 
+Speed_limit(9): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(13): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(11): Accident_Severity 
+Light_Conditions(9): Accident_Severity 
+Weather_Conditions(15): Accident_Severity 
+Road_Surface_Conditions(9): Accident_Severity 
+Special_Conditions_at_Site(7): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(27): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -577655.1986207437
+LogScore BDeu: -579523.9462896702
+LogScore MDL: -579803.5460521546
+LogScore ENTROPY: -577184.1605054971
+LogScore AIC: -577693.1605054971
+
+
+Weight: 0.84
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(14): Accident_Severity 
+Number_of_Vehicles(11): Accident_Severity 
+Number_of_Casualties(11): Accident_Severity 
+Time(6): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(9): Accident_Severity 
+Speed_limit(9): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(13): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(9): Accident_Severity 
+Light_Conditions(9): Accident_Severity 
+Weather_Conditions(15): Accident_Severity 
+Road_Surface_Conditions(3): Accident_Severity 
+Special_Conditions_at_Site(7): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(21): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -533006.8134980599
+LogScore BDeu: -534572.8131936459
+LogScore MDL: -534856.1671266533
+LogScore ENTROPY: -532560.9884354759
+LogScore AIC: -533006.9884354759
+
+
+Weight: 0.49
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(14): Accident_Severity 
+Number_of_Vehicles(11): Accident_Severity 
+Number_of_Casualties(11): Accident_Severity 
+Time(5): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(7): Accident_Severity 
+Speed_limit(9): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(12): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(5): Accident_Severity 
+Light_Conditions(7): Accident_Severity 
+Weather_Conditions(15): Accident_Severity 
+Road_Surface_Conditions(5): Accident_Severity 
+Special_Conditions_at_Site(7): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(14): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -491302.0861579432
+LogScore BDeu: -492648.1833311026
+LogScore MDL: -492961.3722351764
+LogScore ENTROPY: -490897.76986934186
+LogScore AIC: -491298.76986934186
+
+
+Weight: 0.41
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(20): Accident_Severity 
+Number_of_Vehicles(9): Accident_Severity 
+Number_of_Casualties(11): Accident_Severity 
+Time(5): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(5): Accident_Severity 
+Speed_limit(9): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(4): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(5): Accident_Severity 
+Light_Conditions(7): Accident_Severity 
+Weather_Conditions(15): Accident_Severity 
+Road_Surface_Conditions(5): Accident_Severity 
+Special_Conditions_at_Site(7): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(13): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -478964.91163963906
+LogScore BDeu: -480243.0579891897
+LogScore MDL: -480522.3878209178
+LogScore ENTROPY: -478566.85440691
+LogScore AIC: -478946.85440691
+
+
+Weight: 0.21
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(13): Accident_Severity 
+Number_of_Vehicles(9): Accident_Severity 
+Number_of_Casualties(9): Accident_Severity 
+Time(5): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(5): Accident_Severity 
+Speed_limit(9): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(4): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(5): Accident_Severity 
+Light_Conditions(7): Accident_Severity 
+Weather_Conditions(13): Accident_Severity 
+Road_Surface_Conditions(5): Accident_Severity 
+Special_Conditions_at_Site(5): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(16): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -466837.94798140344
+LogScore BDeu: -467969.60978265066
+LogScore MDL: -468235.7234166599
+LogScore ENTROPY: -466434.5742195475
+LogScore AIC: -466784.5742195475
+
+
+Weight: 0.17
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(13): Accident_Severity 
+Number_of_Vehicles(9): Accident_Severity 
+Number_of_Casualties(9): Accident_Severity 
+Time(3): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(5): Accident_Severity 
+Speed_limit(9): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(5): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(5): Accident_Severity 
+Light_Conditions(7): Accident_Severity 
+Weather_Conditions(9): Accident_Severity 
+Road_Surface_Conditions(5): Accident_Severity 
+Special_Conditions_at_Site(2): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(18): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -448966.24726592173
+LogScore BDeu: -450039.49125274277
+LogScore MDL: -450298.68399230007
+LogScore ENTROPY: -448590.1653253248
+LogScore AIC: -448922.1653253248
+
+
+Weight: 0.08
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(13): Accident_Severity 
+Number_of_Vehicles(9): Accident_Severity 
+Number_of_Casualties(9): Accident_Severity 
+Time(3): Accident_Severity 
+1st_Road_Class(11): Accident_Severity 
+Road_Type(5): Accident_Severity 
+Speed_limit(9): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(5): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(7): Accident_Severity 
+Light_Conditions(7): Accident_Severity 
+Weather_Conditions(9): Accident_Severity 
+Road_Surface_Conditions(5): Accident_Severity 
+Special_Conditions_at_Site(2): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(18): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -451871.87347561
+LogScore BDeu: -452967.7315212508
+LogScore MDL: -453230.6634794801
+LogScore ENTROPY: -451491.26796912577
+LogScore AIC: -451829.26796912577
+
+
+Weight: 0.09
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(13): Accident_Severity 
+Number_of_Vehicles(9): Accident_Severity 
+Number_of_Casualties(9): Accident_Severity 
+Time(3): Accident_Severity 
+1st_Road_Class(7): Accident_Severity 
+Road_Type(5): Accident_Severity 
+Speed_limit(11): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(4): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(7): Accident_Severity 
+Light_Conditions(7): Accident_Severity 
+Weather_Conditions(9): Accident_Severity 
+Road_Surface_Conditions(5): Accident_Severity 
+Special_Conditions_at_Site(2): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(21): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -447342.52322995936
+LogScore BDeu: -448453.5538530989
+LogScore MDL: -448711.7118757826
+LogScore ENTROPY: -446972.3163654283
+LogScore AIC: -447310.3163654283
+
+
+Weight: 0.05
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+ID(13): Accident_Severity 
+Number_of_Vehicles(9): Accident_Severity 
+Number_of_Casualties(9): Accident_Severity 
+Time(8): Accident_Severity 
+1st_Road_Class(7): Accident_Severity 
+Road_Type(5): Accident_Severity 
+Speed_limit(11): Accident_Severity 
+Junction_Control(11): Accident_Severity 
+2nd_Road_Number(4): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(7): Accident_Severity 
+Light_Conditions(7): Accident_Severity 
+Weather_Conditions(9): Accident_Severity 
+Road_Surface_Conditions(5): Accident_Severity 
+Special_Conditions_at_Site(2): Accident_Severity 
+Urban_or_Rural_Area(3): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(17): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -463146.9913251099
+LogScore BDeu: -464244.822126631
+LogScore MDL: -464504.3203878808
+LogScore ENTROPY: -462749.486455837
+LogScore AIC: -463090.486455837
+
+
+Weight: 0.04
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 5.53 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       23115               78.3453 %
+Incorrectly Classified Instances      6389               21.6547 %
+Kappa statistic                          0.6737
+Mean absolute error                      0.1956
+Root mean squared error                  0.3131
+Relative absolute error                 44.0925 %
+Root relative squared error             66.4675 %
+Total Number of Instances            29504     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.841    0.238    0.660      0.841    0.739      0.579    0.866     0.695     Slight
+                 0.559    0.095    0.750      0.559    0.641      0.506    0.859     0.782     Serious
+                 0.964    0.000    1.000      0.964    0.982      0.974    0.980     0.982     Fatal
+Weighted Avg.    0.783    0.116    0.795      0.783    0.781      0.676    0.899     0.813     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 8790 1665    0 |    a = Slight
+ 4396 5581    1 |    b = Serious
+  135  192 8744 |    c = Fatal
+

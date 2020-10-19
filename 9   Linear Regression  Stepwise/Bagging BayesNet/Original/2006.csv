@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     2006new-weka.filters.unsupervised.attribute.Remove-R2-7,10-13,15-16,18,21,23,25,31
+Instances:    295031
+Attributes:   18
+              ID
+              Number_of_Vehicles
+              Number_of_Casualties
+              Time
+              1st_Road_Class
+              Road_Type
+              Speed_limit
+              Junction_Control
+              2nd_Road_Number
+              Pedestrian_Crossing-Physical_Facilities
+              Light_Conditions
+              Weather_Conditions
+              Road_Surface_Conditions
+              Special_Conditions_at_Site
+              Urban_or_Rural_Area
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+Time taken to build model: 97.92 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      235746               79.9055 %
+Incorrectly Classified Instances     59285               20.0945 %
+Kappa statistic                          0.6972
+Mean absolute error                      0.1539
+Root mean squared error                  0.297 
+Relative absolute error                 34.6902 %
+Root relative squared error             63.0536 %
+Total Number of Instances           295031     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.864    0.228    0.676      0.864    0.758      0.612    0.896     0.784     Slight
+                 0.579    0.082    0.784      0.579    0.666      0.544    0.890     0.821     Serious
+                 0.966    0.000    1.000      0.966    0.983      0.976    0.992     0.991     Fatal
+Weighted Avg.    0.799    0.108    0.812      0.799    0.796      0.701    0.924     0.860     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+ 90345 14194     2 |     a = Slight
+ 42024 57760     0 |     b = Serious
+  1339  1726 87641 |     c = Fatal
+

@@ -1,0 +1,2106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     2008new-weka.filters.unsupervised.attribute.Remove-R3-4,6-7,10-13,15-18,21,23,28,31,34-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    25901
+Attributes:   18
+              ID
+              ?Accident_Index
+              Longitude
+              Number_of_Vehicles
+              Number_of_Casualties
+              Time
+              Road_Type
+              Speed_limit
+              Junction_Control
+              2nd_Road_Number
+              Pedestrian_Crossing-Human_Control
+              Pedestrian_Crossing-Physical_Facilities
+              Light_Conditions
+              Road_Surface_Conditions
+              Special_Conditions_at_Site
+              Urban_or_Rural_Area
+              Did_Police_Officer_Attend_Scene_of_Accident
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+ID <= 629912
+|   ?Accident_Index <= 160783
+|   |   ?Accident_Index <= 109660.9259
+|   |   |   ?Accident_Index <= 100298: Serious (22.0/1.0)
+|   |   |   ?Accident_Index > 100298: Fatal (4.0)
+|   |   ?Accident_Index > 109660.9259: Serious (545.0/3.0)
+|   ?Accident_Index > 160783
+|   |   Did_Police_Officer_Attend_Scene_of_Accident <= 1.981028
+|   |   |   Junction_Control <= 3.999747
+|   |   |   |   Junction_Control <= 2.000745
+|   |   |   |   |   Junction_Control <= 1.999241
+|   |   |   |   |   |   Junction_Control <= 0.004498
+|   |   |   |   |   |   |   Light_Conditions <= 1.001204
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 1.001383
+|   |   |   |   |   |   |   |   |   Road_Type <= 5.987666
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 3.012952: Serious (107.0/14.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 3.012952: Fatal (30.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 5.987666
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.202199
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 130292524.7: Serious (340.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 130292524.7
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.83688
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 623423.6673: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 623423.6673: Serious (31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.83688: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.202199
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2.308302
+|   |   |   |   |   |   |   |   |   |   |   |   ID <= 596338
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.933982
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 176191.2476: Serious (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 176191.2476
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.164351: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.164351: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.933982: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ID > 596338: Serious (28.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2.308302: Fatal (2.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 1.001383
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.998545: Fatal (81.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.998545
+|   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.989702
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.016954
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.005821
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.054798: Serious (37.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.054798
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 175828.1137: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 175828.1137: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.005821
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.984744: Fatal (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.984744
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.026202
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.920815
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.08025
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 4.20621: Serious (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 4.20621: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.08025: Fatal (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.920815: Serious (43.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.026202
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.986159: Fatal (17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.986159
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 100657008
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.256806: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.256806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 4.81641: Fatal (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 4.81641: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 100657008: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.016954: Fatal (30.0)
+|   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.989702
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 2.027258
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.208775: Serious (66.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.208775
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.997986: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.997986: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 2.027258
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 3.786864: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 3.786864: Serious (5.0)
+|   |   |   |   |   |   |   Light_Conditions > 1.001204
+|   |   |   |   |   |   |   |   Light_Conditions <= 3.990015: Fatal (310.0)
+|   |   |   |   |   |   |   |   Light_Conditions > 3.990015
+|   |   |   |   |   |   |   |   |   Speed_limit <= 30.031447
+|   |   |   |   |   |   |   |   |   |   Speed_limit <= 29.577664
+|   |   |   |   |   |   |   |   |   |   |   ID <= 599861.8034: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ID > 599861.8034: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   Speed_limit > 29.577664
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.01175: Serious (114.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.01175
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.964036: Fatal (22.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.964036: Serious (92.0/7.0)
+|   |   |   |   |   |   |   |   |   Speed_limit > 30.031447
+|   |   |   |   |   |   |   |   |   |   Speed_limit <= 39.818181: Fatal (31.0)
+|   |   |   |   |   |   |   |   |   |   Speed_limit > 39.818181
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.99262
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.000174
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 3.13272
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.923396
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.039664
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.922406
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 56.36594: Serious (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 56.36594: Fatal (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.922406: Serious (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.039664: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.923396: Serious (34.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 3.13272
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.012321: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.012321: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.000174: Fatal (109.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.99262
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.410945
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.591856
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.676075
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.429566: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.429566: Fatal (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.676075
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.0103: Serious (21.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.0103
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 3: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 3: Fatal (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759: Serious (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.591856: Fatal (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 15.410945
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.58509
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.008193
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Serious (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145: Serious (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.008193: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.58509: Serious (53.0/3.0)
+|   |   |   |   |   |   Junction_Control > 0.004498: Fatal (481.0/5.0)
+|   |   |   |   |   Junction_Control > 1.999241
+|   |   |   |   |   |   ?Accident_Index <= 175720.3072
+|   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control <= 0.019674
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 3.127834
+|   |   |   |   |   |   |   |   |   ID <= 579928
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.06729: Serious (32.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.06729
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.992996: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.992996: Serious (44.0/4.0)
+|   |   |   |   |   |   |   |   |   ID > 579928
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.524208
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.012898
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 34.959556
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 590.774583
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 175161.4141
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 5.56998
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.732454
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.442119: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.442119: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.732454: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 5.56998: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 175161.4141: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 590.774583: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 34.959556: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.012898: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.524208: Serious (12.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 3.127834: Fatal (8.0/1.0)
+|   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control > 0.019674: Fatal (6.0/1.0)
+|   |   |   |   |   |   ?Accident_Index > 175720.3072
+|   |   |   |   |   |   |   Speed_limit <= 31.592186: Serious (156.0/3.0)
+|   |   |   |   |   |   |   Speed_limit > 31.592186
+|   |   |   |   |   |   |   |   Speed_limit <= 38.048043: Fatal (3.0)
+|   |   |   |   |   |   |   |   Speed_limit > 38.048043: Serious (29.0/2.0)
+|   |   |   |   Junction_Control > 2.000745
+|   |   |   |   |   Junction_Control <= 3
+|   |   |   |   |   |   Junction_Control <= 2.9933: Fatal (272.0)
+|   |   |   |   |   |   Junction_Control > 2.9933: Serious (14.0)
+|   |   |   |   |   Junction_Control > 3: Fatal (289.0)
+|   |   |   Junction_Control > 3.999747
+|   |   |   |   Light_Conditions <= 1.031536
+|   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.027155
+|   |   |   |   |   |   ?Accident_Index <= 130833708
+|   |   |   |   |   |   |   Road_Type <= 5.66427
+|   |   |   |   |   |   |   |   Road_Type <= 3.208232
+|   |   |   |   |   |   |   |   |   ?Accident_Index <= 170026
+|   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749: Serious (3.0)
+|   |   |   |   |   |   |   |   |   ?Accident_Index > 170026: Serious (103.0/5.0)
+|   |   |   |   |   |   |   |   Road_Type > 3.208232: Fatal (6.0)
+|   |   |   |   |   |   |   Road_Type > 5.66427: Serious (546.0/20.0)
+|   |   |   |   |   |   ?Accident_Index > 130833708
+|   |   |   |   |   |   |   ID <= 626476.0628: Fatal (6.0)
+|   |   |   |   |   |   |   ID > 626476.0628: Serious (18.0/2.0)
+|   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.027155
+|   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.990676: Fatal (12.0)
+|   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.990676
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.178253: Serious (31.0/2.0)
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.178253
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 3.375524: Fatal (22.0)
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 3.375524
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.003813: Serious (48.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.003813
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 7.850965
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 5.408326
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.778492: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.778492: Serious (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 5.408326: Fatal (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 7.850965: Serious (42.0/6.0)
+|   |   |   |   Light_Conditions > 1.031536
+|   |   |   |   |   Light_Conditions <= 3.986619: Fatal (164.0)
+|   |   |   |   |   Light_Conditions > 3.986619
+|   |   |   |   |   |   ?Accident_Index <= 131047308
+|   |   |   |   |   |   |   Speed_limit <= 30.41411
+|   |   |   |   |   |   |   |   Light_Conditions <= 4.027029
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 3.592163
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.898973
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.882047
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.179801
+|   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.036986
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 529449.4642: Serious (46.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 529449.4642
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.186423
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 608234.1588
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.601756: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.601756
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.202085: Serious (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.202085
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 604183.1961: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 604183.1961: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 608234.1588: Serious (27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.186423: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.036986
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.956367: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.956367
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.497603: Serious (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.497603: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.179801: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.882047
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.10546: Serious (89.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.10546
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.979928: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.979928: Serious (19.0)
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.898973: Serious (23.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 3.592163: Serious (38.0)
+|   |   |   |   |   |   |   |   Light_Conditions > 4.027029
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.887084: Serious (13.0/1.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.887084: Fatal (6.0/1.0)
+|   |   |   |   |   |   |   Speed_limit > 30.41411
+|   |   |   |   |   |   |   |   Speed_limit <= 39.818181: Fatal (16.0)
+|   |   |   |   |   |   |   |   Speed_limit > 39.818181
+|   |   |   |   |   |   |   |   |   ID <= 586244.7593: Fatal (7.0)
+|   |   |   |   |   |   |   |   |   ID > 586244.7593
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.14033
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.687875
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.11099
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.008988: Serious (23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.008988
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.936231: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.936231: Serious (28.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.11099: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.687875: Serious (25.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.14033
+|   |   |   |   |   |   |   |   |   |   |   ID <= 616347: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   ID > 616347: Fatal (7.0)
+|   |   |   |   |   |   ?Accident_Index > 131047308
+|   |   |   |   |   |   |   ID <= 627840.0664: Fatal (15.0/1.0)
+|   |   |   |   |   |   |   ID > 627840.0664: Serious (7.0)
+|   |   Did_Police_Officer_Attend_Scene_of_Accident > 1.981028: Serious (215.0)
+ID > 629912
+|   Did_Police_Officer_Attend_Scene_of_Accident <= 1.981028
+|   |   Speed_limit <= 30
+|   |   |   Number_of_Vehicles <= 1.996606
+|   |   |   |   Number_of_Vehicles <= 1.00208
+|   |   |   |   |   Light_Conditions <= 1.006282
+|   |   |   |   |   |   Pedestrian_Crossing-Human_Control <= 0.10384
+|   |   |   |   |   |   |   Number_of_Casualties <= 1.976157
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 5.197753
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.009436
+|   |   |   |   |   |   |   |   |   |   Speed_limit <= 24.430255
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.063728: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 12.063728
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 130600811.5: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 130600811.5: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1.498248
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.25: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.25: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1.498248: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Speed_limit > 24.430255
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.095986
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.492965: Slight (863.0/421.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.492965
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 728022
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.833333: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.833333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.483333: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.483333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 331147667.3: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 331147667.3: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 9720707: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 9720707
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.698132
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 689652
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 641201: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 641201: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 689652: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.698132: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 728022: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.095986
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 502507.9219
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 502017: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 502017: Fatal (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 502507.9219
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.424759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.492965: Serious (140.0/56.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.492965
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.665051: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.665051: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.424759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238: Serious (36.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.809076: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.809076
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.499717
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 706908.701: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 706908.701: Serious (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.499717
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 738165
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.358271: Slight (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.358271
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.457841: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.457841: Serious (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 738165: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.009436
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 3.759521: Fatal (10.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 3.759521
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.598171
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 444
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 9.796324
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2.49173
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 732485: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 732485: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2.49173
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 0.499713
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 728660
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.923885: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.923885: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 728660: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 0.499713: Serious (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Serious (65.0/31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.37302: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.37302: Slight (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 700470: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 700470: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 9.796324
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 695683: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 695683: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 444: Serious (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.598171: Slight (77.0/33.0)
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 5.197753
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 7.969695: Fatal (13.0/1.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 7.969695
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Serious (19.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 14.957598: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 14.957598: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (4.0/1.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 1.976157
+|   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.495399
+|   |   |   |   |   |   |   |   |   |   Time <= 17.223722
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 679741.2118: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 679741.2118
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.595746
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 610074853.1: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 610074853.1: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.595746: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.583333: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 15.583333: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759: Serious (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Time > 17.223722: Serious (7.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.495399: Serious (4.0)
+|   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517: Serious (58.0/14.0)
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   Junction_Control <= 2
+|   |   |   |   |   |   |   |   |   |   |   Time <= 14.933333: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 14.933333: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Control > 2
+|   |   |   |   |   |   |   |   |   |   |   Time <= 15.933333: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 15.933333: Serious (3.0)
+|   |   |   |   |   |   Pedestrian_Crossing-Human_Control > 0.10384
+|   |   |   |   |   |   |   ?Accident_Index <= 9268112.003
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control <= 1.984735: Fatal (8.0)
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control > 1.984735: Slight (2.0)
+|   |   |   |   |   |   |   ?Accident_Index > 9268112.003
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 1.397148
+|   |   |   |   |   |   |   |   |   2nd_Road_Number <= 29.433771
+|   |   |   |   |   |   |   |   |   |   Longitude <= -3.180668: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Longitude > -3.180668: Slight (11.0/3.0)
+|   |   |   |   |   |   |   |   |   2nd_Road_Number > 29.433771
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 261.093302: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 261.093302: Serious (2.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 1.397148: Slight (2.0/1.0)
+|   |   |   |   |   Light_Conditions > 1.006282
+|   |   |   |   |   |   Light_Conditions <= 3.984998: Fatal (108.0)
+|   |   |   |   |   |   Light_Conditions > 3.984998
+|   |   |   |   |   |   |   Number_of_Casualties <= 1.003807
+|   |   |   |   |   |   |   |   Road_Type <= 2.49173
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 1.471669
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 255: Serious (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 255
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2679.183503: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2679.183503: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 1.471669
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Slight (17.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 2.501538: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 2.501538: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (9.0/2.0)
+|   |   |   |   |   |   |   |   Road_Type > 2.49173
+|   |   |   |   |   |   |   |   |   Road_Type <= 5.848355
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 3.02659
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 94
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.451237: Serious (18.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.451237
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.148082: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.148082: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 706452: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 706452: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.497484: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.497484: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 94: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 3.02659: Fatal (9.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 5.848355
+|   |   |   |   |   |   |   |   |   |   ID <= 641758
+|   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.982968
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.130642
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.034004
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 639649: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 639649: Serious (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.034004
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.108291
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1.786816: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1.786816: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.108291: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.130642
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 2.483819: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 2.483819: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   Longitude > -1.982968
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1.798178
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 20130701: Slight (29.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 20130701
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 20184702: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 20184702: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1.798178
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Slight (25.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.99841
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 631986: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 631986: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.99841
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 637173: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 637173: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   ID > 641758
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.11653: Serious (496.0/218.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.11653
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.337687
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.591262
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.0628: Serious (15.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.0628
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 681715
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 661654: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 661654: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 681715: Slight (15.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.591262
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.499609: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.499609
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 687135: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 687135
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.914257: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.914257: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Serious (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.337687
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.223635: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.223635: Fatal (5.0/1.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 1.003807
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 1.980684: Fatal (26.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 1.980684
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.898116
+|   |   |   |   |   |   |   |   |   |   ID <= 649713
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   ID <= 640116: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ID > 640116: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.845858
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1.351872
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.160381
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.119297: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.119297
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.789284: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.789284: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.160381: Fatal (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1.351872: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.845858
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 20124801: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 20124801: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   ID > 649713
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.530635
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 1.471669: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 1.471669
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 465478054.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 135
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 42341509
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 30303739.31
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 693629: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 693629: Serious (7.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 30303739.31: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 42341509: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 135: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 465478054.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 22.583333: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 22.583333: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.530635
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 2.484975
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2.49173: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2.49173
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.498641: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.498641: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 726923: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 726923: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 2.484975: Slight (4.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.898116: Serious (24.0/10.0)
+|   |   |   |   Number_of_Vehicles > 1.00208: Fatal (219.0)
+|   |   |   Number_of_Vehicles > 1.996606
+|   |   |   |   Number_of_Vehicles <= 2
+|   |   |   |   |   Number_of_Casualties <= 2.027618
+|   |   |   |   |   |   Light_Conditions <= 1.00818
+|   |   |   |   |   |   |   Road_Type <= 5.875553
+|   |   |   |   |   |   |   |   Time <= 8.539937
+|   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 2.484975
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 322
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 20088202: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 20088202: Slight (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 322
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.110423: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.110423: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3: Serious (6.0/2.0)
+|   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 2.484975: Serious (5.0)
+|   |   |   |   |   |   |   |   Time > 8.539937
+|   |   |   |   |   |   |   |   |   Road_Type <= 2.49173: Slight (203.0/40.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 2.49173
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 3.315512: Slight (134.0/34.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 3.315512: Fatal (5.0)
+|   |   |   |   |   |   |   Road_Type > 5.875553: Slight (2116.0/688.0)
+|   |   |   |   |   |   Light_Conditions > 1.00818
+|   |   |   |   |   |   |   Road_Surface_Conditions <= 1.998014
+|   |   |   |   |   |   |   |   Light_Conditions <= 3.986619: Fatal (19.0)
+|   |   |   |   |   |   |   |   Light_Conditions > 3.986619
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.220321
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 1.471669
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 6.472965
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.499609
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517: Slight (19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.499609: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 6.472965: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 1.471669
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 0.499713: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 0.499713
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 25747968.51: Serious (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 25747968.51
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2.49173
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.399663: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.399663: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2.49173: Slight (9.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.497065: Slight (229.0/83.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.497065
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 47: Slight (18.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 47: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.220321
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2052
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.497065
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.492965: Slight (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.492965: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.99841
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.486317
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.802148: Slight (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.802148
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 639873: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 639873: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.486317
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 678662: Serious (15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 678662
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.258097: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.258097
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 42480509: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 42480509: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.99841: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.002358: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.002358: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.497065: Slight (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2052: Slight (9.0)
+|   |   |   |   |   |   |   Road_Surface_Conditions > 1.998014
+|   |   |   |   |   |   |   |   Road_Type <= 2.49173
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145: Slight (45.0/4.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.497484
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 170: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 170: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.497484: Slight (3.0)
+|   |   |   |   |   |   |   |   Road_Type > 2.49173
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 4.497065
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.162841
+|   |   |   |   |   |   |   |   |   |   |   Time <= 16.239832: Serious (63.0/26.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 16.239832: Slight (222.0/73.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.162841
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 1283: Slight (57.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 1283: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 4.497065
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 4.328119
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 178456879.3
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 2504110.197: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 2504110.197: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 178456879.3: Slight (15.0/2.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 4.328119: Slight (3.0)
+|   |   |   |   |   Number_of_Casualties > 2.027618
+|   |   |   |   |   |   Junction_Control <= 3.499717
+|   |   |   |   |   |   |   Number_of_Casualties <= 2.91415: Fatal (7.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 2.91415
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 3.498641: Slight (73.0/17.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 3.498641
+|   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   ID <= 696549: Serious (17.0/7.0)
+|   |   |   |   |   |   |   |   |   |   ID > 696549: Slight (10.0/1.0)
+|   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (24.0/8.0)
+|   |   |   |   |   |   Junction_Control > 3.499717
+|   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   Longitude <= -4.020487: Slight (2.0)
+|   |   |   |   |   |   |   |   |   Longitude > -4.020487: Serious (11.0/3.0)
+|   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Slight (7.0/1.0)
+|   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   Road_Type <= 6.492196
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.498641
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 329012388.3: Serious (20.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 329012388.3: Slight (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.498641
+|   |   |   |   |   |   |   |   |   |   |   |   ID <= 642089: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ID > 642089: Serious (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.785642: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Longitude > -1.785642: Serious (13.0/3.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 6.492196: Serious (2.0)
+|   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.498641
+|   |   |   |   |   |   |   |   |   |   ID <= 732881
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915: Slight (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 14301466.61: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 14301466.61: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   ID > 732881: Serious (4.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.498641: Serious (19.0/3.0)
+|   |   |   |   Number_of_Vehicles > 2
+|   |   |   |   |   Number_of_Vehicles <= 2.997531: Fatal (64.0)
+|   |   |   |   |   Number_of_Vehicles > 2.997531
+|   |   |   |   |   |   Number_of_Casualties <= 3.426767
+|   |   |   |   |   |   |   Number_of_Vehicles <= 3.076851
+|   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 1335
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.492965
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 42.01426
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.499717
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759: Slight (50.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.083333: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 15.083333: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.499717
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145: Serious (42.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.87309: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.87309
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.75876: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.75876: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.755344: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.755344: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 42.01426: Slight (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.492965
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 730167
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.013961: Slight (15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.013961
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.799435: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.799435: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 730167: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 560
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 8.402618: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 8.402618: Slight (65.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 560: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 1335
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 7083: Slight (20.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 7083: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.499717: Slight (35.0/5.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Control > 3.499717
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2.49173: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 2.49173
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 131
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.051538
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -3.098465
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 726063: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 726063: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -3.098465: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.051538: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 131: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 1648: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 1648: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   Junction_Control <= 3: Slight (40.0/7.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.497065
+|   |   |   |   |   |   |   |   |   |   |   |   ID <= 646899: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ID > 646899
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.269913: Serious (18.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.269913: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.497065: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.499609
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -3.22101: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Longitude > -3.22101
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 684648
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1.498248
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 31083592: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 31083592: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1.498248: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.272643: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.272643: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 684648: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.499609: Slight (3.0/1.0)
+|   |   |   |   |   |   |   Number_of_Vehicles > 3.076851
+|   |   |   |   |   |   |   |   Number_of_Vehicles <= 3.910102: Fatal (11.0)
+|   |   |   |   |   |   |   |   Number_of_Vehicles > 3.910102
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 5.4307
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 4.457323: Slight (76.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 4.457323
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 178456879.3: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 178456879.3: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759
+|   |   |   |   |   |   |   |   |   |   |   Time <= 12.114612: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 12.114612: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles > 5.4307: Serious (6.0/1.0)
+|   |   |   |   |   |   Number_of_Casualties > 3.426767
+|   |   |   |   |   |   |   Time <= 17.791108
+|   |   |   |   |   |   |   |   Number_of_Vehicles <= 3.495454
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   ID <= 723619: Serious (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   ID > 723619: Slight (3.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915: Slight (3.0)
+|   |   |   |   |   |   |   |   Number_of_Vehicles > 3.495454: Slight (6.0/1.0)
+|   |   |   |   |   |   |   Time > 17.791108: Serious (15.0/2.0)
+|   |   Speed_limit > 30
+|   |   |   Speed_limit <= 39.999595: Fatal (784.0)
+|   |   |   Speed_limit > 39.999595
+|   |   |   |   Speed_limit <= 40
+|   |   |   |   |   Number_of_Vehicles <= 1.966913
+|   |   |   |   |   |   Number_of_Vehicles <= 1.014311
+|   |   |   |   |   |   |   Road_Surface_Conditions <= 2.085204
+|   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.910589
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 2.110358
+|   |   |   |   |   |   |   |   |   |   Junction_Control <= 3
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 189
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984: Serious (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.036393: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.036393: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (18.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 675740: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 675740: Serious (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 189: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   |   |   Time <= 6.533333: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 6.533333: Serious (39.0/5.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 2.110358
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.908158: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.908158
+|   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.341514
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 6.492196
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5: Serious (48.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.417906
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 1.405984: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 1.405984: Serious (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.417906: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 6.492196: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Longitude > 0.341514: Slight (6.0)
+|   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.910589
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   Junction_Control <= 1
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 6.472965
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 19.691592
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 36386169.25: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 36386169.25: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (29.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 19.691592: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 6.472965: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Control > 1
+|   |   |   |   |   |   |   |   |   |   |   ID <= 667750.66
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.5: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 12.5: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ID > 667750.66: Slight (18.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 7.432974
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.449789
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 403984491.3: Serious (15.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 403984491.3: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984: Serious (14.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.449789: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 6.460816
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 470807045.5: Slight (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 470807045.5: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 6.460816: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 7.432974: Slight (2.0)
+|   |   |   |   |   |   |   Road_Surface_Conditions > 2.085204
+|   |   |   |   |   |   |   |   ID <= 646396: Fatal (5.0)
+|   |   |   |   |   |   |   |   ID > 646396
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   ID <= 675164: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ID > 675164: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 2: Slight (9.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 2: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 3: Serious (2.0)
+|   |   |   |   |   |   Number_of_Vehicles > 1.014311: Fatal (16.0)
+|   |   |   |   |   Number_of_Vehicles > 1.966913
+|   |   |   |   |   |   Number_of_Casualties <= 3.299668
+|   |   |   |   |   |   |   Time <= 7.033333
+|   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2.492987
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.409917
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 2: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 2
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 4784866.232: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 4784866.232: Serious (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145: Serious (15.0/3.0)
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.409917
+|   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 232917591.3: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   ?Accident_Index > 232917591.3: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2.492987: Serious (3.0)
+|   |   |   |   |   |   |   Time > 7.033333
+|   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.128766
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.495399: Slight (382.0/115.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.495399
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238: Serious (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.816301
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 0.48455
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 14.787975: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 14.787975: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.12148: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.12148: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3: Slight (20.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 0.48455: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.816301: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Slight (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915: Slight (19.0/5.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1: Slight (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 692397: Slight (20.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 692397: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Slight (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 5.485096
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.743366: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.743366: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= -0.525367: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > -0.525367
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.492061: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.492061: Slight (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 42318209: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 42318209
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.10767: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.10767: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.331887: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.331887: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 5.485096: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.983333: Slight (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.983333: Serious (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (32.0/7.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.783475
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238: Serious (12.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 55804401: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 55804401: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1
+|   |   |   |   |   |   |   |   |   |   |   |   ID <= 704736: Slight (19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ID > 704736
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.933776
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 30303739.31: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 30303739.31: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.933776: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.783475
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.060205: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.060205
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.274451: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 18.274451: Serious (2.0)
+|   |   |   |   |   |   |   |   Number_of_Vehicles > 2.128766
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.090578: Slight (99.0/18.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.090578
+|   |   |   |   |   |   |   |   |   |   ID <= 635880
+|   |   |   |   |   |   |   |   |   |   |   ID <= 633520.3978: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ID > 633520.3978: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   ID > 635880
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517: Slight (34.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 39
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.75: Serious (6.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.75: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.858466: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.858466: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 39: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.498759: Serious (10.0/2.0)
+|   |   |   |   |   |   Number_of_Casualties > 3.299668
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 3.677083
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.109686
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 3.495454
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.576483
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 171764105.3: Slight (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 171764105.3: Serious (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.576483: Serious (21.0/5.0)
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles > 3.495454: Slight (3.0)
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.109686: Fatal (2.0)
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 3.677083: Serious (5.0)
+|   |   |   |   Speed_limit > 40
+|   |   |   |   |   Speed_limit <= 59.997683
+|   |   |   |   |   |   Speed_limit <= 50
+|   |   |   |   |   |   |   Speed_limit <= 49.970154: Fatal (747.0)
+|   |   |   |   |   |   |   Speed_limit > 49.970154
+|   |   |   |   |   |   |   |   Light_Conditions <= 1.006282
+|   |   |   |   |   |   |   |   |   Time <= 18.858147
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 659281.1843: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 659281.1843: Serious (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Slight (80.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.9: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.9: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 2: Slight (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 6.492196
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.624304
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.99841
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 4.438456
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.333333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749: Slight (16.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.333333: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 656318: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 656318: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 652544: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 652544
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 686168: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 686168: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 4.438456: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 689579: Slight (16.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 689579: Serious (14.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.99841: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 677024: Fatal (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 677024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 287264198.3: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 287264198.3: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749: Serious (21.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.624304
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -3.333018: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -3.333018
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 440
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.163793: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.163793: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (47.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 679971
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145: Serious (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145: Slight (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 679971: Slight (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 440: Slight (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 6.492196: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   Time > 18.858147
+|   |   |   |   |   |   |   |   |   |   Time <= 21.15: Serious (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Time > 21.15: Slight (2.0)
+|   |   |   |   |   |   |   |   Light_Conditions > 1.006282
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 3.984486: Fatal (12.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 3.984486
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 691655: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 691655: Slight (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Slight (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 31083592: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 31083592: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 33680725.51: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 33680725.51
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.900334: Slight (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.900334
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.222167: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.222167: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   Time <= 5.019: Serious (23.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 5.019
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 686212: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 686212: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 646899: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 646899
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.490928
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.034811: Slight (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.034811: Fatal (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.490928
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.149127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.019557
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.496366: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.496366: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.019557
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.98425: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.98425
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 652508: Serious (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 652508
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 663809.5011: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 663809.5011: Serious (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.149127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 716661: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 716661: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 139: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 139: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 49378213.73: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 49378213.73: Serious (7.0/1.0)
+|   |   |   |   |   |   Speed_limit > 50: Fatal (881.0)
+|   |   |   |   |   Speed_limit > 59.997683
+|   |   |   |   |   |   Number_of_Casualties <= 1
+|   |   |   |   |   |   |   Light_Conditions <= 1.004914
+|   |   |   |   |   |   |   |   Speed_limit <= 69.898641
+|   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.994375
+|   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.019557
+|   |   |   |   |   |   |   |   |   |   |   ID <= 729749
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.933009
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 0.134675
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.876008
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.466288
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.584885: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.584885
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.776623
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.51073: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.51073: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.776623: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 708994: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 708994: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.466288: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.876008
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -3.422497
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Did_Police_Officer_Attend_Scene_of_Accident <= 1.241767
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.088003
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 608034925.8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -4.607082: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -4.607082
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 727506: Slight (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 727506: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 608034925.8: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.088003
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -4.804262: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -4.804262
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 608090924: Fatal (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 608090924: Slight (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 727531: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 727531: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749: Slight (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 707623: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 707623
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 710360: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 710360
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 710478: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 710478: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Did_Police_Officer_Attend_Scene_of_Accident > 1.241767: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -3.422497
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.094137
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.783983
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 8.466803
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.07195: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.07195
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.402912: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.402912: Serious (12.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 8.466803: Slight (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.783983: Serious (149.0/52.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.094137
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.868916: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.868916: Slight (213.0/104.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 0.134675
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.004929
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 688006: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 688006: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.004929
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.657992
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.795222: Fatal (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.795222
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.625029: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.625029
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.439843: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.439843
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 666228.9997: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 666228.9997
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.208314: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.208314: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.657992: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.933009
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Serious (54.0/23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 685321: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 685321: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Slight (264.0/118.0)
+|   |   |   |   |   |   |   |   |   |   |   ID > 729749
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 737041: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 737041: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517: Serious (112.0/25.0)
+|   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.019557: Fatal (34.0)
+|   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.994375
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 9770512: Slight (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 9770512
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.524958: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.524958
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.957194: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.957194: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 2.923289
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 3.636966
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 633453
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.199558: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.199558: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 633453: Slight (299.0/116.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 41000339: Slight (39.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 41000339
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.07212
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 678930: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 678930
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 8.633333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.16062
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 692082: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 692082: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.16062: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 8.633333: Serious (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 15.07212
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 676504: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 676504: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 3.636966: Slight (52.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 2.923289
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.75: Serious (23.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 7.75: Slight (149.0/40.0)
+|   |   |   |   |   |   |   |   Speed_limit > 69.898641
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 232917591.3: Slight (12.0)
+|   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 232917591.3
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.7: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 12.7: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2: Slight (168.0/81.0)
+|   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 688019: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 688019: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (2.0)
+|   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.492965
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 28
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.65331
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.4: Slight (25.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.4: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.65331: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 28: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.492965: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1: Slight (129.0/31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.999214
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 103: Slight (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 103: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.156899: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.156899
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 730506
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.790721: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.790721: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 5: Slight (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 730506: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.999214: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.766366: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.766366: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.040706: Slight (64.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.040706: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2
+|   |   |   |   |   |   |   |   |   |   |   Time <= 11.55: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 11.55
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 676529: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 676529: Serious (2.0)
+|   |   |   |   |   |   |   Light_Conditions > 1.004914
+|   |   |   |   |   |   |   |   Light_Conditions <= 3.976084: Fatal (117.0)
+|   |   |   |   |   |   |   |   Light_Conditions > 3.976084
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 5.989091
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.021625
+|   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 60.14911
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517: Serious (16.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.499717
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 371
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 31022883: Serious (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 31022883
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -3.580024: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -3.580024: Slight (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 25747968.51: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 25747968.51: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 371: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.499717
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 280704640.5: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 280704640.5: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 669080.2713: Slight (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 669080.2713
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 693667: Serious (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 693667: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Speed_limit > 60.14911
+|   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 68.748465: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 68.748465
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 1421.596639
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.622052
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.63837
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.406104
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 685981.8385: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 685981.8385: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.406104
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 66.232696: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 66.232696: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.63837
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2.475142
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 662347.6186: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 662347.6186
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 689997: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 689997
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.751552: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.751552: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2.475142: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 1.498248: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 1.498248: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.254598: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.254598: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.622052
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 2.484975: Slight (36.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 2.484975: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Slight (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 4.438456
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 3.495454: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 3.495454: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 4.438456: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 1421.596639
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.900025: Fatal (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.900025: Serious (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.021625
+|   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 69.874516
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.849386: Fatal (85.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.849386
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.412975: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.412975
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 37: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 37: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Speed_limit > 69.874516
+|   |   |   |   |   |   |   |   |   |   |   |   ID <= 684580: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ID > 684580
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.869015: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.869015: Serious (3.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 5.989091
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 7
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.963784
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.000471
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 3.48695
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.952366
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.362536
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.004929
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 4524777: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 4524777
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 653460: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 653460: Serious (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.004929: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.362536
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 674773
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.089639
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.737206: Serious (41.0/21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.737206
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 4.65201: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 4.65201: Fatal (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.089639: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 674773: Serious (80.0/34.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.952366
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 2.484975
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.701627: Slight (195.0/86.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.701627: Serious (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 2.484975
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 922730551.1: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 922730551.1: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 3.48695: Slight (51.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.000471: Fatal (15.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.963784
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 232917591.3: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 232917591.3: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 23.514803: Slight (39.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 23.514803: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 41009999
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 675448.8722: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 675448.8722: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 41009999: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651: Slight (116.0/51.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.37111: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.37111: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.307925: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.307925: Slight (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 7
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.861216: Fatal (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.861216
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 30303739.31
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 686135: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 686135: Fatal (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 30303739.31
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 135: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 135
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Serious (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 42480509: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 42480509: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 3: Serious (4.0)
+|   |   |   |   |   |   Number_of_Casualties > 1
+|   |   |   |   |   |   |   Number_of_Casualties <= 1.997703: Fatal (630.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 1.997703
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 2.001215
+|   |   |   |   |   |   |   |   |   Speed_limit <= 69.931184
+|   |   |   |   |   |   |   |   |   |   Speed_limit <= 60.012418
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.950364
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 0.084735
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.977137
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.042732
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 5045860.901
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 3458748
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 6.304951
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.936583: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.936583: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.45
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -3.824976: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -3.824976: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.45: Slight (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 6.304951: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 3458748
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.996622: Fatal (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.996622: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 5045860.901
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.406747
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.557738: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.557738: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.406747
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.542886
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.499928
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 724484.3965: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 724484.3965
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 730009: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 730009: Serious (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749: Serious (24.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.499928
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.116667: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.116667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.450285: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.450285: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.542886
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.437872
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 42480509
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.003551: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.003551
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 659540.4705: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 659540.4705
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 660121: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 660121: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 676539: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 676539: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749: Serious (41.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 42480509
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 682719.2467
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 660998: Serious (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 660998
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 350173508: Fatal (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 350173508: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 682719.2467
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651: Serious (31.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Slight (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.437872
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.91484: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.91484
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.310353
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 19.85654
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.274929: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.274929
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.352697: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.352697: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 19.85654: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.310353
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.871988: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.871988: Slight (21.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.16774
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 41009999
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 41002182: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 41002182: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 41009999
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 470802465.9: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 470802465.9: Slight (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.16774: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.042732: Fatal (22.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.977137
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.043564
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 1.478111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.844456
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.616794
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 2.484975
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 350074308: Serious (17.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 350074308: Slight (13.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 2.484975: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 33680725.51
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 728165: Slight (14.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 728165: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 5032807.339
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -4.000682: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -4.000682: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 5032807.339: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 3: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 33680725.51
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.587562: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.587562
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.420945
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.431852
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -3.634869: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -3.634869: Serious (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.431852: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.390525: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.390525: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.420945: Serious (32.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.616794
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.999855
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.200257: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.200257
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.751615: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.751615
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 708065.5732: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 708065.5732: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.999855: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.844456: Serious (83.0/29.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 1.478111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -2.271295: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -2.271295
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.583333: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.583333: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.043564
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.843234: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.843234
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 3.48695
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 662740: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 662740: Slight (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 3.48695: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 0.084735
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2.492987: Fatal (36.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2.492987: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.950364
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 6.05797
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.499057: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.499057: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 6.05797
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 729677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 1.471669
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 675038: Serious (6.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 675038: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 1.471669: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.4984
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 22.490502: Slight (205.0/75.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 22.490502: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ID > 729677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 384.899698: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 384.899698: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   Speed_limit > 60.012418: Fatal (35.0)
+|   |   |   |   |   |   |   |   |   Speed_limit > 69.931184
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 301
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 194286486.9: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 194286486.9: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.583333: Serious (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.583333: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915: Slight (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 61: Slight (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 61: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915: Serious (10.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.624513
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 686223: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 686223: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.624513: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 7: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 3.871575: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 3.871575
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.624513: Slight (37.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.624513
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -4.472944: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -4.472944
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 713021
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -0.305866
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915: Slight (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 677069.0421: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 677069.0421: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -0.305866: Serious (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 713021: Serious (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 5.4307: Slight (59.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 5.4307: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 301
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.053167
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651: Slight (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2715: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2715: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.053167: Fatal (3.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 2.001215
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.998015: Fatal (332.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.998015
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 3.045231
+|   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 1.106429
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 0.48455
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 3.90518
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= 0.718168
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.90027
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 5850455.919: Slight (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 5850455.919
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.698988
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 66.003597
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.819398: Fatal (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 15.819398: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 66.003597
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.374692: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.374692: Serious (27.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.698988: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.90027: Serious (163.0/48.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 0.718168: Fatal (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > 3.90518
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.171203
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 64.986495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2461.400946
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 44.286998
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= -0.525367: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > -0.525367
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 732950: Slight (20.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 732950: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 32166708: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 32166708: Serious (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 44.286998: Serious (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2461.400946: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 64.986495: Slight (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5: Serious (19.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.171203
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.846137: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.846137
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915: Serious (15.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 0.48455
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 130208408: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 130208408: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Longitude > 1.106429
+|   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 64.986495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.499928: Fatal (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.499928: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 64.986495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 194286486.9: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 194286486.9: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 3.045231
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 3.949866: Fatal (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 3.949866
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.289868
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 64.986495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 11: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 64.986495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 661190: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 661190
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 43101058.07: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 43101058.07: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.289868: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.991374: Fatal (144.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.991374
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 69.768143
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.848355
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.042813
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 677058: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 677058: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.042813: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.848355
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.156485: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.156485: Slight (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 1.499749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822: Serious (37.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 656971: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 656971
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 36386169.25: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 36386169.25: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 646241: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 646241: Serious (42.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 69.768143
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.499651: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.499651: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238: Slight (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Serious (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 4.997583: Fatal (62.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 4.997583
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.049517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 668707.7762
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.079736
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 648677: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 648677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.75: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.75: Fatal (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.079736
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.252592: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.252592: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 668707.7762
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 64.986495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2280
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.159386
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID <= 722686
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.702391: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.702391: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ID > 722686: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822: Serious (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.159386
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles <= 2.797922: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Vehicles > 2.797922: Serious (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2280: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 64.986495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 6.488693: Serious (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 6.488693: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.049517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.953586: Fatal (16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.953586
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 6.062711
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit <= 61.884787
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 5260877.99: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 5260877.99: Serious (19.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Speed_limit > 61.884787
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.889304: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.889304: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 6.062711
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.02659: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.02659: Fatal (10.0/1.0)
+|   Did_Police_Officer_Attend_Scene_of_Accident > 1.981028
+|   |   Number_of_Vehicles <= 1.904902
+|   |   |   Speed_limit <= 41.077385
+|   |   |   |   Speed_limit <= 34.959556
+|   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517: Slight (438.0/112.0)
+|   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   Time <= 16.807672: Slight (70.0/17.0)
+|   |   |   |   |   |   |   Time > 16.807672: Serious (17.0/5.0)
+|   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   2nd_Road_Number <= 4027: Slight (146.0/49.0)
+|   |   |   |   |   |   2nd_Road_Number > 4027: Serious (9.0/3.0)
+|   |   |   |   Speed_limit > 34.959556
+|   |   |   |   |   Road_Type <= 2.49173: Slight (3.0)
+|   |   |   |   |   Road_Type > 2.49173
+|   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   Junction_Control <= 3
+|   |   |   |   |   |   |   |   Time <= 13.366667: Slight (7.0/2.0)
+|   |   |   |   |   |   |   |   Time > 13.366667
+|   |   |   |   |   |   |   |   |   Longitude <= -1.150363: Serious (3.0)
+|   |   |   |   |   |   |   |   |   Longitude > -1.150363: Slight (5.0)
+|   |   |   |   |   |   |   Junction_Control > 3: Serious (8.0/1.0)
+|   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   Road_Surface_Conditions <= 1.499822
+|   |   |   |   |   |   |   |   ID <= 676157: Serious (3.0)
+|   |   |   |   |   |   |   |   ID > 676157
+|   |   |   |   |   |   |   |   |   ?Accident_Index <= 530194765.6: Slight (4.0)
+|   |   |   |   |   |   |   |   |   ?Accident_Index > 530194765.6: Serious (2.0)
+|   |   |   |   |   |   |   Road_Surface_Conditions > 1.499822
+|   |   |   |   |   |   |   |   ID <= 695553: Slight (3.0)
+|   |   |   |   |   |   |   |   ID > 695553: Serious (5.0/1.0)
+|   |   |   Speed_limit > 41.077385
+|   |   |   |   Number_of_Vehicles <= 1.012321
+|   |   |   |   |   Speed_limit <= 55.328969
+|   |   |   |   |   |   ID <= 656383: Serious (2.0)
+|   |   |   |   |   |   ID > 656383
+|   |   |   |   |   |   |   Number_of_Casualties <= 1.065995
+|   |   |   |   |   |   |   |   Speed_limit <= 50.294459: Slight (5.0)
+|   |   |   |   |   |   |   |   Speed_limit > 50.294459: Fatal (2.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 1.065995: Fatal (3.0)
+|   |   |   |   |   Speed_limit > 55.328969
+|   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517: Slight (3.0)
+|   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   Junction_Control <= 3
+|   |   |   |   |   |   |   |   |   Speed_limit <= 64.986495
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.498145
+|   |   |   |   |   |   |   |   |   |   |   Time <= 11.733333: Slight (26.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   Time > 11.733333
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 533639399.3: Slight (29.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 533639399.3: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.498145
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control <= -0.501238: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Control > -0.501238: Slight (3.0)
+|   |   |   |   |   |   |   |   |   Speed_limit > 64.986495
+|   |   |   |   |   |   |   |   |   |   ID <= 690967: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   ID > 690967: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   ?Accident_Index <= 43213128: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   ?Accident_Index > 43213128: Serious (3.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 2.498759: Slight (6.0)
+|   |   |   |   Number_of_Vehicles > 1.012321: Fatal (5.0)
+|   |   Number_of_Vehicles > 1.904902
+|   |   |   Number_of_Vehicles <= 2.129288
+|   |   |   |   Light_Conditions <= 6.499607
+|   |   |   |   |   ID <= 652049: Slight (361.0/30.0)
+|   |   |   |   |   ID > 652049
+|   |   |   |   |   |   Did_Police_Officer_Attend_Scene_of_Accident <= 2.210522
+|   |   |   |   |   |   |   Number_of_Casualties <= 2.498759
+|   |   |   |   |   |   |   |   Time <= 7.289138
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517
+|   |   |   |   |   |   |   |   |   |   Junction_Control <= 1.498248: Serious (11.0/4.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Control > 1.498248
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 178456879.3: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ?Accident_Index > 178456879.3: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499915
+|   |   |   |   |   |   |   |   |   |   |   |   Longitude <= 0.4701
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude <= -1.045973: Slight (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Longitude > -1.045973: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Longitude > 0.4701: Slight (5.0)
+|   |   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   |   ?Accident_Index <= 775216724.8: Slight (21.0/2.0)
+|   |   |   |   |   |   |   |   |   |   ?Accident_Index > 775216724.8: Serious (2.0)
+|   |   |   |   |   |   |   |   Time > 7.289138: Slight (1167.0/188.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 2.498759
+|   |   |   |   |   |   |   |   Urban_or_Rural_Area <= 1.499517: Slight (27.0/1.0)
+|   |   |   |   |   |   |   |   Urban_or_Rural_Area > 1.499517
+|   |   |   |   |   |   |   |   |   Time <= 13.75: Slight (3.0)
+|   |   |   |   |   |   |   |   |   Time > 13.75: Serious (13.0/2.0)
+|   |   |   |   |   |   Did_Police_Officer_Attend_Scene_of_Accident > 2.210522
+|   |   |   |   |   |   |   Road_Surface_Conditions <= -0.836371
+|   |   |   |   |   |   |   |   Junction_Control <= 3: Serious (3.0)
+|   |   |   |   |   |   |   |   Junction_Control > 3
+|   |   |   |   |   |   |   |   |   ID <= 656022: Slight (2.0)
+|   |   |   |   |   |   |   |   |   ID > 656022: Serious (2.0)
+|   |   |   |   |   |   |   Road_Surface_Conditions > -0.836371: Slight (23.0/2.0)
+|   |   |   |   Light_Conditions > 6.499607: Slight (40.0/2.0)
+|   |   |   Number_of_Vehicles > 2.129288: Slight (124.0/22.0)
+
+Number of Leaves  : 	1021
+
+Size of the tree : 	2041
+
+
+Time taken to build model: 2.47 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       19312               74.5608 %
+Incorrectly Classified Instances      6589               25.4392 %
+Kappa statistic                          0.615 
+Mean absolute error                      0.1962
+Root mean squared error                  0.3509
+Relative absolute error                 44.4389 %
+Root relative squared error             74.6773 %
+Total Number of Instances            25901     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.786    0.242    0.649      0.786    0.711      0.527    0.831     0.642     Slight
+                 0.574    0.141    0.693      0.574    0.628      0.455    0.810     0.673     Serious
+                 0.912    0.013    0.965      0.912    0.938      0.915    0.962     0.944     Fatal
+Weighted Avg.    0.746    0.142    0.753      0.746    0.745      0.610    0.860     0.738     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 7387 1925   84 |    a = Slight
+ 3785 5310  153 |    b = Serious
+  216  426 6615 |    c = Fatal
+

@@ -1,0 +1,116 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     2011new-weka.filters.unsupervised.attribute.Remove-R3-4,6-7,10-13,15-16,18,21,23,25-26,28,31-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    22290
+Attributes:   18
+              ID
+              ?Accident_Index
+              Longitude
+              Number_of_Vehicles
+              Number_of_Casualties
+              Time
+              1st_Road_Class
+              Road_Type
+              Speed_limit
+              Junction_Control
+              2nd_Road_Number
+              Light_Conditions
+              Road_Surface_Conditions
+              Special_Conditions_at_Site
+              Urban_or_Rural_Area
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class Slight :
+-40.3 + 
+[ID] * 0    +
+[Longitude] * 0.06 +
+[Number_of_Vehicles] * 0.18 +
+[Number_of_Casualties] * -0.18 +
+[Time] * 0.01 +
+[1st_Road_Class] * 0.04 +
+[Road_Type] * -0.1 +
+[Speed_limit] * -0 +
+[Junction_Control] * 0.04 +
+[2nd_Road_Number] * 0    +
+[Light_Conditions] * -0.08 +
+[Road_Surface_Conditions] * 0.26 +
+[Special_Conditions_at_Site] * 0.05 +
+[Urban_or_Rural_Area] * -0.16 +
+[Did_Police_Officer_Attend_Scene_of_Accident] * 0.93 +
+[LSOA_of_Accident_Location] * 0   
+
+Class Serious :
+2.25 + 
+[ID] * -0 +
+[Longitude] * -0.05 +
+[Number_of_Vehicles] * -0.21 +
+[Number_of_Casualties] * -0.01 +
+[Time] * 0    +
+[1st_Road_Class] * 0.01 +
+[Road_Type] * -0.01 +
+[Junction_Control] * 0.02 +
+[2nd_Road_Number] * -0 +
+[Light_Conditions] * -0.03 +
+[Road_Surface_Conditions] * 0.02 +
+[Special_Conditions_at_Site] * 0.04 +
+[Urban_or_Rural_Area] * -0.03 +
+[Did_Police_Officer_Attend_Scene_of_Accident] * -0.12 +
+[LSOA_of_Accident_Location] * 0   
+
+Class Fatal :
+10.95 + 
+[ID] * -0 +
+[Longitude] * -0.04 +
+[Number_of_Vehicles] * -0.11 +
+[Number_of_Casualties] * 0.25 +
+[Time] * -0.01 +
+[1st_Road_Class] * -0.16 +
+[Road_Type] * 0.08 +
+[Speed_limit] * 0.02 +
+[Junction_Control] * -0.07 +
+[2nd_Road_Number] * -0 +
+[Light_Conditions] * 0.13 +
+[Road_Surface_Conditions] * -0.16 +
+[Special_Conditions_at_Site] * -0.16 +
+[Urban_or_Rural_Area] * 0.12 +
+[Did_Police_Officer_Attend_Scene_of_Accident] * -1.91 +
+[LSOA_of_Accident_Location] * -0
+
+
+Time taken to build model: 4.8 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       11573               51.9201 %
+Incorrectly Classified Instances     10717               48.0799 %
+Kappa statistic                          0.2605
+Mean absolute error                      0.378 
+Root mean squared error                  0.4356
+Relative absolute error                 86.4146 %
+Root relative squared error             93.1427 %
+Total Number of Instances            22290     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.647    0.309    0.556      0.647    0.598      0.330    0.757     0.629     Slight
+                 0.473    0.299    0.489      0.473    0.480      0.175    0.634     0.543     Serious
+                 0.398    0.135    0.496      0.398    0.442      0.285    0.775     0.467     Fatal
+Weighted Avg.    0.519    0.262    0.515      0.519    0.515      0.260    0.715     0.556     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 5388 2051  886 |    a = Slight
+ 3059 3967 1369 |    b = Serious
+ 1251 2101 2218 |    c = Fatal
+

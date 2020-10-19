@@ -1,0 +1,307 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     2006new-weka.filters.unsupervised.attribute.Remove-R3-4,6-7,10-13,15-16,18,21,23,25,28,31,34-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    29504
+Attributes:   18
+              ID
+              ?Accident_Index
+              Longitude
+              Number_of_Vehicles
+              Number_of_Casualties
+              Time
+              1st_Road_Class
+              Road_Type
+              Speed_limit
+              Junction_Control
+              2nd_Road_Number
+              Pedestrian_Crossing-Physical_Facilities
+              Light_Conditions
+              Road_Surface_Conditions
+              Special_Conditions_at_Site
+              Urban_or_Rural_Area
+              Did_Police_Officer_Attend_Scene_of_Accident
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.7578504464150773
+    Node 3    -6.800845345870132
+    Node 4    -2.5002392778736358
+    Node 5    0.677503919369527
+    Node 6    -5.6836151270890385
+    Node 7    1.661757317051222
+    Node 8    2.533338079745357
+    Node 9    1.970525683149524
+    Node 10    2.669554239494333
+    Node 11    2.293947532441495
+    Node 12    1.5407409360576256
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -4.047381002689504
+    Node 3    -9.328959615345378
+    Node 4    -3.83729478539036
+    Node 5    -0.10314126572246904
+    Node 6    2.2508719604795266
+    Node 7    4.26827145613133
+    Node 8    4.023573542493629
+    Node 9    3.943368235030848
+    Node 10    3.8629652478067973
+    Node 11    4.916848590932191
+    Node 12    -0.733375927468737
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    2.600633397817032
+    Node 3    6.543523885452814
+    Node 4    4.829481433306896
+    Node 5    -1.4787391628828466
+    Node 6    0.3774440865035137
+    Node 7    -4.2421289784565195
+    Node 8    -4.6372688226674095
+    Node 9    -4.149966974627261
+    Node 10    -4.925463959408541
+    Node 11    -6.697982431029212
+    Node 12    -2.9388120862203833
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.488189262945756
+    Attrib ID    -24.844140191680733
+    Attrib ?Accident_Index    19.127100740830954
+    Attrib Longitude    -10.589967423336207
+    Attrib Number_of_Vehicles    6.882423909522499
+    Attrib Number_of_Casualties    2.276407829761508
+    Attrib Time    -0.8727173175746968
+    Attrib 1st_Road_Class    0.5264006217797847
+    Attrib Road_Type    0.6276980151765014
+    Attrib Speed_limit    0.495961491634693
+    Attrib Junction_Control    0.005010178179354345
+    Attrib 2nd_Road_Number    1.0511368352962311
+    Attrib Pedestrian_Crossing-Physical_Facilities    0.5095796557470665
+    Attrib Light_Conditions    -1.4381554601415367
+    Attrib Road_Surface_Conditions    -3.9362980261697893
+    Attrib Special_Conditions_at_Site    -1.2189993574071047
+    Attrib Urban_or_Rural_Area    0.9841396118626506
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -1.402490835004576
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    71.39803737951921
+    Attrib ID    -0.6959455745511783
+    Attrib ?Accident_Index    -0.12311097810065849
+    Attrib Longitude    -0.149895697307666
+    Attrib Number_of_Vehicles    2.561560873230324
+    Attrib Number_of_Casualties    3.977146317237532
+    Attrib Time    -0.4586553998616698
+    Attrib 1st_Road_Class    0.061989454482461306
+    Attrib Road_Type    -0.920375048362435
+    Attrib Speed_limit    0.25042595248971133
+    Attrib Junction_Control    -0.01084233438185567
+    Attrib 2nd_Road_Number    0.0773029250436246
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.03611498092876721
+    Attrib Light_Conditions    0.4179172978481795
+    Attrib Road_Surface_Conditions    -0.7669971965797794
+    Attrib Special_Conditions_at_Site    -0.6378089009445286
+    Attrib Urban_or_Rural_Area    69.03929489487857
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -0.9431844991089807
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.347765728272118
+    Attrib ID    -0.06878994021910546
+    Attrib ?Accident_Index    -0.22497887750839823
+    Attrib Longitude    -1.1921748335944546
+    Attrib Number_of_Vehicles    47.490603224148806
+    Attrib Number_of_Casualties    -13.993607454338665
+    Attrib Time    0.7398176365869233
+    Attrib 1st_Road_Class    0.19109650914285373
+    Attrib Road_Type    0.600724928527157
+    Attrib Speed_limit    -62.51080578403834
+    Attrib Junction_Control    -0.39313132832547926
+    Attrib 2nd_Road_Number    1.6315635917525628
+    Attrib Pedestrian_Crossing-Physical_Facilities    -1.083537572364383
+    Attrib Light_Conditions    -0.12054061153384496
+    Attrib Road_Surface_Conditions    1.4710582659255007
+    Attrib Special_Conditions_at_Site    -0.05369960666919095
+    Attrib Urban_or_Rural_Area    2.186542508795938
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -1.1062633313053627
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -10.097153005640655
+    Attrib ID    -65.21768067196537
+    Attrib ?Accident_Index    12.62704874314699
+    Attrib Longitude    1.4977138483321086
+    Attrib Number_of_Vehicles    -8.001189360137715
+    Attrib Number_of_Casualties    5.77813030774267
+    Attrib Time    -0.09628491044592595
+    Attrib 1st_Road_Class    0.16158302791300838
+    Attrib Road_Type    0.09197582885078069
+    Attrib Speed_limit    -0.5850783012985505
+    Attrib Junction_Control    0.2784213268749151
+    Attrib 2nd_Road_Number    0.027264727675619188
+    Attrib Pedestrian_Crossing-Physical_Facilities    -1.3957618419817883
+    Attrib Light_Conditions    -0.35982882629512336
+    Attrib Road_Surface_Conditions    -2.934158283866488
+    Attrib Special_Conditions_at_Site    1.5704747952921774
+    Attrib Urban_or_Rural_Area    0.8595794883286941
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -0.38812715469328546
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -37.04305047614743
+    Attrib ID    5.764918212975946
+    Attrib ?Accident_Index    -3.1845553419010857
+    Attrib Longitude    2.6120786900890427
+    Attrib Number_of_Vehicles    -2.43894137936716
+    Attrib Number_of_Casualties    -0.30306484642374604
+    Attrib Time    0.08248772587052934
+    Attrib 1st_Road_Class    0.3352394196762746
+    Attrib Road_Type    -0.5510062929054688
+    Attrib Speed_limit    -0.4311560524651038
+    Attrib Junction_Control    -17.05490712491951
+    Attrib 2nd_Road_Number    -21.94017842769994
+    Attrib Pedestrian_Crossing-Physical_Facilities    -1.4182835340050617
+    Attrib Light_Conditions    -0.04574088969960854
+    Attrib Road_Surface_Conditions    1.6045217594841712
+    Attrib Special_Conditions_at_Site    2.608894921999433
+    Attrib Urban_or_Rural_Area    74.31841328621216
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    1.5352176548472305
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -80.15314760807695
+    Attrib ID    -0.07280481310068027
+    Attrib ?Accident_Index    0.5951955916491195
+    Attrib Longitude    -0.28418578980643533
+    Attrib Number_of_Vehicles    -2.2265643816724126
+    Attrib Number_of_Casualties    -2.5962814515276493
+    Attrib Time    -0.3072311672981126
+    Attrib 1st_Road_Class    0.18025847648928678
+    Attrib Road_Type    69.45635254413952
+    Attrib Speed_limit    -0.8910588212405388
+    Attrib Junction_Control    -0.11965595581722495
+    Attrib 2nd_Road_Number    1.3243543841097685
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.20879498713645478
+    Attrib Light_Conditions    -64.35977832664346
+    Attrib Road_Surface_Conditions    -0.16922538584432298
+    Attrib Special_Conditions_at_Site    1.1977025174346496
+    Attrib Urban_or_Rural_Area    0.5069352593337733
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    0.037851884855303025
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -21.515097782553326
+    Attrib ID    0.9498323094083138
+    Attrib ?Accident_Index    4.947496151760592
+    Attrib Longitude    0.08509258206302195
+    Attrib Number_of_Vehicles    -3.284845084083646
+    Attrib Number_of_Casualties    -3.6084122093859397
+    Attrib Time    0.5268380013058758
+    Attrib 1st_Road_Class    0.5943370743591292
+    Attrib Road_Type    51.361602202614364
+    Attrib Speed_limit    -31.840242503406188
+    Attrib Junction_Control    0.04484147482752875
+    Attrib 2nd_Road_Number    9.157510003881658
+    Attrib Pedestrian_Crossing-Physical_Facilities    0.21840551197296823
+    Attrib Light_Conditions    57.78191783373705
+    Attrib Road_Surface_Conditions    -0.409930211800464
+    Attrib Special_Conditions_at_Site    -0.07085284573939932
+    Attrib Urban_or_Rural_Area    -0.2499577968784077
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    17.83976187160424
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -44.58400809137178
+    Attrib ID    1.0924983425546189
+    Attrib ?Accident_Index    -0.1947667671595997
+    Attrib Longitude    -0.7190367910021793
+    Attrib Number_of_Vehicles    -1.612221887197007
+    Attrib Number_of_Casualties    3.0155329862933846
+    Attrib Time    -0.1438714576842459
+    Attrib 1st_Road_Class    -0.5340991466236714
+    Attrib Road_Type    -100.39194055713773
+    Attrib Speed_limit    -0.09335957503506181
+    Attrib Junction_Control    -0.11163013555853926
+    Attrib 2nd_Road_Number    0.8925364932642553
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.2685093589904639
+    Attrib Light_Conditions    -1.07076571801599
+    Attrib Road_Surface_Conditions    0.8821562075971974
+    Attrib Special_Conditions_at_Site    0.6541283651770646
+    Attrib Urban_or_Rural_Area    0.1390034197850971
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    0.859081372834448
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -50.167659602390245
+    Attrib ID    -0.4424326039296313
+    Attrib ?Accident_Index    -0.05692624275359486
+    Attrib Longitude    -0.0596055759827458
+    Attrib Number_of_Vehicles    -0.5960210542299627
+    Attrib Number_of_Casualties    1.0142801766942893
+    Attrib Time    0.11741092622232215
+    Attrib 1st_Road_Class    -0.2848610462503375
+    Attrib Road_Type    0.4466314836210204
+    Attrib Speed_limit    0.6697427994055791
+    Attrib Junction_Control    52.680171468827794
+    Attrib 2nd_Road_Number    -0.37961689898275774
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.29982633348777965
+    Attrib Light_Conditions    0.7593204056584677
+    Attrib Road_Surface_Conditions    -0.03594998072102435
+    Attrib Special_Conditions_at_Site    -0.25534047511751773
+    Attrib Urban_or_Rural_Area    5.252101006744274
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -1.1629901521375785
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -39.13570076534965
+    Attrib ID    1.4568795966425483
+    Attrib ?Accident_Index    -0.230742377390197
+    Attrib Longitude    0.1545859381412762
+    Attrib Number_of_Vehicles    8.933107806648527
+    Attrib Number_of_Casualties    -48.43185087682182
+    Attrib Time    0.5050004436397474
+    Attrib 1st_Road_Class    -0.3109074183665487
+    Attrib Road_Type    0.7587817867568102
+    Attrib Speed_limit    3.0079829212473688
+    Attrib Junction_Control    -0.26027480080163545
+    Attrib 2nd_Road_Number    1.262392861023609
+    Attrib Pedestrian_Crossing-Physical_Facilities    0.8393914049026105
+    Attrib Light_Conditions    0.5694305957454555
+    Attrib Road_Surface_Conditions    6.019246086743519
+    Attrib Special_Conditions_at_Site    0.7567593642338799
+    Attrib Urban_or_Rural_Area    -1.1942234920754817
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    15.633692261947871
+Class Slight
+    Input
+    Node 0
+Class Serious
+    Input
+    Node 1
+Class Fatal
+    Input
+    Node 2
+
+
+Time taken to build model: 40.95 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       19882               67.3875 %
+Incorrectly Classified Instances      9622               32.6125 %
+Kappa statistic                          0.5073
+Mean absolute error                      0.2669
+Root mean squared error                  0.3719
+Relative absolute error                 60.16   %
+Root relative squared error             78.9589 %
+Total Number of Instances            29504     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.868    0.321    0.598      0.868    0.708      0.524    0.849     0.697     Slight
+                 0.421    0.103    0.676      0.421    0.519      0.369    0.777     0.673     Serious
+                 0.727    0.073    0.815      0.727    0.769      0.676    0.918     0.878     Fatal
+Weighted Avg.    0.674    0.171    0.691      0.674    0.663      0.519    0.846     0.744     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 9080  790  585 |    a = Slight
+ 4859 4205  914 |    b = Serious
+ 1250 1224 6597 |    c = Fatal
+
