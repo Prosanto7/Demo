@@ -1,0 +1,1836 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     2013new-weka.filters.unsupervised.attribute.Remove-R1-5,7-8,10-12,16-17,20,22-23,29,32-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    20418
+Attributes:   18
+              Latitude
+              Number_of_Casualties
+              Day_of_Week
+              Time
+              Local_Authority_(District)
+              1st_Road_Number
+              Road_Type
+              Junction_Detail
+              2nd_Road_Number
+              Pedestrian_Crossing-Human_Control
+              Pedestrian_Crossing-Physical_Facilities
+              Light_Conditions
+              Weather_Conditions
+              Special_Conditions_at_Site
+              Carriageway_Hazards
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Local_Authority_(District) <= 209.285641
+|   LSOA_of_Accident_Location <= 1030372
+|   |   Did_Police_Officer_Attend_Scene_of_Accident <= 1.990665
+|   |   |   Light_Conditions <= 1.001288
+|   |   |   |   Day_of_Week <= 1.004374: Serious (177.0/5.0)
+|   |   |   |   Day_of_Week > 1.004374
+|   |   |   |   |   Day_of_Week <= 1.997755: Fatal (45.0)
+|   |   |   |   |   Day_of_Week > 1.997755
+|   |   |   |   |   |   Day_of_Week <= 2.000007
+|   |   |   |   |   |   |   Weather_Conditions <= 1.019858: Serious (205.0/9.0)
+|   |   |   |   |   |   |   Weather_Conditions > 1.019858
+|   |   |   |   |   |   |   |   Weather_Conditions <= 1.81266: Fatal (4.0)
+|   |   |   |   |   |   |   |   Weather_Conditions > 1.81266: Serious (25.0/2.0)
+|   |   |   |   |   |   Day_of_Week > 2.000007
+|   |   |   |   |   |   |   Day_of_Week <= 2.988991: Fatal (74.0)
+|   |   |   |   |   |   |   Day_of_Week > 2.988991
+|   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1027568
+|   |   |   |   |   |   |   |   |   Day_of_Week <= 6.986419
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 5257
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.00837
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.011516: Serious (180.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.011516
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 1.863991: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 1.863991: Serious (28.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.00837
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.98479: Fatal (63.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.98479
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.010423
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.252642: Serious (167.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.252642
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.766854: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.766854
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 169.460373: Serious (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 169.460373: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.010423
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.993517: Fatal (67.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.993517
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.004321
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.499436
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1020083: Serious (153.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1020083
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 41.744205
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.023514: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.023514: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 41.744205
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 981
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.568298
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.594877: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.594877: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.568298: Serious (23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 981: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.499436
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.501021: Serious (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.501021: Fatal (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.995176: Fatal (52.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.995176: Serious (214.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.004321: Fatal (27.0)
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number > 5257: Serious (80.0/3.0)
+|   |   |   |   |   |   |   |   |   Day_of_Week > 6.986419
+|   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1011336: Serious (100.0/5.0)
+|   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1011336
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 41.744205
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 72.074298: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 72.074298: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 41.744205: Serious (78.0/1.0)
+|   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1027568
+|   |   |   |   |   |   |   |   |   Junction_Detail <= 2.955084
+|   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.018511
+|   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 0.726901
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 2.040965
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.13734: Serious (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.13734
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.193152
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.920623: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.920623
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 54.090598
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 53.946045: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 53.946045: Fatal (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 54.090598: Serious (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.193152: Fatal (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 2.040965: Fatal (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 0.726901: Fatal (10.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.018511: Fatal (28.0/1.0)
+|   |   |   |   |   |   |   |   |   Junction_Detail > 2.955084
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.265118: Serious (26.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.265118: Fatal (2.0)
+|   |   |   Light_Conditions > 1.001288
+|   |   |   |   Light_Conditions <= 3.998282: Fatal (538.0)
+|   |   |   |   Light_Conditions > 3.998282
+|   |   |   |   |   Number_of_Casualties <= 1.002756
+|   |   |   |   |   |   Day_of_Week <= 6.987695
+|   |   |   |   |   |   |   Day_of_Week <= 6.016569
+|   |   |   |   |   |   |   |   Day_of_Week <= 5.980806
+|   |   |   |   |   |   |   |   |   Day_of_Week <= 5.127774
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.992187
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 3.146221
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.734272
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.026767
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.405304: Serious (29.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.405304
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.068589: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.068589: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.026767: Fatal (15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.734272
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.340212
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 182.254306: Serious (151.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 182.254306
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.977695
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.470308
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 650.170594: Fatal (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 650.170594: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.470308: Fatal (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.977695: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.340212: Serious (43.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 3.146221
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 185.730852
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.139474
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 552.588961
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.100356: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.100356
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023550
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 5.986207: Fatal (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 5.986207: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023550: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 552.588961: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.139474: Fatal (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 185.730852: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.992187
+|   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.603188
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.009767: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.009767: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.603188: Serious (51.0/2.0)
+|   |   |   |   |   |   |   |   |   Day_of_Week > 5.127774: Fatal (12.0)
+|   |   |   |   |   |   |   |   Day_of_Week > 5.980806: Serious (92.0/3.0)
+|   |   |   |   |   |   |   Day_of_Week > 6.016569: Fatal (27.0)
+|   |   |   |   |   |   Day_of_Week > 6.987695: Serious (80.0/3.0)
+|   |   |   |   |   Number_of_Casualties > 1.002756
+|   |   |   |   |   |   Number_of_Casualties <= 1.997872: Fatal (94.0)
+|   |   |   |   |   |   Number_of_Casualties > 1.997872
+|   |   |   |   |   |   |   Number_of_Casualties <= 2.003252
+|   |   |   |   |   |   |   |   Time <= 16.794874
+|   |   |   |   |   |   |   |   |   Time <= 7.684006
+|   |   |   |   |   |   |   |   |   |   Latitude <= 55.026882: Serious (25.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Latitude > 55.026882: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   Time > 7.684006
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 3656: Fatal (10.0)
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number > 3656: Serious (2.0)
+|   |   |   |   |   |   |   |   Time > 16.794874: Serious (66.0/2.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 2.003252
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 2.984042: Fatal (44.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 2.984042
+|   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 0.094208
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.037253: Serious (44.0/7.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.037253
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 3.939843: Fatal (16.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 3.939843
+|   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1027713
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.005722: Serious (20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.005722
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.963469
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 4.038974: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 4.038974: Fatal (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.963469: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1027713: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   Carriageway_Hazards > 0.094208: Fatal (14.0/2.0)
+|   |   Did_Police_Officer_Attend_Scene_of_Accident > 1.990665: Serious (254.0/8.0)
+|   LSOA_of_Accident_Location > 1030372
+|   |   LSOA_of_Accident_Location <= 1030747
+|   |   |   Did_Police_Officer_Attend_Scene_of_Accident <= 1.49898
+|   |   |   |   Local_Authority_(District) <= 82.473259
+|   |   |   |   |   Local_Authority_(District) <= 38
+|   |   |   |   |   |   Number_of_Casualties <= 1.499386
+|   |   |   |   |   |   |   Latitude <= 51.335219
+|   |   |   |   |   |   |   |   Junction_Detail <= 2: Slight (6.0)
+|   |   |   |   |   |   |   |   Junction_Detail > 2: Serious (2.0)
+|   |   |   |   |   |   |   Latitude > 51.335219: Serious (6.0)
+|   |   |   |   |   |   Number_of_Casualties > 1.499386: Slight (8.0)
+|   |   |   |   |   Local_Authority_(District) > 38: Slight (30.0/10.0)
+|   |   |   |   Local_Authority_(District) > 82.473259: Fatal (2.0)
+|   |   |   Did_Police_Officer_Attend_Scene_of_Accident > 1.49898: Slight (12.0/2.0)
+|   |   LSOA_of_Accident_Location > 1030747
+|   |   |   Number_of_Casualties <= 1.046907
+|   |   |   |   Special_Conditions_at_Site <= 0.119863
+|   |   |   |   |   Day_of_Week <= 1.761085
+|   |   |   |   |   |   Day_of_Week <= 1.035203
+|   |   |   |   |   |   |   Time <= 15: Serious (7.0)
+|   |   |   |   |   |   |   Time > 15: Slight (2.0)
+|   |   |   |   |   |   Day_of_Week > 1.035203: Fatal (3.0)
+|   |   |   |   |   Day_of_Week > 1.761085: Serious (87.0/2.0)
+|   |   |   |   Special_Conditions_at_Site > 0.119863
+|   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.498244: Fatal (3.0)
+|   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.498244: Serious (2.0)
+|   |   |   Number_of_Casualties > 1.046907
+|   |   |   |   Number_of_Casualties <= 1.994927: Fatal (12.0)
+|   |   |   |   Number_of_Casualties > 1.994927
+|   |   |   |   |   Light_Conditions <= 1.991643: Serious (14.0)
+|   |   |   |   |   Light_Conditions > 1.991643
+|   |   |   |   |   |   Light_Conditions <= 3.998282: Fatal (2.0)
+|   |   |   |   |   |   Light_Conditions > 3.998282: Serious (8.0/1.0)
+Local_Authority_(District) > 209.285641
+|   Did_Police_Officer_Attend_Scene_of_Accident <= 1.999884
+|   |   Number_of_Casualties <= 1
+|   |   |   Did_Police_Officer_Attend_Scene_of_Accident <= 1.00229
+|   |   |   |   Light_Conditions <= 1.001288
+|   |   |   |   |   Latitude <= 56.407101
+|   |   |   |   |   |   Road_Type <= 3.018519
+|   |   |   |   |   |   |   Road_Type <= 1.311231
+|   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Slight (360.0/124.0)
+|   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   2nd_Road_Number <= 1318
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 95
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 36
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.596293: Serious (10.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.596293: Slight (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 36: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 95: Slight (8.0)
+|   |   |   |   |   |   |   |   |   2nd_Road_Number > 1318: Serious (4.0)
+|   |   |   |   |   |   |   Road_Type > 1.311231
+|   |   |   |   |   |   |   |   Road_Type <= 2.895635
+|   |   |   |   |   |   |   |   |   Road_Type <= 2.013255
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.483502
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control <= 0.478477
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.702779
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.498127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.174298
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.666667: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.666667: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.174298
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348: Slight (26.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.498127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.583333: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.583333: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.702779: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 481.238562: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 481.238562: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control > 0.478477: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Slight (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.483502: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 2.013255: Fatal (8.0)
+|   |   |   |   |   |   |   |   Road_Type > 2.895635
+|   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 0.434495
+|   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.165528
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 472.394116
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 42.469799
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.340999: Serious (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.340999: Slight (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 42.469799: Serious (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 472.394116
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.242004
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023249.508
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.557762: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.557762: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023249.508: Serious (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.242004: Slight (49.0/10.0)
+|   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.165528
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.361709
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.498244: Slight (429.0/136.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.498244
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1010481
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691: Serious (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.319952: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.319952: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1010481
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405: Slight (36.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.498127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.972026: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.972026: Slight (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.498127: Serious (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.25: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 2: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 681: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 681: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.361709
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.119645
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1009568: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1009568
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.999728
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 4.485092: Slight (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 4.485092
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 1141.381163
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 106
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.498674
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Serious (32.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.010065: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.010065: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.498674: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 106: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 1141.381163: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.999728
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 195.320302: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 195.320302: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.119645
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.987695: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.987695
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 485.047238: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 485.047238: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 0.434495
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.270649
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 544: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 544
+|   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 144: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 144: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Latitude > 51.270649: Slight (13.0)
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.715524: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Latitude > 51.715524: Serious (2.0)
+|   |   |   |   |   |   Road_Type > 3.018519
+|   |   |   |   |   |   |   Road_Type <= 5.998772: Fatal (90.0)
+|   |   |   |   |   |   |   Road_Type > 5.998772
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control <= 0.478477
+|   |   |   |   |   |   |   |   |   Road_Type <= 6.974885
+|   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 3.497542
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.987331
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.000576
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.991533
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.013081
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.983169
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.016852
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.992505
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.004495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.957846
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.000614
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1030450
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.879581
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.92447
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.006474
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1019513: Serious (178.0/78.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1019513
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.909414
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 113.374111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023345
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 64.297141
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.06981
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.45: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.45: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.06981
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.041297
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.26671
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 14.608521: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 14.608521: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.26671: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.041297: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 64.297141: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023345
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Slight (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.995416: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.995416: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 113.374111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.266638: Serious (70.0/28.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.266638
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 19.705499: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 19.705499: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.909414
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 53.277345: Slight (19.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 53.277345
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.622631: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.622631: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 675: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 675: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1026620
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1021130.465: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1021130.465
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 497: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 497: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.5: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.35: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.35: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1026620: Serious (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.006474: Fatal (25.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.92447: Slight (456.0/200.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.879581
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.499322
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1018591
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.498674
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.396677
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 6: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 6: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.396677: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.498674
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 114.378567: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 114.378567: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1018591
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023762
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1021721: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1021721: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023762: Slight (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.499322: Slight (80.0/28.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1030450
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161: Serious (98.0/30.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 7.482264
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.583333: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.583333: Slight (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 7.482264
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 514: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 514: Slight (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.000614: Fatal (35.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.957846
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.783333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.498674
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 602.730214: Slight (185.0/75.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 602.730214
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1000108: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1000108
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1032359.486: Serious (65.0/30.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1032359.486: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.175323: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.175323
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 4.394198: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 4.394198: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.498674
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.622489
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 5.49386: Slight (159.0/78.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 5.49386: Serious (70.0/24.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.622489: Slight (113.0/34.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.783333: Serious (38.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.004495: Fatal (39.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.992505
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.524144
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.493817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 7.346876
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 213
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1007843
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 53.531407: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 53.531407: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1007843: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 213: Slight (362.0/134.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.999728
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 42
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.683333: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.683333: Serious (15.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 42
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 3698
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 7.482264: Slight (18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 7.482264
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.591986: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.591986: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 3698: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.999728: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 7.346876
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 748
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.460433: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.460433: Serious (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 748: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.493817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 4146
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.07069
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 6: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 6: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.07069: Slight (22.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 4146
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 4455: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 4455
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 5517: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 5517: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.524144
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 11.496823
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161: Serious (99.0/36.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.916667: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.916667: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 11.496823
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 962.948618
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1016498.674: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1016498.674
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.394685: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.394685: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 962.948618: Slight (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 7: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 285
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1008505.889: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1008505.889: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 5: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 285: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.016852: Fatal (46.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.983169
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.498244
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2011
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 4.494065
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348: Slight (478.0/224.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 585
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 5517: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 5517: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 585: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 6.499997
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.7: Slight (33.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.7: Serious (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 6.499997: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 4.494065
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1030641.649: Slight (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1030641.649: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2011
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1010928.783: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1010928.783
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 6607: Slight (19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 6607
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.340434: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.340434: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.498244
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 561.468093
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.983333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1026889: Slight (19.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1026889
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1029190: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1029190: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 15.983333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 4097.448345: Serious (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 4097.448345: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 561.468093: Slight (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.874829: Serious (33.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.874829
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 432: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 432: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.013081: Fatal (30.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.991533
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348: Slight (590.0/262.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 3.987746
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.494766
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.133333: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.133333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.583333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 623: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 623: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.583333: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.494766: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 3.987746
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 6.496596
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 753: Slight (13.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 753: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1: Slight (41.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.35
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 7.482264
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.415964: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.415964: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 7.482264: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.35: Serious (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 6.496596
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.454107: Serious (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.454107
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 294: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 294: Slight (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.000576: Fatal (34.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.987331
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 101.053355
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Serious (403.0/196.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 5.476654
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 8.474667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1030905: Slight (49.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1030905: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 8.474667: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 5.476654
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 101.053355
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 2.912213
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.006555: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.006555: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 2.912213
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.339428: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.339428
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 563.710702: Serious (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 563.710702
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023713.532
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1016261: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1016261: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023713.532: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 3: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 3.497542
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 5.284524
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.498244
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Serious (82.0/29.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 102
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 4.494065
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.75: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.75: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 4.494065: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 102: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.498244: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 5.284524
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 4.96104: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 4.96104
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.746641: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.746641: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 6.974885: Slight (79.0/22.0)
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Human_Control > 0.478477: Slight (26.0/6.0)
+|   |   |   |   |   Latitude > 56.407101
+|   |   |   |   |   |   1st_Road_Number <= 1.449204
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 6
+|   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 3.868797
+|   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 1
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= -0.501093: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > -0.501093
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 911: Serious (20.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 911
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 933.371703: Slight (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 933.371703: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 1: Slight (2.0)
+|   |   |   |   |   |   |   |   |   Carriageway_Hazards > 3.868797: Serious (2.0)
+|   |   |   |   |   |   |   |   Special_Conditions_at_Site > 6: Serious (2.0)
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348: Slight (7.0/1.0)
+|   |   |   |   |   |   1st_Road_Number > 1.449204
+|   |   |   |   |   |   |   Carriageway_Hazards <= 1
+|   |   |   |   |   |   |   |   Day_of_Week <= 2.011834
+|   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.363139
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 101
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 1.999728
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 910.405515: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 910.405515
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 57.2304
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.451651: Slight (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.451651: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 57.2304: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 1.999728: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 101: Serious (2.0)
+|   |   |   |   |   |   |   |   |   Weather_Conditions > 1.363139: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   Day_of_Week > 2.011834
+|   |   |   |   |   |   |   |   |   Day_of_Week <= 2.988991: Fatal (11.0)
+|   |   |   |   |   |   |   |   |   Day_of_Week > 2.988991
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.68595
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 912
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 20.657156
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.46273
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 911
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 989: Serious (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 989
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.083333: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.083333: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 911: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.46273
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.960588: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.960588: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 20.657156: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 912
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 917.235608: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 917.235608
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 934.210397
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 3.326701
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.836101
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 930.174282: Slight (6.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 930.174282: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.836101
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 928.49047
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.456272: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.456272
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.124519: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.124519: Slight (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 928.49047: Serious (17.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 3.326701
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 57.473876
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.064103: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.064103: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 57.473876: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 934.210397: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.68595
+|   |   |   |   |   |   |   |   |   |   |   Latitude <= 57.24854: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   Latitude > 57.24854: Fatal (4.0)
+|   |   |   |   |   |   |   Carriageway_Hazards > 1
+|   |   |   |   |   |   |   |   Day_of_Week <= 4.499405: Serious (3.0)
+|   |   |   |   |   |   |   |   Day_of_Week > 4.499405: Slight (6.0/1.0)
+|   |   |   |   Light_Conditions > 1.001288
+|   |   |   |   |   Light_Conditions <= 3.995529: Fatal (402.0)
+|   |   |   |   |   Light_Conditions > 3.995529
+|   |   |   |   |   |   Light_Conditions <= 4.002632
+|   |   |   |   |   |   |   Road_Type <= 5.82062
+|   |   |   |   |   |   |   |   Road_Type <= 3.065244
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   |   |   Latitude <= 51.801381
+|   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 3.999934
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1024268
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 4.494065
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.496544: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.496544: Slight (15.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Serious (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 4.494065: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1024268: Slight (15.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 1.462161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 22.116667: Slight (19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 22.116667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 50.809587: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 50.809587: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 1.462161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2.499328: Serious (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2.499328
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 50.890459: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 50.890459: Slight (34.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 3.999934: Slight (15.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   Latitude > 51.801381
+|   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.900943: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   Latitude > 51.900943
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.040969: Serious (60.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 18.040969: Slight (82.0/23.0)
+|   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 221
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 3.485953
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 5.97802
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 1.462161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 811: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 811: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 1.462161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023650: Serious (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023650: Slight (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2.499328: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2.499328
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 323.447272: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 323.447272: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.638462
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 2: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 2: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.638462: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 5.97802: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 3.485953: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 221
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 7.346876
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 5.043204
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 592.981793
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 4.494065
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 305.268058: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 305.268058: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 4.494065: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 4115: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 4115: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 592.981793: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 5.043204
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.453096: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.453096: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 7.346876: Serious (3.0)
+|   |   |   |   |   |   |   |   Road_Type > 3.065244: Fatal (29.0)
+|   |   |   |   |   |   |   Road_Type > 5.82062
+|   |   |   |   |   |   |   |   Junction_Detail <= 2.981386
+|   |   |   |   |   |   |   |   |   Junction_Detail <= 0.023151
+|   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.081822
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.167436: Slight (187.0/93.0)
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.167436
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.499322: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.499322
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 611
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 7.494871: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 7.494871
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.790305: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.790305: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 611: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.081822
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.913368
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 6.497787
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.374952
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 637.286094: Serious (23.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 637.286094: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.374952
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.481572
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 5.934945: Serious (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 5.934945
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.498244
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.601178: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.601178: Slight (27.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.498244: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.481572
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.113902
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 23.015333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.582371
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.47577
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.504187: Serious (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.504187: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 2340.110881
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1012387: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1012387: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 2340.110881: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.47577: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.582371
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 16.639632: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 16.639632
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.603274: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.603274
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 31.487358
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 56.272349
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.415127: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.415127: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 56.272349: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 31.487358: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 420: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 420
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 554: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 554
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 918: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 918: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 23.015333: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.113902: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 6.497787: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.913368
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691: Serious (63.0/26.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691: Slight (4.0)
+|   |   |   |   |   |   |   |   |   Junction_Detail > 0.023151
+|   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.943669: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.943669
+|   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.000337
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 3.485953
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 474.450626
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 1198
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1025964: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1025964: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 1198: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 474.450626: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 3.485953: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.000337
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.445687
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 19.14016: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 19.14016: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.445687
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 2.042904
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.938168: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.938168: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 2.042904: Fatal (4.0)
+|   |   |   |   |   |   |   |   Junction_Detail > 2.981386
+|   |   |   |   |   |   |   |   |   Junction_Detail <= 3.057181
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 3385: Serious (376.0/176.0)
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number > 3385
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 7.494871
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.499322: Slight (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.499322
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.416614
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.498244
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405: Serious (11.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 5546: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 5546: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.498244: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.416614: Slight (22.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.333333: Slight (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.333333: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 7.494871: Serious (5.0)
+|   |   |   |   |   |   |   |   |   Junction_Detail > 3.057181
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 6.497787
+|   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 5.928548
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.004727: Fatal (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.004727: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 5.928548
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 6.496596
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 22.866667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1007907: Serious (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1007907: Slight (145.0/63.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 22.866667: Serious (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 6.496596: Serious (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 6.497787: Slight (10.0)
+|   |   |   |   |   |   Light_Conditions > 4.002632
+|   |   |   |   |   |   |   Light_Conditions <= 5.996614
+|   |   |   |   |   |   |   |   1st_Road_Number <= 0.022427
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 5.073514: Serious (11.0/1.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 5.073514: Fatal (2.0)
+|   |   |   |   |   |   |   |   1st_Road_Number > 0.022427
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 5.001449
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.997063: Fatal (85.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.997063
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 2
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 1071
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1026797: Serious (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1026797: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 1071: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024: Slight (14.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691: Serious (3.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 5.001449: Fatal (102.0)
+|   |   |   |   |   |   |   Light_Conditions > 5.996614
+|   |   |   |   |   |   |   |   Road_Type <= 5.981337
+|   |   |   |   |   |   |   |   |   Road_Type <= 3.047929
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 6.479107
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 277.215301
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.348211
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.196007: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.196007: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.348211: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 277.215301
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.838755
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.042992
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 1.462161: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 1.462161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 7.460822
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023258
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1017591: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1017591
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 2: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 493.460648: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 493.460648: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023258
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.339491: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.339491: Fatal (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 4: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 7.460822: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.680999: Slight (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.680999
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 309: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 309
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 82: Serious (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 82
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.124712: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.124712: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.042992: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.838755
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 3.704173
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.493817: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.493817: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 3.704173
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1018542.995
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 731.247394: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 731.247394: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1018542.995: Slight (18.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 6.479107
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.540723: Slight (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.540723
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.795501: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.795501: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 3.047929: Fatal (15.0)
+|   |   |   |   |   |   |   |   Road_Type > 5.981337
+|   |   |   |   |   |   |   |   |   Weather_Conditions <= 5.476654
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 6.124934
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.951312
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.099368
+|   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 0.623318
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.039365
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 22.423895
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023225: Serious (21.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023225
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 60.391643: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 60.391643
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 2.76278: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 2.76278: Serious (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 22.423895
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 753: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 753: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.039365
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.037651: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.037651
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1031471.904
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 56.384859: Slight (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 56.384859: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1031471.904: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 0.623318: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.099368: Fatal (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.951312
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 1.477788
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.0244
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 2.470869
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.499161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Slight (84.0/31.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 301.478157: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 301.478157: Serious (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.499161: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 2.470869: Serious (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.0244
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 4.993097
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 5.788511
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 475: Serious (49.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 475: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 5.788511
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.732355
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 8.072355
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 268.747455: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 268.747455
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806: Slight (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 8.072355: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 15.732355
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 0.190515
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2.475179
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.829861: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.829861
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 5.49386
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Serious (71.0/26.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.772753
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.539696: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.539696: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.772753: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.498127: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.498127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.530676: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.530676: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 5.49386
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.498127
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 19.133333: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 19.133333: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.498127: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 22.213061
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 514: Serious (16.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 514: Slight (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 22.213061
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 205.704469: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 205.704469
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 495: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 495: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2.475179: Slight (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 0.190515
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 1813.692585: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 1813.692585: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 4.993097
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 164: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 164: Slight (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 1.477788
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 485.047238: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 485.047238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.064017: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.064017: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 6.124934
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 6.969052: Fatal (10.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 6.969052
+|   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1008977.56: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1008977.56
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1029400: Serious (22.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1029400
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 22.383333: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 22.383333: Serious (2.0)
+|   |   |   |   |   |   |   |   |   Weather_Conditions > 5.476654
+|   |   |   |   |   |   |   |   |   |   Junction_Detail <= 7
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 8.470296
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 5.5: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 5.5: Slight (32.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 8.470296
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 35.481526: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 35.481526: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Detail > 7: Serious (2.0)
+|   |   |   Did_Police_Officer_Attend_Scene_of_Accident > 1.00229: Fatal (36.0)
+|   |   Number_of_Casualties > 1
+|   |   |   Number_of_Casualties <= 1.99938: Fatal (1151.0)
+|   |   |   Number_of_Casualties > 1.99938
+|   |   |   |   Number_of_Casualties <= 2
+|   |   |   |   |   Junction_Detail <= 2.993009
+|   |   |   |   |   |   Junction_Detail <= 1.000337
+|   |   |   |   |   |   |   Junction_Detail <= 0.981376
+|   |   |   |   |   |   |   |   Junction_Detail <= 0.001983
+|   |   |   |   |   |   |   |   |   Road_Type <= 3.020345
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 3.485953
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 2.499328: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 2.499328
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Slight (146.0/56.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 463: Slight (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 463
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 552: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 552: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1014484: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1014484: Serious (22.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Serious (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions > 3.485953
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5: Slight (12.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 34: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 34: Slight (2.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 3.020345
+|   |   |   |   |   |   |   |   |   |   Road_Type <= 5.99197: Fatal (47.0)
+|   |   |   |   |   |   |   |   |   |   Road_Type > 5.99197
+|   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 3.676234
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.013636
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 5.476654
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.497709
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Serious (64.0/24.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 570: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 570: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.497709: Slight (18.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 5.476654: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.013636
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.954309
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 46.435374
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.905702
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 6.497787
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.011524
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.613349
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.667373
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 33: Serious (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 33: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.667373: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.613349
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.496792
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.606568: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.606568: Serious (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 3: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.496792: Serious (19.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.011524
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.684702: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.684702
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.083333: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.083333: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.211859: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.211859
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 10.483946
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.432865: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.432865: Slight (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 10.483946: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 6.497787: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.905702: Serious (23.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 46.435374
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.928004
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.933655
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.277564
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.429552
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 50.927481: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 50.927481: Serious (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1020052: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1020052
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 495: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 272.420769: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 272.420769: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.429552
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1023236
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.857432: Fatal (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.857432: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1023236
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 18.174288: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 18.174288: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.277564: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.933655
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 612
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 586.234339
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 514: Serious (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 514: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 586.234339: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 555.292201: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 555.292201: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 612
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1000995: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1000995
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 643.256829: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 643.256829
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.235027: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.235027: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.459409: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.459409: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.928004
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 1.963648: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 1.963648
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.122534
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.497709
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.032548
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.052897
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 13.433333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 12.412881
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.618254: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.618254
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.654595: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.654595: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 12.412881: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 13.433333: Serious (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.052897
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.892431: Fatal (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.892431
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.108272
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.493817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.417671: Slight (23.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.417671
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.61949: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.61949
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 8.620221: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 8.620221: Serious (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.493817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.760932: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.760932: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.108272
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 354
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 294: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 294: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 354
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.53793: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.53793
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 438: Fatal (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 438
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 55.963923: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 55.963923: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.032548
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.873534: Fatal (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.873534
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.496544: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 347: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 347: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.497709
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 3.455467
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1019650
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 53.452403: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 53.452403: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.496544: Serious (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1019650
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.052548: Slight (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.052548
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 53.128615: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 53.128615: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 3.455467: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.122534: Fatal (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.954309
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 50.480378
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Did_Police_Officer_Attend_Scene_of_Accident <= 1.154172: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Did_Police_Officer_Attend_Scene_of_Accident > 1.154172: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 50.480378
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.836745
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.377569
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.236699
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Slight (67.0/32.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 15.951732
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.666059: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.666059: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 15.951732: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.236699
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.94921: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.94921: Serious (67.0/35.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.377569: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.836745
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.729481
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.927102
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 596: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 596: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.927102: Serious (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.729481: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 518: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 518: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5: Serious (17.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 560.12579
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 211
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1018843: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1018843: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 211: Slight (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 560.12579: Serious (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 495.325787: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 495.325787: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 3.676234
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 6.264056
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1000842: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1000842
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.36973: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.36973: Slight (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 6.264056: Slight (12.0/1.0)
+|   |   |   |   |   |   |   |   Junction_Detail > 0.001983: Fatal (30.0)
+|   |   |   |   |   |   |   Junction_Detail > 0.981376: Slight (118.0/23.0)
+|   |   |   |   |   |   Junction_Detail > 1.000337
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 3.771077
+|   |   |   |   |   |   |   |   Road_Type <= 1.024948: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   Road_Type > 1.024948: Fatal (52.0/4.0)
+|   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 3.771077
+|   |   |   |   |   |   |   |   Day_of_Week <= 5: Serious (3.0)
+|   |   |   |   |   |   |   |   Day_of_Week > 5: Slight (2.0)
+|   |   |   |   |   Junction_Detail > 2.993009
+|   |   |   |   |   |   Day_of_Week <= 5.750426
+|   |   |   |   |   |   |   2nd_Road_Number <= 4143
+|   |   |   |   |   |   |   |   2nd_Road_Number <= 12.336256
+|   |   |   |   |   |   |   |   |   Light_Conditions <= 4.497709
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.011943
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 5.686128
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.193461
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 0.471059: Slight (29.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 0.471059: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.193461: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 5.686128
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.607132
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= -0.501093
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.496792
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 8.474667: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 8.474667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.643571: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.643571: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.496792: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > -0.501093: Slight (210.0/99.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 7: Slight (25.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1029536: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1029536: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.607132
+|   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1007467
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.706545: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.706545: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1007467
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.580969
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 4.46639: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 4.46639
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.65: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.65: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 53.531407: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 53.531407: Serious (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.580969: Slight (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 0.497348
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.496792
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.276184: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.276184: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.5: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.496792
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 17.65732: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 17.65732: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 415.435906: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 415.435906: Slight (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 0.497348: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Carriageway_Hazards > 3: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.011943
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 374.743043: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 374.743043
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.372103: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.372103: Serious (11.0/3.0)
+|   |   |   |   |   |   |   |   |   Light_Conditions > 4.497709
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.493817
+|   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 4170.279587: Slight (15.0)
+|   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 4170.279587
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 5.49386: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 5.49386: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.493817: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   2nd_Road_Number > 12.336256
+|   |   |   |   |   |   |   |   |   2nd_Road_Number <= 21.833925
+|   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.30756: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.30756: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   2nd_Road_Number > 21.833925
+|   |   |   |   |   |   |   |   |   |   Latitude <= 51.092168
+|   |   |   |   |   |   |   |   |   |   |   Latitude <= 50.722413: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Latitude > 50.722413
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.308604: Serious (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.308604: Fatal (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Latitude > 51.092168
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 6.499997
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 3.587594
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.499885: Slight (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.499885
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1026167
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.594866
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 2124
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 53.18476: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 53.18476: Slight (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 2124: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.594866: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 3: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1026167
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3.496792: Slight (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3.496792
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 9.05: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 9.05: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 3.587594
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 4.90291: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 4.90291: Slight (23.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 6.499997
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1017766: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1017766: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 3.999934
+|   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 56.487806: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 56.487806: Slight (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 3.999934: Serious (7.0/1.0)
+|   |   |   |   |   |   |   2nd_Road_Number > 4143: Slight (39.0/6.0)
+|   |   |   |   |   |   Day_of_Week > 5.750426: Slight (258.0/100.0)
+|   |   |   |   Number_of_Casualties > 2
+|   |   |   |   |   Number_of_Casualties <= 2.999814: Fatal (524.0)
+|   |   |   |   |   Number_of_Casualties > 2.999814
+|   |   |   |   |   |   Number_of_Casualties <= 3
+|   |   |   |   |   |   |   Latitude <= 56.125386
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 2.498244
+|   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 606.426164
+|   |   |   |   |   |   |   |   |   |   Junction_Detail <= 2.918318
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 15.767351
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.498674
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.478252
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 8.46141
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 7.833333: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 7.833333: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 8.46141: Serious (26.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046: Slight (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 454.487919: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 454.487919: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.478252
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.614538
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 5.177889
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 2: Serious (94.0/33.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 2: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 5.177889
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 413
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 368
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.991062: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.991062: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 328: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 328: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 368
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 404: Fatal (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 404: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 413
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 2552.748498: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 2552.748498: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Slight (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.614538
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.912442: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.912442
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 95
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.268892: Slight (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.268892: Serious (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 95: Serious (28.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.498674
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 10.657527: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 10.657527: Slight (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 15.767351
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.180469
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 0.981376: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 0.981376
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 3: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 3: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.180469: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   Junction_Detail > 2.918318
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 355.326944
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5: Slight (22.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5: Serious (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 355.326944: Serious (26.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 2.496544
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.499885
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 11.989988: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Time > 11.989988: Slight (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.499885
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 2.493817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716: Serious (82.0/36.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1018304
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 278: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 278: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1018304: Serious (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 2.493817
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1014965: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1014965: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Slight (16.0/5.0)
+|   |   |   |   |   |   |   |   |   Local_Authority_(District) > 606.426164
+|   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site <= 0.434495
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 608.441953
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.836758: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Weather_Conditions > 1.836758: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 608.441953
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.014835
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 50.759478
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 221.357932: Fatal (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 221.357932: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 50.759478
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.230141
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 937.414885
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.886098
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 51.585607: Slight (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 51.585607
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 927: Serious (27.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 927: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 55.808522
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 915.471814
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806: Slight (21.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 54: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 54: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 915.471814: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 55.808522: Slight (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 20.886098: Fatal (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 937.414885: Serious (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.230141
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.406228: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.406228
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 742.322829: Serious (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 742.322829: Slight (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 2: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.014835: Serious (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Special_Conditions_at_Site > 0.434495: Fatal (5.0/1.0)
+|   |   |   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 2.498244
+|   |   |   |   |   |   |   |   |   Day_of_Week <= 5.498127
+|   |   |   |   |   |   |   |   |   |   Latitude <= 51.183091: Serious (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Latitude > 51.183091
+|   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 297.332366
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 52.109969: Slight (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 52.109969
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405: Serious (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 297.332366: Slight (19.0/1.0)
+|   |   |   |   |   |   |   |   |   Day_of_Week > 5.498127: Slight (13.0/2.0)
+|   |   |   |   |   |   |   Latitude > 56.125386
+|   |   |   |   |   |   |   |   Local_Authority_(District) <= 914
+|   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.499716
+|   |   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 912.47727
+|   |   |   |   |   |   |   |   |   |   |   Latitude <= 57.538316: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Latitude > 57.538316: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   Local_Authority_(District) > 912.47727: Fatal (7.0)
+|   |   |   |   |   |   |   |   |   Weather_Conditions > 1.499716: Serious (3.0)
+|   |   |   |   |   |   |   |   Local_Authority_(District) > 914: Serious (13.0/1.0)
+|   |   |   |   |   |   Number_of_Casualties > 3
+|   |   |   |   |   |   |   Number_of_Casualties <= 3.9987: Fatal (239.0)
+|   |   |   |   |   |   |   Number_of_Casualties > 3.9987
+|   |   |   |   |   |   |   |   Number_of_Casualties <= 4
+|   |   |   |   |   |   |   |   |   Weather_Conditions <= 1.698069
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.49739
+|   |   |   |   |   |   |   |   |   |   |   Latitude <= 50.273676: Fatal (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Latitude > 50.273676
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.286672
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.499885
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 18
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 291
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 2: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 2: Slight (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 291: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 18: Slight (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.499885
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 8.474667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 55.193175
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 1.497024: Serious (35.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 6.499806: Slight (25.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 6.499806: Serious (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 55.193175: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 8.474667: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.286672
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.983635: Fatal (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.983635
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 5.49386
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 3682.343375: Serious (17.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 3682.343375: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 5.49386: Slight (3.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.49739: Serious (20.0/1.0)
+|   |   |   |   |   |   |   |   |   Weather_Conditions > 1.698069
+|   |   |   |   |   |   |   |   |   |   Light_Conditions <= 2.499046
+|   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1019919
+|   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1013713: Serious (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1013713: Slight (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1019919: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Light_Conditions > 2.499046
+|   |   |   |   |   |   |   |   |   |   |   Road_Type <= 4.499885: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Road_Type > 4.499885
+|   |   |   |   |   |   |   |   |   |   |   |   Time <= 20.9: Slight (21.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Time > 20.9: Serious (5.0)
+|   |   |   |   |   |   |   |   Number_of_Casualties > 4
+|   |   |   |   |   |   |   |   |   Number_of_Casualties <= 4.992847: Fatal (94.0)
+|   |   |   |   |   |   |   |   |   Number_of_Casualties > 4.992847
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 5
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 4.193045
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 1.007742: Serious (58.0/20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 1.007742
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 3.594238: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 3.594238
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1022954
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time <= 21.409002: Slight (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Time > 21.409002: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1022954: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 4.193045
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions <= 5.931142: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Light_Conditions > 5.931142
+|   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 15: Fatal (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   1st_Road_Number > 15: Serious (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 5
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 5.988755: Fatal (41.0)
+|   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 5.988755
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location <= 1014588: Slight (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   LSOA_of_Accident_Location > 1014588
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number <= 68: Serious (23.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   2nd_Road_Number > 68
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405: Slight (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type <= 3.172624
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude <= 53.069967: Serious (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Latitude > 53.069967: Slight (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Road_Type > 3.172624
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail <= 2.981386: Fatal (45.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Junction_Detail > 2.981386
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 6.944495: Fatal (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 6.944495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties <= 8.332851
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week <= 4.499405: Slight (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Day_of_Week > 4.499405: Serious (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Number_of_Casualties > 8.332851: Serious (3.0)
+|   Did_Police_Officer_Attend_Scene_of_Accident > 1.999884
+|   |   Light_Conditions <= 4.497709: Slight (2011.0/461.0)
+|   |   Light_Conditions > 4.497709
+|   |   |   Junction_Detail <= 3.999934
+|   |   |   |   Time <= 23.133333
+|   |   |   |   |   Light_Conditions <= 5.49739
+|   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities <= 4.489691
+|   |   |   |   |   |   |   Time <= 19.85: Slight (9.0/2.0)
+|   |   |   |   |   |   |   Time > 19.85: Serious (2.0)
+|   |   |   |   |   |   Pedestrian_Crossing-Physical_Facilities > 4.489691: Serious (3.0)
+|   |   |   |   |   Light_Conditions > 5.49739
+|   |   |   |   |   |   Carriageway_Hazards <= 3.455467
+|   |   |   |   |   |   |   Time <= 15.373184
+|   |   |   |   |   |   |   |   Weather_Conditions <= 2
+|   |   |   |   |   |   |   |   |   Road_Type <= 4.499885: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 4.499885
+|   |   |   |   |   |   |   |   |   |   Time <= 0.333333: Slight (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Time > 0.333333: Serious (8.0)
+|   |   |   |   |   |   |   |   Weather_Conditions > 2: Slight (3.0)
+|   |   |   |   |   |   |   Time > 15.373184
+|   |   |   |   |   |   |   |   Junction_Detail <= 1.497024
+|   |   |   |   |   |   |   |   |   Local_Authority_(District) <= 391
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number <= 694.155115: Serious (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   1st_Road_Number > 694.155115: Slight (5.0)
+|   |   |   |   |   |   |   |   |   Local_Authority_(District) > 391: Slight (32.0/2.0)
+|   |   |   |   |   |   |   |   Junction_Detail > 1.497024
+|   |   |   |   |   |   |   |   |   Road_Type <= 3.99558: Serious (2.0)
+|   |   |   |   |   |   |   |   |   Road_Type > 3.99558
+|   |   |   |   |   |   |   |   |   |   Latitude <= 51.112039: Serious (2.0)
+|   |   |   |   |   |   |   |   |   |   Latitude > 51.112039: Slight (12.0/2.0)
+|   |   |   |   |   |   Carriageway_Hazards > 3.455467
+|   |   |   |   |   |   |   Latitude <= 51.501366: Serious (2.0)
+|   |   |   |   |   |   |   Latitude > 51.501366: Slight (3.0)
+|   |   |   |   Time > 23.133333: Serious (6.0)
+|   |   |   Junction_Detail > 3.999934: Slight (8.0)
+
+Number of Leaves  : 	886
+
+Size of the tree : 	1771
+
+
+Time taken to build model: 4.84 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       14287               69.9726 %
+Incorrectly Classified Instances      6131               30.0274 %
+Kappa statistic                          0.5405
+Mean absolute error                      0.2237
+Root mean squared error                  0.3761
+Relative absolute error                 51.2578 %
+Root relative squared error             80.5121 %
+Total Number of Instances            20418     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.728    0.281    0.605      0.728    0.661      0.434    0.782     0.589     Slight
+                 0.550    0.184    0.651      0.550    0.596      0.380    0.770     0.626     Serious
+                 0.893    0.014    0.955      0.893    0.923      0.900    0.951     0.926     Fatal
+Weighted Avg.    0.700    0.178    0.708      0.700    0.700      0.527    0.819     0.686     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 5521 1982   81 |    a = Slight
+ 3405 4314  130 |    b = Serious
+  201  332 4452 |    c = Fatal
+

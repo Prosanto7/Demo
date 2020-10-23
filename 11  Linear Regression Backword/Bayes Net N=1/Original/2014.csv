@@ -1,0 +1,86 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     2014new-weka.filters.unsupervised.attribute.Remove-R1-3,5-7,10,12,16-17,20-21,23-24,27,29,32
+Instances:    214193
+Attributes:   18
+              Location_Northing_OSGR
+              Number_of_Vehicles
+              Number_of_Casualties
+              Month
+              Day_of_Week
+              Time
+              Local_Authority_(District)
+              1st_Road_Number
+              Road_Type
+              Junction_Control
+              Pedestrian_Crossing-Human_Control
+              Pedestrian_Crossing-Physical_Facilities
+              Weather_Conditions
+              Special_Conditions_at_Site
+              Carriageway_Hazards
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=17
+Network structure (nodes followed by parents)
+Location_Northing_OSGR(108): Accident_Severity 
+Number_of_Vehicles(15): Accident_Severity 
+Number_of_Casualties(21): Accident_Severity 
+Month(23): Accident_Severity 
+Day_of_Week(13): Accident_Severity 
+Time(1796): Accident_Severity 
+Local_Authority_(District)(622): Accident_Severity 
+1st_Road_Number(1300): Accident_Severity 
+Road_Type(11): Accident_Severity 
+Junction_Control(9): Accident_Severity 
+Pedestrian_Crossing-Human_Control(5): Accident_Severity 
+Pedestrian_Crossing-Physical_Facilities(11): Accident_Severity 
+Weather_Conditions(17): Accident_Severity 
+Special_Conditions_at_Site(13): Accident_Severity 
+Carriageway_Hazards(11): Accident_Severity 
+Did_Police_Officer_Attend_Scene_of_Accident(3): Accident_Severity 
+LSOA_of_Accident_Location(450): Accident_Severity 
+Accident_Severity(3): 
+LogScore Bayes: -8073202.255082479
+LogScore BDeu: -8205829.084451201
+LogScore MDL: -8179603.842270181
+LogScore ENTROPY: -8098376.460002565
+LogScore AIC: -8111611.460002565
+
+
+Time taken to build model: 9.4 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      159127               74.2914 %
+Incorrectly Classified Instances     55066               25.7086 %
+Kappa statistic                          0.6068
+Mean absolute error                      0.1872
+Root mean squared error                  0.335 
+Relative absolute error                 42.9678 %
+Root relative squared error             71.782  %
+Total Number of Instances           214193     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.817    0.295    0.623      0.817    0.707      0.505    0.843     0.711     Slight
+                 0.531    0.118    0.739      0.531    0.618      0.450    0.842     0.781     Serious
+                 0.968    0.000    1.000      0.968    0.984      0.979    0.991     0.987     Fatal
+Weighted Avg.    0.743    0.156    0.758      0.743    0.739      0.597    0.878     0.804     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+ 65440 14651     0 |     a = Slight
+ 38748 43956     0 |     b = Serious
+   811   856 49731 |     c = Fatal
+

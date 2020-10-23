@@ -1,0 +1,307 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     2009new-weka.filters.unsupervised.attribute.Remove-R1-7,10,15-17,20-23,29,32-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    24219
+Attributes:   18
+              Number_of_Vehicles
+              Number_of_Casualties
+              Month
+              Date
+              Day_of_Week
+              Time
+              1st_Road_Number
+              Road_Type
+              2nd_Road_Number
+              Pedestrian_Crossing-Human_Control
+              Pedestrian_Crossing-Physical_Facilities
+              Light_Conditions
+              Weather_Conditions
+              Special_Conditions_at_Site
+              Carriageway_Hazards
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -7.640132628860717
+    Node 3    1.1775308675914273
+    Node 4    -4.368963813866483
+    Node 5    6.541835745705535
+    Node 6    3.7895238510660203
+    Node 7    1.9875868609827978
+    Node 8    2.542922273713992
+    Node 9    6.710228237409858
+    Node 10    -2.1615157934463816
+    Node 11    1.4950387052190728
+    Node 12    -1.0481623829066047
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -5.946021953817492
+    Node 3    -0.3176167845016835
+    Node 4    2.307778898159925
+    Node 5    6.042971010666023
+    Node 6    -1.8599444077144016
+    Node 7    3.5309780267865922
+    Node 8    4.333325094242068
+    Node 9    5.5292884450512085
+    Node 10    -4.197600930343734
+    Node 11    -0.33028723729581366
+    Node 12    0.6112052125668769
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    16.00047765251069
+    Node 3    -2.844446681926724
+    Node 4    0.2272837006260427
+    Node 5    -17.307016568364975
+    Node 6    -0.051792854086545506
+    Node 7    -4.235247602942255
+    Node 8    -5.325954938688062
+    Node 9    -16.903316608414745
+    Node 10    4.830733845235544
+    Node 11    -2.3685182270937437
+    Node 12    1.0143411060711274
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -17.260079304243817
+    Attrib Number_of_Vehicles    13.118926932642928
+    Attrib Number_of_Casualties    -31.92641215933529
+    Attrib Month    -11.717369972366846
+    Attrib Date    -0.2913092332587733
+    Attrib Day_of_Week    -0.17323331085400784
+    Attrib Time    -1.872873935283095
+    Attrib 1st_Road_Number    0.14664279372558636
+    Attrib Road_Type    -1.6475808276840738
+    Attrib 2nd_Road_Number    1.4926517878002157
+    Attrib Pedestrian_Crossing-Human_Control    4.419836727996132
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.7748477806410555
+    Attrib Light_Conditions    0.6477331193651523
+    Attrib Weather_Conditions    2.3848028213590498
+    Attrib Special_Conditions_at_Site    3.450446765723046
+    Attrib Carriageway_Hazards    3.3889624471279767
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    22.96860269924839
+    Attrib LSOA_of_Accident_Location    0.942994894873817
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -28.123734469582416
+    Attrib Number_of_Vehicles    -10.159219491066873
+    Attrib Number_of_Casualties    0.8540159543607875
+    Attrib Month    -0.29193846425818826
+    Attrib Date    0.35722979945068
+    Attrib Day_of_Week    0.145055837757224
+    Attrib Time    0.946498568839742
+    Attrib 1st_Road_Number    0.17429283690961445
+    Attrib Road_Type    0.04048103486500081
+    Attrib 2nd_Road_Number    -0.8444068355360989
+    Attrib Pedestrian_Crossing-Human_Control    7.74218180591323
+    Attrib Pedestrian_Crossing-Physical_Facilities    1.8078211773363089
+    Attrib Light_Conditions    -0.9641346371233184
+    Attrib Weather_Conditions    0.9958909883182211
+    Attrib Special_Conditions_at_Site    4.279938280432781
+    Attrib Carriageway_Hazards    1.385752463242422
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -0.12447711338238186
+    Attrib LSOA_of_Accident_Location    -57.695069016893775
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -22.573472121346786
+    Attrib Number_of_Vehicles    -1.4124673481292018
+    Attrib Number_of_Casualties    3.8642650771363356
+    Attrib Month    0.14469681743264307
+    Attrib Date    -0.01263652244841
+    Attrib Day_of_Week    -0.15654305028717796
+    Attrib Time    0.3195653977640516
+    Attrib 1st_Road_Number    -0.6185862956941306
+    Attrib Road_Type    -60.302257537462076
+    Attrib 2nd_Road_Number    0.012041433307802787
+    Attrib Pedestrian_Crossing-Human_Control    0.2561493864398063
+    Attrib Pedestrian_Crossing-Physical_Facilities    0.08550635520346245
+    Attrib Light_Conditions    0.07739999782282503
+    Attrib Weather_Conditions    -0.08449947333066418
+    Attrib Special_Conditions_at_Site    0.3365945661488145
+    Attrib Carriageway_Hazards    -0.7878751139486674
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    89.75181837799157
+    Attrib LSOA_of_Accident_Location    -0.14480397932999783
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -17.388634928476062
+    Attrib Number_of_Vehicles    9.22934733760824
+    Attrib Number_of_Casualties    8.399118667281442
+    Attrib Month    -0.3881325947764587
+    Attrib Date    -0.29639142987678996
+    Attrib Day_of_Week    0.5057692291045954
+    Attrib Time    1.6235413915367212
+    Attrib 1st_Road_Number    2.5519857827225607
+    Attrib Road_Type    -0.2895831071777369
+    Attrib 2nd_Road_Number    0.47900764182694416
+    Attrib Pedestrian_Crossing-Human_Control    6.688429929391988
+    Attrib Pedestrian_Crossing-Physical_Facilities    -2.2561891162174383
+    Attrib Light_Conditions    -0.16088574186815344
+    Attrib Weather_Conditions    1.158979794182493
+    Attrib Special_Conditions_at_Site    -2.2842916513276825
+    Attrib Carriageway_Hazards    5.055183112338822
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -3.9229416404761657
+    Attrib LSOA_of_Accident_Location    -51.693601199689496
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -22.9608667304688
+    Attrib Number_of_Vehicles    3.2482610207042453
+    Attrib Number_of_Casualties    -22.4566101844925
+    Attrib Month    1.003757450611183
+    Attrib Date    -0.4568957785928654
+    Attrib Day_of_Week    -0.05598875833983607
+    Attrib Time    -19.073748889806804
+    Attrib 1st_Road_Number    1.3373925517142777
+    Attrib Road_Type    -0.3735323742961044
+    Attrib 2nd_Road_Number    -0.24334058691732718
+    Attrib Pedestrian_Crossing-Human_Control    2.6068632111765666
+    Attrib Pedestrian_Crossing-Physical_Facilities    0.8726851796073921
+    Attrib Light_Conditions    7.77971713467104
+    Attrib Weather_Conditions    1.7558561655624576
+    Attrib Special_Conditions_at_Site    2.559828275865481
+    Attrib Carriageway_Hazards    0.4841903393902666
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    8.008761679600335
+    Attrib LSOA_of_Accident_Location    -1.411427510529264
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -48.35733743326106
+    Attrib Number_of_Vehicles    -0.3321605257348594
+    Attrib Number_of_Casualties    -2.824866779629553
+    Attrib Month    0.40877889574829374
+    Attrib Date    9.479952193301618E-4
+    Attrib Day_of_Week    -0.13897908556774907
+    Attrib Time    0.27724227241261723
+    Attrib 1st_Road_Number    0.13593840957314882
+    Attrib Road_Type    0.2248887774362067
+    Attrib 2nd_Road_Number    -0.08051118255704844
+    Attrib Pedestrian_Crossing-Human_Control    33.7702556191763
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.22093861691909028
+    Attrib Light_Conditions    -97.40874679387967
+    Attrib Weather_Conditions    -0.2089999670998182
+    Attrib Special_Conditions_at_Site    0.4540089833012622
+    Attrib Carriageway_Hazards    14.892867216305412
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -1.909633396955256
+    Attrib LSOA_of_Accident_Location    -0.22915937494180305
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -24.566219005405497
+    Attrib Number_of_Vehicles    -1.7722458543744883
+    Attrib Number_of_Casualties    -4.251480494599646
+    Attrib Month    0.44499127198406313
+    Attrib Date    -0.09542804214557016
+    Attrib Day_of_Week    0.07556651147442915
+    Attrib Time    0.21898494282232275
+    Attrib 1st_Road_Number    0.034790961770501595
+    Attrib Road_Type    92.49551267071553
+    Attrib 2nd_Road_Number    0.18530133223640488
+    Attrib Pedestrian_Crossing-Human_Control    -0.17027293884063838
+    Attrib Pedestrian_Crossing-Physical_Facilities    0.06528840392915267
+    Attrib Light_Conditions    -0.15582180394756592
+    Attrib Weather_Conditions    -0.2790204319736201
+    Attrib Special_Conditions_at_Site    0.38353336347012995
+    Attrib Carriageway_Hazards    0.47363022769860375
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -38.75576158740641
+    Attrib LSOA_of_Accident_Location    -0.5966974249823648
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    15.952532579011116
+    Attrib Number_of_Vehicles    0.25466672810157565
+    Attrib Number_of_Casualties    8.647994842512652
+    Attrib Month    -1.261710777271732
+    Attrib Date    0.20617081936880455
+    Attrib Day_of_Week    0.1387603748841538
+    Attrib Time    -34.50925143041403
+    Attrib 1st_Road_Number    1.0852350187115662
+    Attrib Road_Type    -0.11359197912961044
+    Attrib 2nd_Road_Number    -1.5410508360052424
+    Attrib Pedestrian_Crossing-Human_Control    -7.284178771100138
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.37137951303357536
+    Attrib Light_Conditions    -29.400869503569925
+    Attrib Weather_Conditions    -2.038284893323065
+    Attrib Special_Conditions_at_Site    0.6067439108599754
+    Attrib Carriageway_Hazards    3.059931649324784
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -3.1342280779153096
+    Attrib LSOA_of_Accident_Location    1.0906560856086518
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -22.662839215529228
+    Attrib Number_of_Vehicles    16.56232054687471
+    Attrib Number_of_Casualties    -39.32337458672077
+    Attrib Month    3.6778048664493004
+    Attrib Date    0.2612120314499459
+    Attrib Day_of_Week    0.39894981196553225
+    Attrib Time    -0.19352356243096858
+    Attrib 1st_Road_Number    0.4229537456384772
+    Attrib Road_Type    -1.7272092582604615
+    Attrib 2nd_Road_Number    2.725680905437621
+    Attrib Pedestrian_Crossing-Human_Control    0.8988757035108511
+    Attrib Pedestrian_Crossing-Physical_Facilities    -0.45464536936318134
+    Attrib Light_Conditions    0.6769427367429286
+    Attrib Weather_Conditions    2.2740305594225743
+    Attrib Special_Conditions_at_Site    -0.2108622828524443
+    Attrib Carriageway_Hazards    1.2551074009282808
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    11.201847034950816
+    Attrib LSOA_of_Accident_Location    0.6141922219630207
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    6.021542117739242
+    Attrib Number_of_Vehicles    26.710121256864674
+    Attrib Number_of_Casualties    9.581816280560778
+    Attrib Month    0.9371771361441206
+    Attrib Date    0.16909242376315425
+    Attrib Day_of_Week    1.8707234173587177
+    Attrib Time    -0.6078006309404016
+    Attrib 1st_Road_Number    0.9156898253494845
+    Attrib Road_Type    0.038227943069999264
+    Attrib 2nd_Road_Number    -13.459568311669592
+    Attrib Pedestrian_Crossing-Human_Control    -6.009952319775929
+    Attrib Pedestrian_Crossing-Physical_Facilities    -3.482671753454539
+    Attrib Light_Conditions    4.419210767030691
+    Attrib Weather_Conditions    0.9341912914420568
+    Attrib Special_Conditions_at_Site    0.0743786139304419
+    Attrib Carriageway_Hazards    1.5384383917131041
+    Attrib Did_Police_Officer_Attend_Scene_of_Accident    -3.425379347871864
+    Attrib LSOA_of_Accident_Location    3.294040510773196
+Class Slight
+    Input
+    Node 0
+Class Serious
+    Input
+    Node 1
+Class Fatal
+    Input
+    Node 2
+
+
+Time taken to build model: 224.83 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       14343               59.2221 %
+Incorrectly Classified Instances      9876               40.7779 %
+Kappa statistic                          0.3732
+Mean absolute error                      0.3231
+Root mean squared error                  0.4097
+Relative absolute error                 73.523  %
+Root relative squared error             87.3955 %
+Total Number of Instances            24219     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.559    0.248    0.573      0.559    0.566      0.313    0.750     0.602     Slight
+                 0.626    0.365    0.495      0.626    0.553      0.252    0.697     0.539     Serious
+                 0.593    0.027    0.886      0.593    0.710      0.654    0.864     0.802     Fatal
+Weighted Avg.    0.592    0.232    0.627      0.592    0.599      0.380    0.761     0.632     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 5055 3793  196 |    a = Slight
+ 3001 5510  288 |    b = Serious
+  760 1838 3778 |    c = Fatal
+

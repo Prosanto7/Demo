@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     2010new-weka.filters.unsupervised.attribute.Remove-R1,3-5,7,9-10,15-17,20-21,23-25,29,32-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    22134
+Attributes:   18
+              ?Accident_Index
+              Latitude
+              Number_of_Vehicles
+              Month
+              Date
+              Day_of_Week
+              Time
+              1st_Road_Number
+              Road_Type
+              Junction_Control
+              Pedestrian_Crossing-Physical_Facilities
+              Light_Conditions
+              Weather_Conditions
+              Special_Conditions_at_Site
+              Carriageway_Hazards
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class Slight :
+-7.05 + 
+[Latitude] * -0.03 +
+[1st_Road_Number] * 0    +
+[Road_Type] * -0.02 +
+[Junction_Control] * 0.02 +
+[Pedestrian_Crossing-Physical_Facilities] * -0.01 +
+[Light_Conditions] * -0.06 +
+[Weather_Conditions] * 0.08 +
+[Special_Conditions_at_Site] * 0.04 +
+[Did_Police_Officer_Attend_Scene_of_Accident] * 1.07 +
+[LSOA_of_Accident_Location] * 0   
+
+Class Serious :
+18.09 + 
+[Latitude] * 0.05 +
+[Number_of_Vehicles] * -0.3 +
+[Date] * 0    +
+[Day_of_Week] * -0.01 +
+[Time] * 0.01 +
+[Road_Type] * 0.07 +
+[Pedestrian_Crossing-Physical_Facilities] * 0.01 +
+[Light_Conditions] * -0.01 +
+[LSOA_of_Accident_Location] * -0
+
+Class Fatal :
+1.52 + 
+[Month] * -0.01 +
+[Date] * -0 +
+[Time] * -0.02 +
+[Junction_Control] * -0.15 +
+[Light_Conditions] * 0.09 +
+[Weather_Conditions] * -0.03 +
+[Carriageway_Hazards] * -0.08 +
+[Did_Police_Officer_Attend_Scene_of_Accident] * -1.32
+
+
+Time taken to build model: 12.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10598               47.8811 %
+Incorrectly Classified Instances     11536               52.1189 %
+Kappa statistic                          0.1847
+Mean absolute error                      0.4033
+Root mean squared error                  0.449 
+Relative absolute error                 92.4895 %
+Root relative squared error             96.1676 %
+Total Number of Instances            22134     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.586    0.334    0.527      0.586    0.555      0.248    0.683     0.590     Slight
+                 0.534    0.378    0.453      0.534    0.491      0.153    0.628     0.494     Serious
+                 0.222    0.104    0.407      0.222    0.287      0.150    0.685     0.360     Fatal
+Weighted Avg.    0.479    0.294    0.470      0.479    0.466      0.189    0.663     0.499     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 5038 2705  849 |    a = Slight
+ 2919 4370  887 |    b = Serious
+ 1609 2567 1190 |    c = Fatal
+

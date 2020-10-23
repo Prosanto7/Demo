@@ -1,0 +1,5612 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -M 2 -C 0.25 -Q 1
+Relation:     2009new-weka.filters.unsupervised.attribute.Remove-R1,3-5,7-8,10,15-17,20,22-24,26,29,32-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    24219
+Attributes:   18
+              ?Accident_Index
+              Latitude
+              Number_of_Casualties
+              Month
+              Date
+              Day_of_Week
+              Time
+              1st_Road_Number
+              Road_Type
+              Junction_Detail
+              Pedestrian_Crossing-Human_Control
+              Light_Conditions
+              Weather_Conditions
+              Special_Conditions_at_Site
+              Carriageway_Hazards
+              Did_Police_Officer_Attend_Scene_of_Accident
+              LSOA_of_Accident_Location
+              Accident_Severity
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+?Accident_Index <= 501995 AND
+?Accident_Index > 108600.0902 AND
+?Accident_Index <= 171061: Serious (754.0/1.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+LSOA_of_Accident_Location > 1007328 AND
+Time > 6.737762 AND
+Number_of_Casualties <= 1.010637 AND
+Latitude <= 53.192715 AND
+Road_Type <= 4.49722 AND
+LSOA_of_Accident_Location <= 1031238.63 AND
+Day_of_Week <= 5.498792 AND
+Light_Conditions <= 2.49976 AND
+Road_Type <= 2.499619 AND
+Junction_Detail <= 2.499642: Slight (108.0/8.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+LSOA_of_Accident_Location > 1007328 AND
+Time > 6.737762 AND
+Number_of_Casualties <= 1.010637 AND
+Latitude <= 53.192715 AND
+Latitude > 51.146958 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.499619 AND
+Day_of_Week <= 5.498792 AND
+Light_Conditions <= 2.49976: Slight (72.0/1.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+LSOA_of_Accident_Location > 1007328 AND
+Time > 6.737762 AND
+Number_of_Casualties <= 1.010637 AND
+Latitude <= 53.192715 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Road_Type > 7.960282 AND
+Light_Conditions <= 2.49976 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 2 AND
+Junction_Detail > 1.49993: Slight (11.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+LSOA_of_Accident_Location > 1007328 AND
+Time > 6.737762 AND
+Number_of_Casualties <= 1.010637 AND
+Latitude <= 53.192715 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Latitude > 51.146958: Slight (1020.0/184.0)
+
+?Accident_Index <= 501995 AND
+1st_Road_Number <= 0.002331 AND
+?Accident_Index > 177038.8113 AND
+Number_of_Casualties <= 1.206726: Serious (131.0)
+
+?Accident_Index <= 501995 AND
+Light_Conditions > 1 AND
+Light_Conditions <= 3.992993: Fatal (357.0)
+
+?Accident_Index <= 501995 AND
+LSOA_of_Accident_Location > 1025212.532 AND
+Road_Type > 5.978876: Serious (71.0/3.0)
+
+?Accident_Index <= 501995 AND
+LSOA_of_Accident_Location > 1000214 AND
+?Accident_Index > 177107.1654 AND
+LSOA_of_Accident_Location <= 1004140: Serious (78.0)
+
+?Accident_Index <= 501995 AND
+LSOA_of_Accident_Location > 1000214 AND
+1st_Road_Number > 4809 AND
+Number_of_Casualties <= 1.179664 AND
+?Accident_Index <= 501534: Serious (38.0/1.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Number_of_Casualties > 1.010637 AND
+Light_Conditions <= 5 AND
+Day_of_Week > 1.140177 AND
+Day_of_Week > 4.815342 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 4.49657: Slight (43.0/1.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Number_of_Casualties <= 1.010637 AND
+Latitude <= 50.755459 AND
+Date <= 21.490903 AND
+Road_Type > 4.49722: Slight (79.0/3.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+LSOA_of_Accident_Location <= 1000213: Serious (22.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Light_Conditions > 4.109766 AND
+Light_Conditions <= 5.96645: Fatal (11.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Junction_Detail <= 0.016046 AND
+Latitude <= 51.512286: Serious (29.0/1.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Junction_Detail <= 2.995058 AND
+Junction_Detail > 1.041599: Fatal (52.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Latitude > 53.645562 AND
+Road_Type <= 3.140921: Serious (29.0/1.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Road_Type <= 5.977601 AND
+Road_Type > 3.000631: Fatal (41.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Junction_Detail > 0.992709 AND
+Junction_Detail <= 3.004326 AND
+LSOA_of_Accident_Location > 1000818.92 AND
+Date > 7.495796 AND
+Weather_Conditions <= 1.026617 AND
+Month > 8.873787: Serious (26.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Weather_Conditions > 1.980437 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.241199 AND
+Road_Type <= 4.49722: Serious (10.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Junction_Detail > 5.928795 AND
+Date > 14.618513: Serious (27.0/1.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.004117 AND
+1st_Road_Number <= 445.337837: Fatal (6.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+?Accident_Index <= 100018: Serious (9.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Special_Conditions_at_Site > 0.269516 AND
+Time > 7.016667: Fatal (7.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Month > 1.071218 AND
+Light_Conditions > 2.49976 AND
+Light_Conditions <= 5 AND
+LSOA_of_Accident_Location <= 1000818.92: Fatal (12.0)
+
+Number_of_Casualties <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+?Accident_Index > 6136641.62 AND
+?Accident_Index <= 22901191 AND
+Day_of_Week > 1.499519 AND
+Road_Type <= 4.49722 AND
+Light_Conditions <= 2.49976 AND
+Month <= 11.496329 AND
+Latitude > 53.383044: Slight (42.0/2.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index <= 501973.5591 AND
+1st_Road_Number <= 4028 AND
+Light_Conditions > 2.49976 AND
+Light_Conditions <= 5 AND
+Weather_Conditions <= 1.917584 AND
+Weather_Conditions <= 1.026617 AND
+Day_of_Week <= 6.716664 AND
+Date <= 11.386618 AND
+Road_Type > 4.49722 AND
+Junction_Detail <= 3.703771: Serious (10.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+?Accident_Index > 6136641.62 AND
+?Accident_Index <= 22901191 AND
+Day_of_Week > 2.499744 AND
+Road_Type > 2.499619: Slight (186.0/37.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Day_of_Week > 1.056453 AND
+Day_of_Week > 1.950868 AND
+Month > 8.014138 AND
+Road_Type > 4.49722 AND
+Month <= 8.988118: Fatal (9.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Junction_Detail > 3.03578 AND
+Day_of_Week <= 5.622978 AND
+Junction_Detail <= 7.179182: Fatal (18.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index <= 501973.5591 AND
+Junction_Detail > 0.992709: Serious (62.0/13.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+?Accident_Index <= 262781.2342 AND
+Junction_Detail > 0.016046: Fatal (11.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Road_Type <= 4.49722: Slight (66.0/13.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Day_of_Week <= 4.498985 AND
+Month <= 9.499975 AND
+Day_of_Week > 1.499519 AND
+Special_Conditions_at_Site <= 2 AND
+Day_of_Week <= 2.499744: Slight (31.0/6.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Month <= 11.496329 AND
+Day_of_Week <= 4.498985 AND
+Month <= 9.499975 AND
+Weather_Conditions <= 3.496148 AND
+Day_of_Week > 2 AND
+Weather_Conditions <= 1.499993 AND
+?Accident_Index <= 440253421.2: Slight (20.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Month > 9.499975 AND
+Day_of_Week <= 4.498985: Slight (26.0/2.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Road_Type > 6.445885 AND
+Road_Type <= 7.960282 AND
+Date <= 24: Slight (3.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Road_Type > 6.445885 AND
+Date <= 25.487671: Serious (4.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.986449 AND
+Month > 10.990161 AND
+Month > 11.91164 AND
+?Accident_Index > 3455189 AND
+Day_of_Week <= 6.499698: Slight (238.0/81.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449: Slight (175.0/81.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Road_Type > 5.994078 AND
+Latitude <= 50.951369 AND
+?Accident_Index <= 503010 AND
+Month > 1.595624 AND
+Carriageway_Hazards <= 1 AND
+Day_of_Week > 5.190138 AND
+Month <= 5.061176: Slight (22.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Road_Type > 5.994078 AND
+Latitude <= 50.951369 AND
+?Accident_Index <= 55900370 AND
+Day_of_Week <= 5.190138 AND
+Weather_Conditions <= 1.499993 AND
+Carriageway_Hazards <= 1: Slight (104.0/31.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20138672.94 AND
+1st_Road_Number <= 12.360799 AND
+Weather_Conditions > 4.071046 AND
+Road_Type <= 6.137981 AND
+Weather_Conditions > 7.496074 AND
+Junction_Detail <= 0.499232 AND
+Weather_Conditions <= 8.462735: Slight (10.0/2.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20138672.94 AND
+1st_Road_Number <= 12.360799 AND
+LSOA_of_Accident_Location <= 1015733 AND
+Road_Type <= 6.445885 AND
+Day_of_Week <= 5.498792: Slight (196.0/55.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20139052.56 AND
+Latitude <= 50.950078 AND
+Day_of_Week <= 1.499519 AND
+Latitude > 50.850374: Serious (10.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Road_Type > 5.994078 AND
+Junction_Detail > 2.983001 AND
+Junction_Detail <= 3.071402 AND
+Day_of_Week > 3.783507 AND
+Weather_Conditions > 2.476127 AND
+Date > 9.498355: Slight (19.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.070698 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20139052.56 AND
+Month <= 1.230306: Slight (150.0/55.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Special_Conditions_at_Site > 3.501141 AND
+Special_Conditions_at_Site <= 4.484925 AND
+Weather_Conditions <= 3.496148 AND
+Carriageway_Hazards <= 1 AND
+Junction_Detail <= 0.499232 AND
+Time <= 11.873609: Slight (10.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Special_Conditions_at_Site > 3.501141 AND
+Carriageway_Hazards > 1 AND
+Month > 4.499713: Slight (4.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Special_Conditions_at_Site > 3.501141: Serious (95.0/44.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.063793 AND
+?Accident_Index <= 9100638 AND
+?Accident_Index <= 6026927.633 AND
+Road_Type > 5.835697 AND
+?Accident_Index > 502794.5097 AND
+1st_Road_Number <= 34: Serious (112.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Road_Type <= 6.445885 AND
+Month > 8.496962 AND
+Carriageway_Hazards <= 1 AND
+Month <= 10.49564 AND
+Month > 9.499975 AND
+Time > 8.766667 AND
+1st_Road_Number <= 2799.036599: Slight (16.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Road_Type <= 6.445885 AND
+Day_of_Week <= 1.499519 AND
+1st_Road_Number > 248.486323: Slight (11.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Road_Type > 6.445885: Slight (6.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Junction_Detail > 4.49657 AND
+Date <= 30.476096 AND
+Month <= 5: Slight (3.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Junction_Detail > 6.467865 AND
+?Accident_Index > 5851756.996: Slight (9.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Date > 30.476096: Serious (31.0/11.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type <= 1.05076 AND
+Date <= 14.498677 AND
+Day_of_Week > 2.499744 AND
+Junction_Detail <= 1.49993: Slight (103.0/18.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Weather_Conditions <= 7.496074 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Road_Type > 2.499619 AND
+Road_Type > 4.49722 AND
+Time <= 13.25: Slight (27.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Month > 8.496962: Slight (24.0/8.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Date > 29.718491 AND
+Junction_Detail <= 4.49657 AND
+Junction_Detail <= 1.49993 AND
+Time <= 18.540401 AND
+Month <= 5.49952 AND
+Weather_Conditions <= 1.499993 AND
+LSOA_of_Accident_Location <= 1023538: Serious (9.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Junction_Detail > 2.983001 AND
+Junction_Detail <= 3.071402 AND
+Day_of_Week > 3.783507 AND
+Day_of_Week <= 4.186599 AND
+Weather_Conditions > 1.499993 AND
+Date > 11.487722: Slight (9.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Junction_Detail > 2.983001 AND
+Junction_Detail <= 3.071402 AND
+Day_of_Week > 3.783507 AND
+Day_of_Week <= 4.186599 AND
+Weather_Conditions <= 1.499993: Slight (133.0/37.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.063793 AND
+?Accident_Index <= 9100638 AND
+?Accident_Index <= 6025165.521 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.824075: Serious (25.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Weather_Conditions <= 7.496074 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Road_Type > 2.499619 AND
+Month > 3.498975 AND
+Road_Type > 4.49722 AND
+Month <= 7.499013: Slight (20.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.063793 AND
+?Accident_Index <= 9100638 AND
+?Accident_Index <= 6025165.521 AND
+Day_of_Week <= 2.042564 AND
+Day_of_Week <= 1.153779: Serious (24.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.063793 AND
+?Accident_Index <= 9100638 AND
+?Accident_Index <= 6025165.521 AND
+Junction_Detail > 5.545407: Serious (28.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Day_of_Week > 6.963191 AND
+Junction_Detail > 1.709183: Slight (190.0/66.0)
+
+Number_of_Casualties <= 1 AND
+1st_Road_Number <= 0.157356 AND
+LSOA_of_Accident_Location > 1009872 AND
+LSOA_of_Accident_Location <= 1013136 AND
+?Accident_Index > 20502903: Serious (140.0/3.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+1st_Road_Number <= 8.271986 AND
+LSOA_of_Accident_Location > 1009718 AND
+Time > 15.291072 AND
+Time <= 15.556651 AND
+LSOA_of_Accident_Location > 1012401: Serious (40.0/5.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+1st_Road_Number <= 8.271986 AND
+LSOA_of_Accident_Location > 1009718 AND
+Time > 16.511736 AND
+Road_Type <= 2.499619 AND
+1st_Road_Number <= 1 AND
+Road_Type > 1.494493: Slight (16.0/4.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+1st_Road_Number <= 8.271986 AND
+LSOA_of_Accident_Location > 1009718 AND
+Time > 16.511736 AND
+1st_Road_Number <= 3.499883 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Day_of_Week <= 3.498872: Slight (7.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+1st_Road_Number <= 8.271986 AND
+LSOA_of_Accident_Location > 1009718 AND
+Time > 16.511736 AND
+1st_Road_Number <= 3.499883 AND
+Weather_Conditions > 1.499993 AND
+Road_Type > 4.49722 AND
+1st_Road_Number <= 1 AND
+Special_Conditions_at_Site <= 2 AND
+Weather_Conditions <= 6.472645 AND
+Month > 4.499713 AND
+Weather_Conditions <= 3.496148 AND
+Latitude > 50.853588 AND
+Junction_Detail <= 1.49993: Slight (9.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 9045152.131 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.953809 AND
+Latitude <= 53.372078 AND
+1st_Road_Number > 131 AND
+Weather_Conditions <= 1.499993: Slight (24.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+1st_Road_Number <= 8.271986 AND
+LSOA_of_Accident_Location > 1009718 AND
+Time > 16.511736 AND
+Month <= 9.499975 AND
+Day_of_Week <= 3.498872 AND
+Road_Type > 2 AND
+Month > 3.498975 AND
+Road_Type > 4.49722: Serious (101.0/29.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Weather_Conditions <= 7.496074 AND
+1st_Road_Number <= 71.451871 AND
+1st_Road_Number <= 57.421089 AND
+Time <= 16.474685 AND
+Pedestrian_Crossing-Human_Control <= 1.302304 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Latitude > 55.857083 AND
+Weather_Conditions <= 1.499993 AND
+Latitude <= 55.971737: Slight (33.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Time <= 8.783601 AND
+Weather_Conditions > 1.519331 AND
+Month > 1.496172 AND
+Day_of_Week <= 5.498792: Slight (85.0/26.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Carriageway_Hazards > 1.504766 AND
+Weather_Conditions <= 2.476127 AND
+Junction_Detail <= 5 AND
+Month > 3.498975 AND
+Weather_Conditions <= 1.499993 AND
+Month > 8.496962: Slight (5.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+Carriageway_Hazards > 1.504766 AND
+Weather_Conditions <= 2.476127 AND
+Junction_Detail <= 5 AND
+LSOA_of_Accident_Location > 1019488 AND
+Carriageway_Hazards <= 6.342158: Serious (9.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20139052.56 AND
+Weather_Conditions <= 2 AND
+Weather_Conditions > 1.94144 AND
+Junction_Detail > 4.49657 AND
+Junction_Detail <= 7.498422: Slight (11.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.063793 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20139052.56 AND
+Weather_Conditions <= 2 AND
+Weather_Conditions > 1.94144: Slight (146.0/59.0)
+
+Number_of_Casualties <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+?Accident_Index > 230996331 AND
+Month > 8.496962 AND
+Day_of_Week <= 2.499744: Slight (18.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Weather_Conditions > 7.496074: Slight (19.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+?Accident_Index <= 9100638 AND
+?Accident_Index <= 6025165.521 AND
+Junction_Detail <= 3.225039 AND
+Junction_Detail > 2.955895 AND
+Month > 1.559779 AND
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Day_of_Week > 4.498985: Serious (16.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+?Accident_Index <= 9045152.131 AND
+?Accident_Index <= 6025165.521 AND
+Road_Type > 1.412126 AND
+Road_Type <= 5.835697 AND
+Road_Type > 3.038181: Fatal (22.0)
+
+Number_of_Casualties <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Latitude > 53.32499 AND
+Latitude <= 55.775305 AND
+?Accident_Index <= 47617294.8 AND
+Date <= 23.499009: Serious (49.0/11.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Carriageway_Hazards > 0.493453 AND
+Date > 7 AND
+Time <= 14.583333: Slight (8.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Road_Type > 2.499619 AND
+Junction_Detail <= 5.499658 AND
+Time <= 17.513016: Serious (10.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Weather_Conditions > 1.499993 AND
+Carriageway_Hazards <= 1 AND
+Month > 11.496329 AND
+Day_of_Week > 3.498872: Serious (7.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Weather_Conditions > 1.499993 AND
+Carriageway_Hazards <= 1 AND
+Month > 9.499975: Slight (11.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Special_Conditions_at_Site > 2 AND
+Month <= 7.499013: Slight (9.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+?Accident_Index <= 9100638 AND
+?Accident_Index > 6025165.521: Fatal (16.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+?Accident_Index <= 7519024.384 AND
+Road_Type > 1.412126 AND
+Road_Type <= 6.445885 AND
+Weather_Conditions > 1.585463 AND
+Month > 1.559779: Serious (13.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Date > 19.775996 AND
+Junction_Detail > 3.995453 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Day_of_Week > 1.499519: Slight (39.0/8.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Date > 19.775996 AND
+Month <= 1.496172 AND
+Latitude <= 57.320289: Serious (11.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Month > 2.978357 AND
+Special_Conditions_at_Site > 0.497703 AND
+Latitude > 56.157474: Serious (10.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Month > 7.777267 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Junction_Detail > 0.499232: Slight (6.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Month > 7.777267 AND
+Day_of_Week > 3.498872 AND
+Time <= 9.037438 AND
+Weather_Conditions > 1.499993: Slight (8.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Month > 7.777267 AND
+Day_of_Week > 3.498872 AND
+Junction_Detail <= 2.499642 AND
+Weather_Conditions <= 2.476127 AND
+Junction_Detail > 0.499232: Serious (8.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Date > 19.775996 AND
+Weather_Conditions > 3.496148 AND
+Latitude <= 56.164861: Serious (7.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Weather_Conditions > 2.596378 AND
+Junction_Detail <= 5.499658: Slight (31.0/6.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Month > 2.978357 AND
+Day_of_Week <= 2.479841 AND
+?Accident_Index > 9700212 AND
+Month <= 3.498975: Serious (12.0/2.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+Latitude > 55.342506 AND
+Month > 3.891665 AND
+?Accident_Index <= 9740607 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type > 1.494493 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886: Slight (132.0/51.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+?Accident_Index <= 7519024.384 AND
+Road_Type > 1.412126 AND
+Road_Type <= 6.445885 AND
+Junction_Detail <= 0.193831 AND
+Road_Type > 4.49722: Serious (35.0/10.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude > 53.056375 AND
+?Accident_Index > 34605786.84 AND
+?Accident_Index <= 219002974 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.953809 AND
+Junction_Detail > 2.954193 AND
+?Accident_Index <= 131053109 AND
+Road_Type > 5.759242 AND
+Special_Conditions_at_Site <= 1 AND
+Junction_Detail <= 3.119348: Serious (71.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.056375 AND
+Weather_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Road_Type > 6.445885 AND
+Junction_Detail <= 5.499658 AND
+Date <= 15.497242: Slight (19.0/1.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.056375 AND
+Weather_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20139052.56 AND
+Day_of_Week > 6.949558 AND
+LSOA_of_Accident_Location > 1029688: Serious (15.0/1.0)
+
+Number_of_Casualties <= 1 AND
+?Accident_Index > 920900052 AND
+Month > 3.498975 AND
+Road_Type > 5.798553 AND
+Pedestrian_Crossing-Human_Control > 0.424778 AND
+Weather_Conditions <= 2.476127 AND
+Date > 5.48958: Serious (8.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.056375 AND
+Weather_Conditions <= 1 AND
+Road_Type <= 3.003187 AND
+Date > 23.963512 AND
+Date > 29.471619 AND
+Date <= 30.476096 AND
+Junction_Detail <= 2 AND
+Junction_Detail <= 0.499232 AND
+Road_Type > 2.499619: Slight (12.0/2.0)
+
+Number_of_Casualties <= 1 AND
+Road_Type <= 1 AND
+Latitude > 53.139972 AND
+?Accident_Index > 7827156.875 AND
+?Accident_Index > 32342377.64 AND
+?Accident_Index <= 609011308: Serious (30.0)
+
+Number_of_Casualties <= 1 AND
+1st_Road_Number <= 9.169876 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.772587: Slight (110.0/49.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+?Accident_Index > 920900052 AND
+Month <= 1.496172 AND
+Time > 8.874924: Slight (9.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.056375 AND
+Weather_Conditions <= 1 AND
+Road_Type <= 2.00619 AND
+Road_Type <= 1.05076 AND
+Day_of_Week > 3.498872 AND
+Junction_Detail > 1.49993 AND
+Date > 13.498011: Serious (5.0)
+
+Number_of_Casualties <= 1 AND
+Light_Conditions <= 1 AND
+Latitude <= 53.056375 AND
+Weather_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+?Accident_Index > 20139052.56 AND
+Latitude <= 52.51146 AND
+?Accident_Index <= 530201153 AND
+Month <= 10.000055 AND
+1st_Road_Number <= 12.360799: Slight (238.0/110.0)
+
+Number_of_Casualties > 1 AND
+Number_of_Casualties <= 1.998942: Fatal (1958.0)
+
+Number_of_Casualties > 2 AND
+Number_of_Casualties <= 2.998597: Fatal (910.0)
+
+Number_of_Casualties > 3 AND
+Number_of_Casualties <= 3.996594: Fatal (369.0)
+
+?Accident_Index <= 501995 AND
+Number_of_Casualties > 1.499539 AND
+Weather_Conditions <= 1.008474 AND
+Date > 6.530747: Serious (85.0/1.0)
+
+Number_of_Casualties > 4 AND
+Number_of_Casualties <= 4.999017: Fatal (136.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail > 0.499232: Slight (211.0/37.0)
+
+Light_Conditions <= 1 AND
+?Accident_Index <= 501995 AND
+Number_of_Casualties > 2.499418: Serious (9.0)
+
+Light_Conditions <= 1 AND
+?Accident_Index <= 501995 AND
+LSOA_of_Accident_Location <= 1001208: Serious (8.0)
+
+Light_Conditions <= 1 AND
+?Accident_Index <= 501995 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail <= 0.305184 AND
+LSOA_of_Accident_Location > 1001658 AND
+Date > 18.170716: Fatal (6.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude > 53.190936 AND
+?Accident_Index <= 9100638 AND
+Number_of_Casualties > 1.499539 AND
+LSOA_of_Accident_Location <= 1006649: Serious (48.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude > 53.616602 AND
+LSOA_of_Accident_Location > 1018684 AND
+Time > 11.864374: Serious (158.0/11.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index > 920900092 AND
+Number_of_Casualties > 2.499418 AND
+Carriageway_Hazards <= 1 AND
+1st_Road_Number <= 3691.694018 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties > 3.499753: Serious (17.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070698 AND
+Weather_Conditions <= 1 AND
+Day_of_Week > 6.986463 AND
+Number_of_Casualties > 2.499418 AND
+Road_Type <= 4.49722 AND
+Number_of_Casualties > 3.499753 AND
+Road_Type > 2.499619 AND
+1st_Road_Number <= 28.479453: Slight (4.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070698 AND
+Weather_Conditions <= 1 AND
+Day_of_Week > 6.986463 AND
+Number_of_Casualties > 3.499753 AND
+Road_Type > 2.499619 AND
+Date <= 25.487671 AND
+Number_of_Casualties <= 4.491847: Serious (15.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070698 AND
+Weather_Conditions <= 1 AND
+Month > 10.990161 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail > 0.499232 AND
+Month > 11.496329 AND
+Date > 14.498677: Slight (9.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070698 AND
+Weather_Conditions <= 1 AND
+Day_of_Week > 6.986463 AND
+Junction_Detail > 0.499232 AND
+Road_Type > 4.524221 AND
+Number_of_Casualties <= 4: Slight (88.0/30.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Weather_Conditions <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.027865 AND
+Month > 10.990161 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail > 0.499232 AND
+1st_Road_Number > 39.45326 AND
+Day_of_Week <= 5.498792 AND
+Day_of_Week <= 4.498985 AND
+?Accident_Index <= 520911100: Slight (25.0/2.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index > 920900149 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 1.499993 AND
+Special_Conditions_at_Site <= 3 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 3 AND
+Time <= 11.82191: Slight (5.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index > 920900149 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 3.498975 AND
+Number_of_Casualties > 1.499539 AND
+Day_of_Week > 1.499519 AND
+Junction_Detail <= 8.435033 AND
+Month <= 9.499975 AND
+Road_Type > 4.49722: Serious (35.0/10.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index <= 501961 AND
+?Accident_Index > 100101.4164 AND
+Month > 2.325163 AND
+1st_Road_Number > 0.022693: Fatal (12.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Weather_Conditions <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.027865 AND
+Road_Type > 5.994078 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail > 0.909207 AND
+Time <= 11.27804 AND
+Number_of_Casualties <= 4.491847 AND
+Junction_Detail > 3.995453 AND
+1st_Road_Number > 227.499698 AND
+Month <= 10.49564: Slight (29.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Road_Type <= 3.003187 AND
+Date > 22.986484 AND
+Number_of_Casualties > 1.499539 AND
+1st_Road_Number <= 5126 AND
+1st_Road_Number > 13.496475 AND
+Day_of_Week > 1.499519 AND
+Road_Type > 1.494493 AND
+LSOA_of_Accident_Location > 1001642.887 AND
+?Accident_Index <= 42254042.95: Slight (28.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Weather_Conditions <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.027865 AND
+Road_Type > 5.994078 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail > 0.909207 AND
+Junction_Detail > 5.976797: Slight (169.0/73.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type <= 1 AND
+Number_of_Casualties > 2.499418 AND
+Number_of_Casualties <= 3.499753 AND
+?Accident_Index <= 354372664.2: Slight (12.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Road_Type <= 3.003187 AND
+Date > 22.986484 AND
+Number_of_Casualties > 2.499418 AND
+LSOA_of_Accident_Location <= 1029285.386 AND
+LSOA_of_Accident_Location > 1017062: Serious (9.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Road_Type <= 3.003187 AND
+Date > 22.986484 AND
+Number_of_Casualties <= 1.499539 AND
+Date > 29.471619 AND
+Road_Type <= 1.494493: Slight (12.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Road_Type <= 3.003187 AND
+Date > 22.986484 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 1.009911 AND
+Road_Type <= 2.499619 AND
+Junction_Detail <= 4.49657 AND
+Day_of_Week <= 3.498872 AND
+Time <= 17.640737 AND
+?Accident_Index > 43117129: Slight (17.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Weather_Conditions <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.027865 AND
+Day_of_Week > 6.986463 AND
+Road_Type > 4.524221 AND
+Month > 9.499975: Slight (36.0/12.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index > 920900149 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 7.499013 AND
+Road_Type > 2.499619 AND
+Number_of_Casualties > 1.499539 AND
+Month > 9: Serious (15.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Road_Type <= 3.003187 AND
+Date > 22.986484 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 1.009911: Slight (198.0/95.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Latitude > 53.055996 AND
+?Accident_Index <= 9100638 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type <= 6.445885 AND
+Date <= 26 AND
+Junction_Detail <= 2.955895: Fatal (11.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Latitude > 53.055996 AND
+1st_Road_Number <= 0.25576 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail > 0.81882: Slight (168.0/75.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.070285 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000585 AND
+Number_of_Casualties > 1.499539 AND
+Special_Conditions_at_Site <= 3.36222 AND
+Junction_Detail > 0.909207 AND
+Junction_Detail > 2.703054 AND
+LSOA_of_Accident_Location <= 1017075 AND
+Number_of_Casualties <= 3.499753 AND
+Number_of_Casualties <= 2.499418 AND
+?Accident_Index > 502050: Slight (69.0/20.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude > 53.070285 AND
+?Accident_Index <= 32389443.63 AND
+?Accident_Index <= 9100638 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions <= 2.169757 AND
+Pedestrian_Crossing-Human_Control <= 1 AND
+Weather_Conditions <= 1.947364 AND
+Road_Type > 2.426446 AND
+Road_Type > 5.729054 AND
+Road_Type <= 6.445885 AND
+Date > 4.355606: Serious (14.0/2.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Latitude > 53.055996 AND
+?Accident_Index > 32389443.63 AND
+?Accident_Index <= 215999893.9 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Month > 2.497337 AND
+Month > 4.933992 AND
+?Accident_Index <= 131107109 AND
+Weather_Conditions <= 1.169952 AND
+Junction_Detail > 2.691882: Serious (51.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Time <= 9.184811 AND
+Latitude > 53.765141 AND
+Special_Conditions_at_Site <= 2 AND
+Latitude <= 55.549246 AND
+Month <= 8.496962: Serious (32.0/3.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Time <= 9.184811 AND
+Number_of_Casualties > 2.499418 AND
+Date <= 6.499276 AND
+Road_Type <= 6.445885: Serious (18.0/2.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Time <= 9.184811 AND
+Number_of_Casualties > 2.499418: Slight (52.0/17.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index > 920900149 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail <= 5.499658 AND
+Junction_Detail <= 0.499232 AND
+Time > 9.016566: Slight (16.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index > 920900149 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 1.499993 AND
+Road_Type > 4.49722 AND
+Month > 4.499713 AND
+Day_of_Week > 1.499519: Slight (18.0/7.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+?Accident_Index > 920900149 AND
+Weather_Conditions <= 1.499993 AND
+Date > 15.497242: Slight (123.0/58.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.616963 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.986449 AND
+Road_Type > 1.494493 AND
+Number_of_Casualties > 1.499539 AND
+Day_of_Week > 1.499519 AND
+Day_of_Week <= 4.498985: Slight (23.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.616963 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Time <= 9.173981 AND
+Day_of_Week <= 6.228742 AND
+Number_of_Casualties > 1.499539 AND
+Month > 1.694019 AND
+Junction_Detail <= 0.499232 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Date > 10.498546 AND
+Road_Type <= 6.445885 AND
+Month <= 10.49564: Slight (43.0/14.0)
+
+Month > 10.993708 AND
+Number_of_Casualties > 2.499418 AND
+Latitude > 53.015122 AND
+Special_Conditions_at_Site <= 0.138647 AND
+Road_Type > 2.733519 AND
+Day_of_Week > 4.272616 AND
+?Accident_Index > 16004366.1 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 3.499753 AND
+Light_Conditions <= 5 AND
+LSOA_of_Accident_Location > 1012576: Serious (8.0)
+
+Month > 10.993708 AND
+Number_of_Casualties > 2.499418 AND
+Carriageway_Hazards <= 1 AND
+Special_Conditions_at_Site <= 0.138647 AND
+Latitude > 53.015122 AND
+Road_Type > 2.733519 AND
+Number_of_Casualties > 4.491847: Serious (13.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Light_Conditions <= 4.066282 AND
+?Accident_Index > 502019 AND
+Latitude <= 53.24321 AND
+?Accident_Index > 3451859 AND
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 11.496329: Slight (59.0/13.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.616963 AND
+Month > 10.990161 AND
+LSOA_of_Accident_Location > 1000482 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail > 3.995453: Slight (15.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.616963 AND
+Road_Type > 5.994078 AND
+Pedestrian_Crossing-Human_Control > 0.424778 AND
+?Accident_Index > 4545032 AND
+Time > 9.033333: Slight (14.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.184899 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.027865 AND
+Road_Type <= 3.003187 AND
+Road_Type <= 1.05076 AND
+Junction_Detail > 1.49993 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 3: Slight (7.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude <= 53.184899 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.027865 AND
+Road_Type <= 3.003187 AND
+?Accident_Index <= 520904642 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Day_of_Week <= 6.137109 AND
+1st_Road_Number <= 5223 AND
+Special_Conditions_at_Site <= 0.214767 AND
+Weather_Conditions <= 3 AND
+Weather_Conditions <= 1.499993: Slight (161.0/59.0)
+
+1st_Road_Number <= 0.022693 AND
+Number_of_Casualties > 3.499753 AND
+Number_of_Casualties > 5.10665 AND
+Number_of_Casualties > 5.937967: Serious (11.0/1.0)
+
+1st_Road_Number <= 0.022693 AND
+Light_Conditions > 3.971882 AND
+Latitude > 53.219871 AND
+?Accident_Index <= 9105467 AND
+Day_of_Week <= 5.414909: Serious (31.0)
+
+1st_Road_Number <= 0.022693 AND
+Light_Conditions > 3.971882 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type <= 2.499619 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 3.498872 AND
+Road_Type <= 1.494493 AND
+Junction_Detail <= 1.49993 AND
+?Accident_Index > 20124101: Slight (8.0)
+
+1st_Road_Number <= 0.022693 AND
+Light_Conditions > 3.971882 AND
+Number_of_Casualties <= 2.499418 AND
+Date > 20.496776 AND
+Carriageway_Hazards > 1 AND
+Light_Conditions <= 5: Serious (4.0)
+
+1st_Road_Number <= 0.022693 AND
+Light_Conditions > 3.971882 AND
+Latitude <= 50.594011 AND
+Time > 9.839536 AND
+Light_Conditions <= 4.498857: Slight (18.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Latitude > 53.616963 AND
+LSOA_of_Accident_Location <= 1011953 AND
+Number_of_Casualties <= 2.499418 AND
+Latitude > 53.785125 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail <= 0.301091: Serious (46.0/1.0)
+
+1st_Road_Number <= 0.022693 AND
+Light_Conditions > 3.971882 AND
+?Accident_Index > 6305909 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions <= 4.226612 AND
+LSOA_of_Accident_Location > 1018218 AND
+Road_Type <= 4.49722 AND
+Time > 21.351597: Slight (9.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Day_of_Week > 6.986463 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Junction_Detail <= 0.499232 AND
+?Accident_Index <= 464864036: Slight (7.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.953809 AND
+?Accident_Index > 55905412: Serious (22.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Number_of_Casualties > 2.499418 AND
+Junction_Detail > 0.978616 AND
+Number_of_Casualties > 4.491847 AND
+1st_Road_Number <= 3201 AND
+Day_of_Week > 2.499744: Serious (11.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.590316 AND
+Number_of_Casualties > 1.499539 AND
+Special_Conditions_at_Site > 0.497703 AND
+Latitude <= 51.746643: Slight (11.0)
+
+1st_Road_Number <= 0.022693 AND
+Light_Conditions > 3.971882 AND
+?Accident_Index > 6305909 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions <= 4.226612 AND
+LSOA_of_Accident_Location > 1018218 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type > 1.494493 AND
+Number_of_Casualties <= 1.499539: Serious (116.0/41.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.590316 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail > 0.909207 AND
+Junction_Detail <= 3.03578 AND
+Junction_Detail > 2.703054 AND
+Day_of_Week > 4.988549: Slight (103.0/37.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Time <= 9.184811 AND
+Junction_Detail <= 0.058224 AND
+Number_of_Casualties > 1.499539 AND
+Latitude <= 51.701192 AND
+Weather_Conditions > 1.499993: Slight (12.0/2.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Junction_Detail > 2.9456 AND
+?Accident_Index > 503006 AND
+Light_Conditions <= 6.35608 AND
+Number_of_Casualties > 2.499418 AND
+Time <= 16.333333: Serious (15.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail <= 0.184604 AND
+Number_of_Casualties > 2.499418 AND
+Number_of_Casualties > 4.491847 AND
+Time > 12.05 AND
+LSOA_of_Accident_Location > 1014767: Serious (16.0/3.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Day_of_Week > 6.986463 AND
+Junction_Detail > 2 AND
+Month <= 10.49564 AND
+Road_Type <= 6.445885 AND
+1st_Road_Number <= 6082.131201 AND
+?Accident_Index <= 365026502.4 AND
+Month <= 3.498975 AND
+LSOA_of_Accident_Location > 1010125: Slight (7.0)
+
+Month > 10.993708 AND
+Month <= 11.004397 AND
+Latitude <= 53.619144 AND
+Junction_Detail > 2.731957 AND
+LSOA_of_Accident_Location <= 1007215 AND
+Road_Type > 4.49722 AND
+?Accident_Index <= 6338109: Serious (9.0)
+
+Month > 10.993708 AND
+Month <= 11.004397 AND
+Latitude <= 53.619144 AND
+Junction_Detail > 2.731957 AND
+Weather_Conditions > 6.472645 AND
+Junction_Detail <= 8.435033 AND
+Weather_Conditions <= 8.462735: Slight (15.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Day_of_Week > 6.986463 AND
+LSOA_of_Accident_Location > 1020497: Serious (103.0/51.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Light_Conditions <= 4.066282 AND
+?Accident_Index > 502931 AND
+Junction_Detail > 2.910878 AND
+Month > 11.496329 AND
+LSOA_of_Accident_Location <= 1010305 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+?Accident_Index <= 6175516.704: Serious (10.0)
+
+Month > 10.993708 AND
+Month <= 11.004397 AND
+Latitude <= 53.619144 AND
+Junction_Detail > 2.731957 AND
+Light_Conditions > 2.49976 AND
+Road_Type > 4.49722: Slight (190.0/89.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 6 AND
+Day_of_Week > 5.998753 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail > 0.499232 AND
+Junction_Detail > 6.467865 AND
+Month > 7.499013: Slight (18.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 6 AND
+Day_of_Week > 5.998753 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail > 0.499232 AND
+LSOA_of_Accident_Location > 1000661 AND
+Junction_Detail <= 4.49657: Slight (144.0/50.0)
+
+Day_of_Week <= 1 AND
+Road_Type <= 1.494493 AND
+Light_Conditions <= 6.48371 AND
+Light_Conditions > 2.49976 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886: Slight (30.0/9.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Time <= 9.184811 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 5.055068 AND
+Month > 4.739326 AND
+Carriageway_Hazards > 1 AND
+Date <= 14: Slight (6.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Time <= 9.184811 AND
+Junction_Detail <= 0.058224 AND
+Number_of_Casualties > 1.499539: Serious (66.0/19.0)
+
+Day_of_Week <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Junction_Detail <= 4.49657 AND
+Weather_Conditions <= 6.472645 AND
+Light_Conditions <= 2.49976 AND
+1st_Road_Number > 20 AND
+Latitude > 52.114233: Slight (9.0)
+
+Day_of_Week <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Junction_Detail <= 4.49657 AND
+Date <= 21.490903 AND
+Date <= 10: Serious (11.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Day_of_Week <= 1 AND
+1st_Road_Number <= 442 AND
+Weather_Conditions > 1.499993 AND
+Road_Type > 1.494493 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 1 AND
+LSOA_of_Accident_Location <= 1030546.111: Slight (10.0)
+
+Day_of_Week <= 1 AND
+Latitude > 53.162312 AND
+?Accident_Index <= 7519024.384 AND
+Carriageway_Hazards <= 0.540633: Serious (25.0/2.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Day_of_Week <= 1 AND
+1st_Road_Number <= 446 AND
+Number_of_Casualties > 3.499753 AND
+Time > 10.31639 AND
+Junction_Detail > 0.499232: Slight (6.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Day_of_Week <= 1 AND
+1st_Road_Number <= 446 AND
+Date > 17.494509 AND
+?Accident_Index > 440030025 AND
+Month > 4.499713: Slight (13.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Day_of_Week <= 1 AND
+1st_Road_Number <= 446 AND
+Date > 14.736109: Serious (150.0/73.0)
+
+Day_of_Week > 6.99994 AND
+Carriageway_Hazards > 0.493453 AND
+Latitude > 52.608642: Serious (12.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+Number_of_Casualties <= 4.491847 AND
+Road_Type <= 2.785406 AND
+LSOA_of_Accident_Location > 1031358.801 AND
+?Accident_Index <= 243880844.7: Serious (2.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+Number_of_Casualties <= 4.491847 AND
+Road_Type <= 2.785406 AND
+Light_Conditions > 4.133867 AND
+Light_Conditions > 4.68085: Slight (4.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+Number_of_Casualties <= 4.491847 AND
+Road_Type <= 2.785406 AND
+Road_Type <= 1.170143 AND
+Junction_Detail <= 1.49993 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Light_Conditions > 2.49976 AND
+Number_of_Casualties <= 1.499539 AND
+LSOA_of_Accident_Location > 1016393: Slight (9.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 6 AND
+Time <= 9.207657 AND
+Number_of_Casualties > 1.499539 AND
+Time > 7.812301 AND
+Latitude > 52.951174: Slight (12.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+Number_of_Casualties <= 4.491847 AND
+Light_Conditions <= 1.281929 AND
+Road_Type <= 2.499619 AND
+Time > 16.923026: Slight (15.0)
+
+Day_of_Week > 6.99994 AND
+Latitude > 53.363931 AND
+?Accident_Index <= 9100059 AND
+Junction_Detail > 1.639239: Serious (17.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 6 AND
+Day_of_Week > 5.998753 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties > 2.499418 AND
+Month > 2.497337 AND
+Junction_Detail <= 0.499232 AND
+Number_of_Casualties <= 3.499753 AND
+1st_Road_Number <= 46.279851: Serious (7.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 6 AND
+Day_of_Week > 5.998753 AND
+Weather_Conditions <= 1.499993 AND
+?Accident_Index <= 30000433.92 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail <= 4.49657 AND
+Junction_Detail <= 2: Slight (20.0/6.0)
+
+Date <= 3 AND
+Weather_Conditions > 1.962167 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 2.483401 AND
+Month > 8.496962 AND
+Time > 8.12451: Slight (26.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Date <= 2.027053 AND
+Day_of_Week <= 1.499519 AND
+Date <= 1.482434 AND
+1st_Road_Number > 946.012467: Serious (9.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Time <= 9.184811 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 5.055068 AND
+Month > 4.739326 AND
+Weather_Conditions > 1.499993 AND
+Special_Conditions_at_Site <= 3 AND
+Date > 12.491888 AND
+Date <= 22.497284: Serious (7.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude > 53.127525 AND
+?Accident_Index <= 30000534 AND
+Number_of_Casualties > 1.499539 AND
+Number_of_Casualties <= 2.499418 AND
+Day_of_Week <= 2.499744 AND
+?Accident_Index <= 30000391: Serious (24.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Number_of_Casualties > 2.499418 AND
+Month > 1.496172 AND
+Month > 8.496962 AND
+Weather_Conditions <= 5.495928 AND
+Light_Conditions <= 4.498857 AND
+?Accident_Index <= 488548661: Serious (16.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Date <= 3 AND
+Weather_Conditions > 4.495361 AND
+Weather_Conditions > 7.496074: Slight (14.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Time <= 9.184811 AND
+Day_of_Week <= 3.091872 AND
+Month <= 3.498975 AND
+Day_of_Week > 1.499519 AND
+Time > 8.241016: Slight (13.0/1.0)
+
+Light_Conditions <= 1 AND
+Number_of_Casualties <= 5 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.127525 AND
+Day_of_Week <= 6.006727 AND
+Day_of_Week > 5.979554 AND
+Latitude <= 53.021533 AND
+?Accident_Index <= 470905668.6 AND
+Month > 7.499013 AND
+Junction_Detail <= 1.49993 AND
+Month > 8.496962 AND
+Month > 9.499975 AND
+1st_Road_Number <= 1178: Slight (20.0/2.0)
+
+Day_of_Week > 6.99994 AND
+Latitude > 53.615729 AND
+LSOA_of_Accident_Location <= 1011946 AND
+Month > 1.496172: Serious (40.0/1.0)
+
+Number_of_Casualties > 5 AND
+Number_of_Casualties <= 5.937967: Fatal (60.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.127525 AND
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 4.996179 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail > 2.928185 AND
+Month > 2.497337: Slight (184.0/71.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Month > 7.499013 AND
+Day_of_Week <= 5.498792 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Junction_Detail <= 1.49993 AND
+Weather_Conditions > 1.499993 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 9.499975 AND
+Date <= 19: Slight (8.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Date > 14.498677 AND
+Time > 3.116667: Slight (13.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Light_Conditions <= 4.066282 AND
+?Accident_Index <= 502016.0775 AND
+Month <= 11.409489: Serious (7.0/1.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Light_Conditions <= 4.066282 AND
+?Accident_Index > 502931 AND
+Month > 11.694814 AND
+Road_Type > 4.49722 AND
+Day_of_Week <= 2.499744 AND
+Junction_Detail > 0.499232 AND
+Weather_Conditions > 1.499993: Slight (14.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Special_Conditions_at_Site > 0.497703 AND
+Month <= 2.497337: Slight (4.0)
+
+Date <= 3 AND
+Road_Type > 5.956096 AND
+Weather_Conditions > 1.947364 AND
+Day_of_Week <= 4.498985 AND
+Light_Conditions <= 5 AND
+Day_of_Week > 2.499744 AND
+Weather_Conditions <= 4.495361 AND
+Weather_Conditions <= 2.476127 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Day_of_Week > 3.498872 AND
+Light_Conditions > 2.49976: Slight (10.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Junction_Detail > 1.49993 AND
+Junction_Detail <= 2.499642 AND
+?Accident_Index <= 491963793.7 AND
+Number_of_Casualties <= 1.499539 AND
+Latitude <= 52.640609: Slight (10.0/1.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Number_of_Casualties > 3.499753 AND
+Junction_Detail <= 7 AND
+Time <= 22.834896 AND
+Number_of_Casualties <= 6.422146 AND
+Number_of_Casualties <= 5.46505 AND
+Road_Type > 4.49722 AND
+Carriageway_Hazards <= 3.373495 AND
+Number_of_Casualties <= 4.491847: Serious (22.0/4.0)
+
+Day_of_Week > 6.99994 AND
+Number_of_Casualties > 3.499753 AND
+Date <= 6 AND
+Latitude <= 53.108243: Serious (8.0)
+
+?Accident_Index > 920900149 AND
+Month > 11.496329 AND
+Date > 24: Slight (8.0)
+
+Light_Conditions <= 1 AND
+Road_Type <= 3.003187 AND
+Latitude <= 53.130198 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 2.969344 AND
+1st_Road_Number <= 24.465042 AND
+Day_of_Week <= 5.498792 AND
+Day_of_Week <= 1.499519 AND
+Date > 4.496123: Serious (11.0/1.0)
+
+?Accident_Index > 920900149 AND
+Number_of_Casualties > 2.499418 AND
+Junction_Detail <= 1.49993: Serious (24.0/2.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+LSOA_of_Accident_Location <= 1029448 AND
+Weather_Conditions > 6 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 2.49976: Serious (4.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Junction_Detail <= 0.019382 AND
+Number_of_Casualties > 2.499418 AND
+?Accident_Index > 40001298 AND
+Number_of_Casualties <= 6.422146 AND
+Month <= 11.496329 AND
+Carriageway_Hazards <= 1 AND
+Day_of_Week > 1.499519 AND
+Day_of_Week <= 5.498792: Serious (41.0/7.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+LSOA_of_Accident_Location <= 1029448 AND
+Month <= 6.405242 AND
+Weather_Conditions <= 3 AND
+Junction_Detail <= 2 AND
+Carriageway_Hazards <= 1 AND
+Month > 4.499713 AND
+Light_Conditions <= 4.498857 AND
+?Accident_Index > 41009460: Serious (16.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Junction_Detail > 1.49993 AND
+Junction_Detail <= 2.499642 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 1.499539: Serious (7.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Weather_Conditions > 1.499993 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail <= 1.49993: Slight (12.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Date <= 2.027053 AND
+Junction_Detail <= 1.458032 AND
+1st_Road_Number > 30 AND
+Date > 1.482434 AND
+Weather_Conditions <= 3 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 1.499993 AND
+Month > 3.498975: Serious (38.0/10.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Weather_Conditions > 1.499993 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week > 5.498792 AND
+Date > 13.498011: Serious (7.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Weather_Conditions > 1.499993 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 4.498857 AND
+Light_Conditions > 2.49976: Serious (17.0/8.0)
+
+Light_Conditions <= 1 AND
+Road_Type <= 3.003187 AND
+Latitude <= 53.09572 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 2.969344 AND
+Number_of_Casualties <= 1.499539 AND
+1st_Road_Number <= 41.452765 AND
+Month <= 6.49484: Slight (110.0/37.0)
+
+1st_Road_Number <= 1.088723 AND
+Light_Conditions > 3.971882 AND
+?Accident_Index > 6305909 AND
+Road_Type <= 6.137981 AND
+Time > 20.814894 AND
+1st_Road_Number > 0.497929 AND
+LSOA_of_Accident_Location > 1016274: Slight (7.0)
+
+1st_Road_Number <= 1.088723 AND
+Light_Conditions > 3.971882 AND
+?Accident_Index > 6305909 AND
+Road_Type <= 6.137981 AND
+1st_Road_Number > 0.913368 AND
+Special_Conditions_at_Site > 2 AND
+Number_of_Casualties > 1.499539: Slight (5.0)
+
+1st_Road_Number <= 0.022693 AND
+Light_Conditions > 3.971882 AND
+?Accident_Index > 6305909 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions <= 4.226612 AND
+Latitude > 51.481478 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type > 4.49722: Slight (198.0/87.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Time <= 9.184811 AND
+Day_of_Week <= 3.091872 AND
+Day_of_Week > 1.826401 AND
+Month > 2.497337 AND
+Day_of_Week > 2.499744 AND
+Road_Type <= 6.445885 AND
+Latitude <= 53.562851: Slight (52.0/24.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude > 53.064838 AND
+?Accident_Index <= 30000537 AND
+Latitude > 53.487639 AND
+Junction_Detail > 3.995453 AND
+Special_Conditions_at_Site <= 1.440104 AND
+Day_of_Week > 2.712811 AND
+Day_of_Week > 5.498792: Slight (13.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.981057 AND
+Time <= 9.508172 AND
+Date > 4.496123 AND
+LSOA_of_Accident_Location <= 1029004 AND
+?Accident_Index <= 42344610 AND
+Junction_Detail <= 8.435033: Slight (34.0/5.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude > 53.064838 AND
+?Accident_Index <= 30000534 AND
+Latitude > 53.487639 AND
+Number_of_Casualties > 2.499418 AND
+Number_of_Casualties <= 4.491847 AND
+Month <= 10.411437 AND
+Number_of_Casualties <= 3.499753 AND
+Latitude > 53.608128 AND
+Date > 2.47306 AND
+Day_of_Week <= 6.499698: Serious (20.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude > 53.064838 AND
+?Accident_Index <= 30000534 AND
+Date > 22.979446 AND
+?Accident_Index <= 30000326.58: Serious (95.0/35.0)
+
+Month > 10.993708 AND
+Time > 20.966667 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 11.496329 AND
+Junction_Detail > 4.49657 AND
+Latitude <= 53.194836: Slight (5.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.981057 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 1.499993 AND
+Number_of_Casualties <= 1.499539: Slight (34.0/10.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Month > 5.49952 AND
+Month > 11.496329 AND
+Time > 9.161813: Serious (7.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Month > 5.49952 AND
+Junction_Detail > 1.49993: Slight (6.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Month > 5.49952 AND
+Weather_Conditions > 1.499993 AND
+Day_of_Week <= 5.498792 AND
+Weather_Conditions > 3: Slight (4.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Weather_Conditions > 1.499993 AND
+Light_Conditions <= 2.49976 AND
+Date > 18 AND
+Weather_Conditions <= 6.472645 AND
+LSOA_of_Accident_Location <= 1018809: Serious (7.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Month > 5.49952 AND
+Light_Conditions <= 2.49976 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Latitude > 51.46519: Slight (15.0/2.0)
+
+Month > 10.993708 AND
+Time > 20.966667 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 11.496329 AND
+Carriageway_Hazards <= 3.373495 AND
+Junction_Detail <= 4.49657 AND
+Time <= 23.414056 AND
+Junction_Detail <= 1.49993 AND
+Day_of_Week > 2 AND
+Light_Conditions > 4.498857 AND
+Number_of_Casualties > 1.499539: Serious (11.0/1.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Number_of_Casualties <= 2.499418 AND
+1st_Road_Number <= 714: Serious (16.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.064838 AND
+Junction_Detail <= 0.019382 AND
+Month > 6.984186 AND
+Time > 12.315618 AND
+Number_of_Casualties <= 2.499418 AND
+Day_of_Week <= 6.499698 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 8.496962 AND
+Month > 10.49564 AND
+LSOA_of_Accident_Location > 1016238: Serious (7.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.064838 AND
+Junction_Detail <= 0.019382 AND
+Month > 6.984186 AND
+Month <= 7.001621 AND
+Time > 19.767733 AND
+LSOA_of_Accident_Location <= 1029705.016: Serious (12.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.064838 AND
+Junction_Detail <= 0.019382 AND
+Month > 6.984186 AND
+Month <= 7.001621 AND
+Latitude > 52.522824 AND
+?Accident_Index <= 360052833 AND
+Day_of_Week <= 5.498792: Slight (21.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 6.499698 AND
+Month > 7.499013 AND
+Weather_Conditions <= 1.499993 AND
+Month > 10.49564: Slight (12.0/1.0)
+
+Date <= 3 AND
+Date > 2.971753 AND
+Carriageway_Hazards > 1.496875 AND
+Carriageway_Hazards <= 4.758017: Serious (4.0)
+
+Date <= 3 AND
+Date > 2.971753 AND
+Month > 1.496172 AND
+Weather_Conditions <= 1.240699 AND
+Light_Conditions > 2.49976 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Road_Type > 4.49722 AND
+Road_Type <= 6.445885 AND
+Junction_Detail <= 4.49657 AND
+Light_Conditions <= 5 AND
+Day_of_Week <= 6.499698: Serious (19.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.980238 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Time <= 13.714122 AND
+Latitude <= 52.569261 AND
+Special_Conditions_at_Site <= 1.440104 AND
+Weather_Conditions <= 3.496148 AND
+Weather_Conditions <= 1.499993 AND
+1st_Road_Number <= 298: Slight (13.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+LSOA_of_Accident_Location <= 1029448 AND
+Number_of_Casualties > 1.499539 AND
+Weather_Conditions <= 2.476127 AND
+Date > 28.492735: Serious (6.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Carriageway_Hazards > 1.823421 AND
+Day_of_Week <= 5.498792 AND
+Junction_Detail <= 5 AND
+Weather_Conditions <= 6.472645 AND
+Day_of_Week <= 1.499519: Serious (7.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Carriageway_Hazards > 1.823421 AND
+Day_of_Week > 5.498792: Slight (7.0)
+
+Month > 10.993708 AND
+Month > 11.98105 AND
+?Accident_Index > 350414509 AND
+Number_of_Casualties > 2.499418 AND
+Latitude <= 51.617661: Serious (8.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.064838 AND
+Junction_Detail <= 0.019382 AND
+Month > 6.984186 AND
+Month <= 7.001621: Serious (95.0/40.0)
+
+?Accident_Index > 920900149 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 1.809401 AND
+Month > 1.931561 AND
+Junction_Detail > 1: Serious (12.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Number_of_Casualties > 2.499418 AND
+Number_of_Casualties > 5.46505 AND
+LSOA_of_Accident_Location > 1004081.873: Fatal (7.0)
+
+Light_Conditions > 5.991772 AND
+Number_of_Casualties > 2.499418 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Road_Type > 4.49722: Slight (5.0)
+
+Light_Conditions > 5.991772 AND
+Number_of_Casualties > 2.499418 AND
+Road_Type > 3.285847 AND
+Number_of_Casualties <= 4.491847 AND
+?Accident_Index <= 171226144.8 AND
+Light_Conditions <= 6.48371 AND
+Month <= 11.043748 AND
+Day_of_Week > 3.498872: Serious (33.0/3.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 17.086836 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 6.48371 AND
+Junction_Detail <= 3.995453 AND
+Latitude > 50.83651 AND
+LSOA_of_Accident_Location > 1001509: Slight (16.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Light_Conditions <= 2.49976 AND
+Month <= 2.497337 AND
+Weather_Conditions <= 6.472645: Slight (13.0)
+
+Light_Conditions > 5.991772 AND
+Latitude > 53.652712 AND
+LSOA_of_Accident_Location > 1018799 AND
+Month <= 9.131436: Serious (43.0)
+
+?Accident_Index > 920900149 AND
+Junction_Detail > 8.435033 AND
+Date > 1.482434: Slight (12.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type <= 1 AND
+Month <= 5.49952 AND
+Weather_Conditions <= 1.499993 AND
+?Accident_Index > 8002289.684 AND
+Day_of_Week > 2.499744 AND
+Number_of_Casualties <= 1.499539: Slight (44.0/16.0)
+
+Month > 10.993708 AND
+Time > 21 AND
+Day_of_Week <= 1.499519 AND
+Latitude <= 54.185014: Slight (12.0/1.0)
+
+Month > 10.993708 AND
+Time > 21.1 AND
+Month > 11.496329 AND
+Carriageway_Hazards <= 3.373495 AND
+Number_of_Casualties <= 2.499418 AND
+Junction_Detail <= 4.49657 AND
+Number_of_Casualties > 1.499539 AND
+Time <= 23.414056: Slight (6.0)
+
+Month > 10.993708 AND
+Time > 21.1 AND
+Month > 11.496329 AND
+Weather_Conditions <= 7.496074 AND
+Number_of_Casualties <= 1.499539 AND
+Date > 2.47306 AND
+Road_Type > 4.49722 AND
+Date <= 18.498983: Serious (14.0/1.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Junction_Detail > 2.9456 AND
+Light_Conditions > 6.35608: Serious (10.0/2.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Junction_Detail > 2.9456 AND
+?Accident_Index > 502931 AND
+Month > 11.496329 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail > 8.435033 AND
+?Accident_Index > 134583758: Serious (4.0)
+
+Month > 10.993708 AND
+Light_Conditions > 3.983647 AND
+Junction_Detail > 2.9456 AND
+?Accident_Index > 502931 AND
+Month > 11.496329 AND
+Number_of_Casualties <= 1.499539: Slight (96.0/35.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.981057 AND
+Month <= 2.497337 AND
+Road_Type <= 7.960282 AND
+Road_Type <= 6.445885 AND
+?Accident_Index <= 330901154 AND
+Junction_Detail > 0.499232: Slight (8.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 3.00248 AND
+Day_of_Week > 2.979981 AND
+Weather_Conditions <= 1.035634 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail <= 0.499232 AND
+Number_of_Casualties <= 3.499753 AND
+Number_of_Casualties <= 2.499418 AND
+LSOA_of_Accident_Location > 1000950: Serious (37.0/10.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.980238 AND
+Number_of_Casualties <= 1.499539 AND
+Time <= 8.359593: Serious (41.0/14.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Light_Conditions <= 5.491594 AND
+LSOA_of_Accident_Location <= 1023462: Slight (6.0)
+
+Road_Type <= 3.000631 AND
+Road_Type > 2.969344 AND
+Latitude > 53.09572 AND
+?Accident_Index <= 7519024.384 AND
+Time > 17.56976: Serious (16.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.981057 AND
+Date <= 2.47306 AND
+?Accident_Index > 1957442.447 AND
+Number_of_Casualties > 1.499539: Slight (7.0)
+
+Road_Type <= 3.000631 AND
+Road_Type > 2.969344 AND
+Latitude > 53.643813 AND
+LSOA_of_Accident_Location <= 1011920: Serious (40.0/2.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 3.00248 AND
+Day_of_Week > 2.979981 AND
+Weather_Conditions <= 1.035634 AND
+?Accident_Index > 9741404 AND
+Latitude > 53.126414 AND
+Number_of_Casualties <= 1.499539 AND
+Date <= 23.499009 AND
+1st_Road_Number > 747.660304: Serious (19.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 3.00248 AND
+Day_of_Week > 2.979981 AND
+Number_of_Casualties > 2.499418 AND
+Road_Type <= 6.445885 AND
+Weather_Conditions <= 2.697228 AND
+Time <= 14.757611: Serious (11.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 3.00248 AND
+Day_of_Week > 2.979981 AND
+?Accident_Index <= 3448309: Slight (17.0/1.0)
+
+Road_Type <= 3.000631 AND
+Road_Type > 2.969344 AND
+Month > 10.926609 AND
+Date <= 27.496686 AND
+Number_of_Casualties > 1.499539 AND
+Special_Conditions_at_Site <= 2 AND
+Weather_Conditions <= 6 AND
+Month <= 11.496329 AND
+Latitude > 52.609095: Serious (12.0/1.0)
+
+Month <= 1 AND
+Latitude <= 53.372399 AND
+Road_Type > 5.887313 AND
+Junction_Detail > 5.499658 AND
+Weather_Conditions <= 7.496074 AND
+Light_Conditions <= 5 AND
+Pedestrian_Crossing-Human_Control <= 0.424778 AND
+Carriageway_Hazards <= 3.373495 AND
+Number_of_Casualties <= 2.499418 AND
+Date <= 20.496776 AND
+LSOA_of_Accident_Location > 1010381.813: Slight (10.0/2.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.980238 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 10.49564 AND
+Month <= 11.496329: Slight (24.0/4.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Special_Conditions_at_Site > 0.497703 AND
+Carriageway_Hazards <= 1 AND
+Light_Conditions <= 5 AND
+1st_Road_Number <= 2210 AND
+Number_of_Casualties > 1.499539: Serious (4.0)
+
+?Accident_Index > 920900149 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 1.566843 AND
+Day_of_Week > 5.498792: Slight (7.0/1.0)
+
+Light_Conditions <= 1 AND
+Road_Type <= 3.003187 AND
+Road_Type > 2.969344 AND
+Latitude <= 53.09572 AND
+Number_of_Casualties > 4.491847 AND
+Special_Conditions_at_Site <= 2 AND
+Number_of_Casualties <= 5.46505 AND
+Latitude > 51.702798: Serious (7.0)
+
+Light_Conditions <= 1 AND
+Road_Type > 5.994078 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.980238 AND
+Number_of_Casualties <= 1.499539 AND
+Date <= 23.499009 AND
+Junction_Detail <= 3.071402: Slight (217.0/100.0)
+
+Light_Conditions > 5.991772 AND
+Weather_Conditions > 6.715295 AND
+Special_Conditions_at_Site <= 3.36222 AND
+Light_Conditions > 6.48371 AND
+?Accident_Index > 5234852.157 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886: Serious (8.0)
+
+Light_Conditions > 5.991772 AND
+Weather_Conditions > 6.715295 AND
+Special_Conditions_at_Site <= 3.36222 AND
+Road_Type <= 4.49722 AND
+1st_Road_Number <= 264.430564: Serious (9.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Weather_Conditions > 6.715295 AND
+Carriageway_Hazards <= 0.431922 AND
+Number_of_Casualties <= 3.499753 AND
+Road_Type > 4.49722 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Weather_Conditions > 7.496074 AND
+LSOA_of_Accident_Location > 1018975 AND
+Month <= 9.499975: Slight (20.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Carriageway_Hazards > 5.295381 AND
+Weather_Conditions > 1.499993: Slight (7.0/1.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Number_of_Casualties <= 1.499539 AND
+Month <= 1.496172 AND
+Junction_Detail <= 1.49993 AND
+Time > 0.790326 AND
+Carriageway_Hazards <= 0.493453 AND
+1st_Road_Number > 255: Slight (11.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type <= 3.243435 AND
+LSOA_of_Accident_Location > 1016845 AND
+Road_Type > 2.499619 AND
+Light_Conditions <= 5 AND
+?Accident_Index > 9770512: Serious (12.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+Light_Conditions <= 1.065945 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail > 3.995453 AND
+Road_Type > 2.499619 AND
+?Accident_Index <= 464864036: Serious (6.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+Time <= 4.19035 AND
+Month > 8.496962 AND
+Date <= 23.499009: Serious (6.0)
+
+Road_Type <= 3.000631 AND
+Time > 16.89051 AND
+Carriageway_Hazards <= 0.408964 AND
+Road_Type <= 1.149449 AND
+Month <= 4.499713 AND
+Number_of_Casualties <= 1.499539: Serious (10.0)
+
+Road_Type <= 3.000631 AND
+Road_Type > 2.969344 AND
+Junction_Detail > 4.834634 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Time <= 8.156274 AND
+Light_Conditions <= 5 AND
+Weather_Conditions <= 1.499993 AND
+Light_Conditions > 2.49976: Serious (19.0/6.0)
+
+Road_Type <= 3.000631 AND
+Time > 16.89051 AND
+Carriageway_Hazards <= 0.408964 AND
+Month > 5.788607 AND
+Number_of_Casualties > 1.499539 AND
+LSOA_of_Accident_Location > 1031538 AND
+Latitude <= 51.128235: Serious (4.0)
+
+Road_Type <= 3.000631 AND
+Road_Type > 2.969344 AND
+Month > 10.926609 AND
+Day_of_Week > 3.498872 AND
+Light_Conditions <= 5.491594 AND
+Carriageway_Hazards <= 1 AND
+Day_of_Week > 5.498792 AND
+Month <= 11.496329: Slight (32.0/2.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type <= 3.243435 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Road_Type <= 1.494493 AND
+LSOA_of_Accident_Location > 1017547: Serious (6.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Road_Type <= 3.243435 AND
+Light_Conditions <= 2.49976 AND
+Weather_Conditions <= 4 AND
+Month <= 9.499975 AND
+Time > 14.041001: Slight (12.0/1.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 17.086836 AND
+Light_Conditions > 6.48371 AND
+Day_of_Week > 2: Serious (6.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type <= 3.243435 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Weather_Conditions <= 6.472645 AND
+Weather_Conditions > 1.499993 AND
+Road_Type > 2.499619 AND
+Month <= 9: Slight (3.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type > 5.89336 AND
+?Accident_Index > 30000018 AND
+Junction_Detail <= 0.043051 AND
+Date <= 13.498011 AND
+Weather_Conditions <= 4.495361 AND
+Weather_Conditions > 1.499993 AND
+Light_Conditions <= 5.491594: Serious (9.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023997.704 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 4.495361 AND
+Light_Conditions > 5.491594 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Light_Conditions <= 6.48371 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail <= 3.995453 AND
+Carriageway_Hazards <= 3 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Latitude <= 57.09092 AND
+?Accident_Index > 43190069: Serious (15.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type > 5.89336 AND
+?Accident_Index > 30000018 AND
+Weather_Conditions <= 1.050056 AND
+Date <= 13.214079 AND
+Light_Conditions <= 2.49976 AND
+Month <= 9.304589 AND
+Date > 3.493228 AND
+Month <= 5.49952: Serious (15.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023983 AND
+Weather_Conditions <= 4.495361 AND
+Number_of_Casualties <= 1.499539 AND
+Time <= 19.471203 AND
+Road_Type <= 3.243435 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Light_Conditions <= 5 AND
+Date > 3.493228 AND
+Light_Conditions <= 2.49976 AND
+Junction_Detail <= 0.499232: Slight (6.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023983 AND
+Number_of_Casualties <= 1.499539 AND
+Special_Conditions_at_Site > 0.497703 AND
+Carriageway_Hazards <= 1 AND
+Month <= 4.499713: Slight (4.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023983 AND
+Number_of_Casualties <= 1.499539 AND
+Month <= 11.496329 AND
+Time <= 18.423409 AND
+Date <= 12.39079 AND
+?Accident_Index <= 920901924 AND
+?Accident_Index > 609244642: Slight (8.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type > 5.89336 AND
+?Accident_Index > 530197968 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886: Serious (74.0/32.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1023983 AND
+Number_of_Casualties <= 1.499539 AND
+Month <= 11.496329 AND
+Time <= 18.423409 AND
+?Accident_Index > 470907488: Serious (31.0/3.0)
+
+Day_of_Week <= 1 AND
+Junction_Detail > 2.839961 AND
+Road_Type > 5.816816 AND
+Latitude <= 52.51146 AND
+Weather_Conditions <= 1.499993: Slight (129.0/63.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 17.086836 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 1.686822 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 3.496148 AND
+Time <= 18.45 AND
+Day_of_Week > 1.499519: Slight (16.0)
+
+Road_Type <= 3.000631 AND
+Time > 16.89051 AND
+Carriageway_Hazards <= 0.408964 AND
+Light_Conditions > 3.960275 AND
+Road_Type <= 2.499619 AND
+Number_of_Casualties <= 3.499753 AND
+Day_of_Week > 5.498792 AND
+Time > 22.65: Serious (8.0)
+
+Month <= 1 AND
+Latitude <= 53.361862 AND
+Road_Type > 5.887313 AND
+Day_of_Week > 1.97219 AND
+Latitude <= 50.722793: Slight (10.0)
+
+Road_Type <= 3.000631 AND
+Time > 16.89051 AND
+Carriageway_Hazards <= 0.408964 AND
+Light_Conditions > 3.960275 AND
+Road_Type <= 2.499619 AND
+Number_of_Casualties <= 3.499753 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Road_Type <= 1.494493 AND
+Latitude <= 51.937086: Slight (9.0)
+
+Month <= 1 AND
+Latitude <= 53.361862 AND
+Road_Type > 5.887313 AND
+Day_of_Week > 1.97219 AND
+?Accident_Index > 4534408 AND
+Number_of_Casualties <= 3.499753 AND
+Date > 13.498011 AND
+Carriageway_Hazards <= 1 AND
+Junction_Detail > 4.49657 AND
+Date > 20.496776: Slight (8.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 3.023924 AND
+Time > 12.773505 AND
+Month <= 1.496172: Serious (7.0)
+
+Date <= 3 AND
+Time > 20.78854 AND
+Road_Type <= 4.49722 AND
+LSOA_of_Accident_Location <= 1022137.671: Slight (7.0)
+
+Road_Type <= 5.997427 AND
+Road_Type > 3.000631: Fatal (665.0)
+
+Date <= 3 AND
+Time > 20.78854 AND
+Road_Type <= 4.49722: Serious (6.0/1.0)
+
+Date <= 3 AND
+Time > 20.78854 AND
+Number_of_Casualties > 1.499539 AND
+Date <= 2.47306 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail > 1.49993: Serious (6.0)
+
+Date <= 3 AND
+Latitude <= 51.456707 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 4.498857 AND
+Light_Conditions > 2.49976 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Road_Type <= 6.445885 AND
+Day_of_Week <= 3.498872: Slight (8.0/1.0)
+
+Date <= 3 AND
+Latitude <= 51.456707 AND
+Road_Type > 4.49722 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Carriageway_Hazards <= 1 AND
+LSOA_of_Accident_Location <= 1016974: Slight (8.0)
+
+Date <= 3 AND
+Latitude <= 51.456707 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Light_Conditions > 2.49976 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties > 1.499539 AND
+Day_of_Week > 3.498872: Serious (5.0)
+
+Date <= 3 AND
+Date > 2.932037 AND
+Day_of_Week <= 5.498792 AND
+Month <= 11.496329 AND
+Weather_Conditions > 1.499993 AND
+Junction_Detail > 1: Slight (8.0)
+
+Date <= 3 AND
+Date <= 1.01124 AND
+Road_Type > 1.494493 AND
+Number_of_Casualties <= 1.499539 AND
+LSOA_of_Accident_Location > 1009367 AND
+Light_Conditions <= 2.49976 AND
+Junction_Detail <= 8.435033 AND
+Weather_Conditions <= 1.499993 AND
+Day_of_Week > 1.499519 AND
+Road_Type > 2.499619 AND
+Month > 4.499713 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 3.995453: Slight (8.0)
+
+Month <= 1 AND
+Latitude <= 53.361862 AND
+Road_Type <= 4.49722 AND
+Day_of_Week > 6.356343 AND
+1st_Road_Number <= 280: Slight (4.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 1.985983 AND
+Day_of_Week <= 3.023631 AND
+Carriageway_Hazards <= 1.496875 AND
+Weather_Conditions > 4.495361: Slight (10.0/1.0)
+
+Date <= 3 AND
+Number_of_Casualties > 2.499418 AND
+Weather_Conditions <= 2.476127 AND
+Day_of_Week <= 5.057672 AND
+Weather_Conditions <= 1.499993 AND
+1st_Road_Number > 35.483716: Slight (15.0/1.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Road_Type <= 2.499619 AND
+Weather_Conditions <= 7.496074 AND
+LSOA_of_Accident_Location > 1017686: Slight (11.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 3.023631 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 2.970131 AND
+Month <= 3.146083 AND
+?Accident_Index <= 491963793.7 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail > 0.499232: Slight (9.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 1.985983 AND
+Day_of_Week <= 3.023631 AND
+Carriageway_Hazards > 1.496875: Slight (5.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Month > 1.887714 AND
+Junction_Detail > 4.227408 AND
+Date > 1.482434 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Number_of_Casualties > 2.499418 AND
+LSOA_of_Accident_Location > 1017663 AND
+Month > 5.49952: Serious (6.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Month > 1.887714 AND
+Day_of_Week > 3.996291 AND
+Latitude <= 52.651987 AND
+Month <= 3.146083 AND
+Number_of_Casualties <= 3.499753 AND
+Date <= 20: Serious (9.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 3.023631 AND
+Month > 1.887714 AND
+Weather_Conditions > 3 AND
+Number_of_Casualties > 1.499539: Slight (6.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 3.023631 AND
+Month > 1.887714 AND
+Weather_Conditions > 3 AND
+Weather_Conditions <= 6: Serious (3.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 3.023631 AND
+Month > 1.887714 AND
+Weather_Conditions > 1.499993 AND
+Date <= 20 AND
+Time <= 17.289229: Slight (18.0/6.0)
+
+?Accident_Index <= 3310208.995 AND
+Latitude > 51.287753 AND
+Number_of_Casualties <= 3.499753 AND
+?Accident_Index > 1134869: Fatal (26.0)
+
+?Accident_Index <= 501930 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Light_Conditions <= 4.174906 AND
+Date <= 14.08325 AND
+Light_Conditions > 2.49976 AND
+Time > 3.204156 AND
+Junction_Detail > 0.02329 AND
+Junction_Detail <= 5.197393: Fatal (8.0/1.0)
+
+Month <= 1 AND
+Latitude <= 53.361862 AND
+Road_Type > 4.49722 AND
+Carriageway_Hazards > 1 AND
+Time > 7.266667: Slight (8.0/1.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Date > 16.777233 AND
+?Accident_Index <= 3402589 AND
+?Accident_Index <= 793230.8236: Fatal (3.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Date > 16.777233 AND
+LSOA_of_Accident_Location <= 1014318.799: Serious (11.0/1.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Date > 16.777233 AND
+Road_Type > 4.49722 AND
+Light_Conditions > 2.49976 AND
+Number_of_Casualties <= 2.499418 AND
+Time <= 23.15 AND
+Number_of_Casualties > 1.499539 AND
+Weather_Conditions <= 3.496148 AND
+Weather_Conditions <= 1.499993 AND
+Date <= 26.494565 AND
+Latitude <= 52.713201: Serious (9.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+1st_Road_Number > 3037 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Day_of_Week > 3.498872: Serious (4.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Date > 17.494509 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 1 AND
+Road_Type > 2.499619 AND
+Latitude > 50.846263 AND
+1st_Road_Number > 3 AND
+Junction_Detail <= 2 AND
+Weather_Conditions <= 3.496148 AND
+Light_Conditions > 2.49976: Slight (13.0/1.0)
+
+Date <= 3 AND
+Date <= 1.01124 AND
+Road_Type > 1.494493 AND
+Number_of_Casualties <= 1.499539 AND
+LSOA_of_Accident_Location <= 1010031.318 AND
+1st_Road_Number > 477.235588: Serious (8.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Date > 17.494509 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 2 AND
+Light_Conditions > 2.49976: Serious (10.0/1.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Date > 17.494509 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2 AND
+Latitude <= 53.171241: Slight (8.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 4.970177 AND
+Number_of_Casualties <= 1.499539 AND
+Date <= 3.135266: Slight (14.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.969344 AND
+Month > 1.887714 AND
+Latitude <= 53.09572 AND
+Day_of_Week > 3.242529 AND
+Special_Conditions_at_Site <= 0.214767 AND
+Junction_Detail > 0.569141 AND
+?Accident_Index <= 620192299 AND
+Weather_Conditions <= 1.499993: Slight (70.0/12.0)
+
+Road_Type <= 1 AND
+Special_Conditions_at_Site <= 1 AND
+Month > 5.49952 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 2.49976 AND
+Date <= 16: Slight (7.0)
+
+Weather_Conditions > 7.970856 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Time > 17.478893 AND
+Special_Conditions_at_Site <= 1 AND
+Weather_Conditions <= 8.462735 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 2.49976: Slight (10.0/1.0)
+
+Light_Conditions > 3.997569 AND
+?Accident_Index <= 501930 AND
+Light_Conditions <= 4.174906 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type > 4.49722 AND
+Date > 14.08325 AND
+?Accident_Index <= 100231.6227: Fatal (16.0/2.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38847 AND
+?Accident_Index <= 609150710 AND
+Junction_Detail > 2.591848 AND
+LSOA_of_Accident_Location <= 1007894 AND
+Junction_Detail <= 4.49657: Serious (8.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38847 AND
+?Accident_Index <= 609150710 AND
+Junction_Detail > 2.591848 AND
+Road_Type <= 4.49722 AND
+1st_Road_Number <= 30: Serious (11.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38847 AND
+?Accident_Index <= 609150710 AND
+Junction_Detail > 2.591848 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 6.467865 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type > 2.499619 AND
+1st_Road_Number <= 94: Slight (9.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38668 AND
+?Accident_Index <= 609150710 AND
+Junction_Detail > 2.591848 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions > 1.499993: Slight (11.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38668 AND
+?Accident_Index <= 609150710 AND
+Junction_Detail > 2.591848 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 6.467865 AND
+LSOA_of_Accident_Location > 1009385 AND
+?Accident_Index > 4539124 AND
+Road_Type > 2.499619 AND
+Junction_Detail <= 3.995453 AND
+Date <= 24: Serious (6.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38668 AND
+?Accident_Index <= 609150710 AND
+Junction_Detail > 2.591848 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 6.467865 AND
+Road_Type > 2.499619 AND
+Junction_Detail <= 3.995453: Slight (6.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38668 AND
+?Accident_Index <= 609150710 AND
+Junction_Detail > 2.591848 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 6.467865 AND
+?Accident_Index > 4539124: Serious (8.0)
+
+Light_Conditions > 5.991772 AND
+Time > 16.356253 AND
+Number_of_Casualties > 2.499418 AND
+Light_Conditions <= 6.48371 AND
+Date > 2.567983 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 4.491847 AND
+Latitude > 51.734892 AND
+Number_of_Casualties <= 3.499753: Serious (15.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Time > 16.356253 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions > 6.937771 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Junction_Detail <= 4.49657 AND
+Number_of_Casualties > 1.499539 AND
+LSOA_of_Accident_Location <= 1026743: Slight (6.0)
+
+Light_Conditions > 5.991772 AND
+Time > 16.706761 AND
+Number_of_Casualties > 3.499753 AND
+Month <= 11.043748 AND
+Number_of_Casualties > 4.491847: Serious (13.0/1.0)
+
+Date <= 3 AND
+Date > 2.932037 AND
+Road_Type <= 4.49722 AND
+Latitude <= 55.811745 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 1.499539: Serious (13.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.38668 AND
+Junction_Detail > 2.977397 AND
+Road_Type > 4.49722 AND
+Junction_Detail <= 3.908691 AND
+Date <= 29.471619 AND
+Number_of_Casualties > 1.499539 AND
+Time <= 20.007541: Slight (25.0/4.0)
+
+Latitude > 55.560608 AND
+Date <= 4.370896 AND
+Junction_Detail > 3.995453 AND
+Day_of_Week <= 6.499698: Serious (8.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 1 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Date > 3: Serious (6.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 1 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 5.49952 AND
+Weather_Conditions <= 1.499993 AND
+1st_Road_Number <= 4175 AND
+Month <= 6.49484: Slight (10.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type <= 1 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 5 AND
+Weather_Conditions <= 1.499993 AND
+1st_Road_Number <= 4396: Slight (72.0/26.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4 AND
+?Accident_Index <= 501930 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type > 4.49722 AND
+Day_of_Week > 5.895065: Serious (10.0)
+
+Light_Conditions > 3.997569 AND
+Time > 16.748988 AND
+Light_Conditions <= 4 AND
+Latitude <= 53.28225 AND
+?Accident_Index <= 520906944 AND
+Road_Type > 4.49722 AND
+Date > 15.73414 AND
+Junction_Detail <= 4.147648: Serious (210.0/95.0)
+
+Light_Conditions <= 1.00492 AND
+Special_Conditions_at_Site > 3.501141 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 1.499993: Serious (12.0/2.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Special_Conditions_at_Site > 3.501141 AND
+Number_of_Casualties <= 4.491847 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 3: Slight (8.0)
+
+Latitude > 55.560608 AND
+Junction_Detail <= 0.164337 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 11.496329 AND
+Road_Type > 4.49722 AND
+?Accident_Index <= 920905121: Slight (6.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Month > 10.990161 AND
+Day_of_Week <= 5.04293 AND
+Date > 7.086294 AND
+Month > 11.496329 AND
+Time <= 13.688393 AND
+?Accident_Index <= 32377942.99: Slight (12.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 2.188843 AND
+Weather_Conditions > 1.628581 AND
+Junction_Detail > 0.499232: Slight (13.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Time > 16.706761 AND
+Weather_Conditions > 4.826551 AND
+Number_of_Casualties <= 3.499753 AND
+Time <= 22.283333 AND
+Special_Conditions_at_Site <= 3 AND
+Light_Conditions <= 6.48371 AND
+Junction_Detail <= 1.49993 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Date <= 21: Slight (15.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Month > 10.990161 AND
+Day_of_Week <= 6.156754 AND
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Month <= 11.496329 AND
+Junction_Detail <= 1.49993 AND
+1st_Road_Number <= 64.468043: Slight (5.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Month > 10.990161 AND
+Day_of_Week <= 6.156754 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 1.49993 AND
+Month <= 11.496329: Serious (6.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 2.188843 AND
+Weather_Conditions > 1.628581 AND
+Carriageway_Hazards <= 1 AND
+Date <= 22.497284 AND
+?Accident_Index <= 9724507: Serious (10.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Latitude <= 50.925769 AND
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+1st_Road_Number <= 1719.51 AND
+?Accident_Index > 502018.2834: Serious (6.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Time > 16.706761 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions > 6.937771 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Junction_Detail <= 4.49657 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 4.498985 AND
+Junction_Detail <= 1.49993: Serious (8.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Junction_Detail > 4.665116 AND
+Weather_Conditions <= 4.495361 AND
+1st_Road_Number <= 4128 AND
+Day_of_Week <= 6.499698 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties > 1.499539 AND
+Month > 6.49484 AND
+Time > 11.423466: Slight (4.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Junction_Detail > 4.665116 AND
+Weather_Conditions <= 4.495361 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Day_of_Week <= 6.499698 AND
+Number_of_Casualties <= 1.499539 AND
+Time > 15.583333 AND
+LSOA_of_Accident_Location > 1007514: Serious (9.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 2.188843 AND
+Date <= 22.018413 AND
+Day_of_Week > 2.153099: Fatal (7.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions > 1.628581 AND
+Carriageway_Hazards <= 1 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail <= 1.49993 AND
+Date > 14.498677: Slight (14.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions > 1.628581 AND
+Carriageway_Hazards <= 1 AND
+1st_Road_Number > 352.304985: Serious (9.0)
+
+Light_Conditions > 5.991772 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Special_Conditions_at_Site > 3.026812 AND
+Road_Type > 4.49722 AND
+Day_of_Week <= 5.498792 AND
+Weather_Conditions <= 1.499993 AND
+Time > 20.406232: Serious (7.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions > 1.628581 AND
+Carriageway_Hazards <= 1 AND
+Month > 6 AND
+Latitude > 51.608917 AND
+LSOA_of_Accident_Location > 1010844: Serious (8.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions > 1.628581: Slight (16.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Carriageway_Hazards > 2.483401: Slight (20.0/9.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Date <= 25.386531 AND
+Junction_Detail > 2.499642 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Day_of_Week <= 4.498985 AND
+Time > 13.824403 AND
+?Accident_Index <= 134583758: Slight (10.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Weather_Conditions <= 1.000189 AND
+Latitude <= 53.056375 AND
+Day_of_Week <= 6.006727 AND
+Day_of_Week > 5.979554 AND
+Road_Type > 4.49722 AND
+LSOA_of_Accident_Location > 1001648 AND
+?Accident_Index <= 22907334 AND
+Number_of_Casualties <= 3.499753 AND
+1st_Road_Number <= 37.322149: Slight (16.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Date <= 25.386531 AND
+Junction_Detail > 2.499642 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Pedestrian_Crossing-Human_Control <= 1 AND
+Number_of_Casualties <= 2.499418 AND
+Day_of_Week <= 6.204019 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail <= 3.995453: Slight (3.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Date <= 25.386531 AND
+Junction_Detail > 2.499642 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Pedestrian_Crossing-Human_Control <= 1 AND
+Month <= 5.49952 AND
+1st_Road_Number > 46 AND
+Latitude > 52.631278: Serious (8.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 1 AND
+Time <= 23.866667 AND
+Weather_Conditions > 1.499993 AND
+Day_of_Week <= 4.498985: Slight (8.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Road_Type <= 4.49722 AND
+Date <= 25.386531 AND
+Junction_Detail <= 2.499642 AND
+Date > 22.226024 AND
+Date > 22.986484: Slight (8.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Latitude <= 50.925769 AND
+Road_Type <= 4.49722: Slight (6.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 1 AND
+Time <= 23.866667 AND
+Number_of_Casualties > 2.499418: Serious (6.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Latitude <= 50.925769 AND
+Number_of_Casualties <= 5.46505 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 1.499993 AND
+Number_of_Casualties > 1.499539 AND
+Month <= 8.496962: Slight (6.0)
+
+Weather_Conditions > 7.970856 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+LSOA_of_Accident_Location <= 1008781 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539: Serious (16.0/1.0)
+
+Latitude > 55.560608 AND
+Date <= 4.370896 AND
+Road_Type <= 4.49722 AND
+Latitude > 55.753465: Slight (7.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Weather_Conditions <= 1.000189 AND
+Number_of_Casualties > 1.499539 AND
+Junction_Detail <= 3.03578 AND
+Time <= 8.45551 AND
+Month <= 8.372619: Serious (13.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 1 AND
+Time <= 23.866667 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties > 1.499539 AND
+1st_Road_Number <= 125.345596 AND
+Junction_Detail <= 3.995453 AND
+Latitude > 51.323332: Serious (4.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Latitude <= 50.925769 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 1.499993 AND
+1st_Road_Number <= 386.374005: Serious (4.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 1 AND
+Time <= 23.866667 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties > 1.499539 AND
+Latitude > 51.118473: Slight (7.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 2.969344 AND
+Weather_Conditions <= 1.000189 AND
+Road_Type <= 4.49722 AND
+Date <= 22.226024: Slight (267.0/120.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Road_Type <= 4.49722 AND
+Carriageway_Hazards <= 1 AND
+Time <= 23.866667 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail <= 2: Slight (37.0/17.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Road_Type > 4.49722 AND
+Weather_Conditions > 5.495928 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886: Serious (40.0/16.0)
+
+Did_Police_Officer_Attend_Scene_of_Accident > 1.953809 AND
+?Accident_Index <= 22907334 AND
+?Accident_Index <= 22903111 AND
+Light_Conditions <= 5: Slight (15.0/1.0)
+
+?Accident_Index > 920900149 AND
+Day_of_Week > 5.498792 AND
+Weather_Conditions <= 1.499993 AND
+Day_of_Week <= 6.499698 AND
+Junction_Detail <= 1: Serious (19.0/2.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+1st_Road_Number > 65.546034 AND
+Junction_Detail <= 6.277174 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Latitude > 51.016322: Serious (4.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+1st_Road_Number > 65.546034 AND
+Junction_Detail <= 6.277174 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 0.499232: Slight (5.0/1.0)
+
+Date <= 3 AND
+Road_Type > 4.49722 AND
+Time > 20.78854 AND
+Time > 22.8: Serious (9.0)
+
+Light_Conditions <= 1.00492 AND
+Road_Type > 4.49722 AND
+Day_of_Week <= 6 AND
+Day_of_Week > 5.998753 AND
+Number_of_Casualties <= 1.499539: Serious (246.0/126.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4 AND
+Latitude > 53.056249 AND
+?Accident_Index <= 7519024.384 AND
+Time > 20.712107: Serious (19.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4 AND
+Latitude > 53.056249 AND
+?Accident_Index <= 7519024.384 AND
+LSOA_of_Accident_Location > 1006089 AND
+Day_of_Week <= 4.498985: Serious (9.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4 AND
+?Accident_Index > 6136641.62 AND
+Latitude > 52.8801 AND
+1st_Road_Number <= 1263 AND
+Number_of_Casualties <= 2.499418 AND
+1st_Road_Number <= 902.97166 AND
+Number_of_Casualties > 1.499539 AND
+?Accident_Index > 14385509 AND
+Weather_Conditions <= 1.499993: Serious (40.0/2.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Road_Type > 4.49722 AND
+Day_of_Week > 1.910198 AND
+Time <= 0.966667 AND
+Number_of_Casualties <= 1.499539: Serious (18.0/1.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Road_Type > 4.49722 AND
+Time > 16.706761 AND
+Light_Conditions <= 6.35608 AND
+Day_of_Week > 1.611882 AND
+Weather_Conditions <= 1.002142 AND
+Number_of_Casualties <= 3.499753 AND
+Number_of_Casualties > 1.499539 AND
+Latitude <= 53.657537 AND
+Junction_Detail > 1.49993: Slight (22.0/6.0)
+
+Light_Conditions > 5.991772 AND
+Special_Conditions_at_Site <= 0.497703 AND
+Road_Type > 4.49722 AND
+1st_Road_Number > 5008: Serious (48.0/18.0)
+
+Latitude > 55.560608 AND
+?Accident_Index <= 9100638 AND
+Month > 2.218304: Fatal (6.0)
+
+Latitude > 55.560608 AND
+Junction_Detail <= 7.040611 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 9.499975 AND
+Weather_Conditions > 2.476127 AND
+Date > 11: Serious (8.0)
+
+Latitude > 55.560608 AND
+Junction_Detail <= 7.040611 AND
+?Accident_Index > 950005944 AND
+Month > 7.499013: Slight (18.0/1.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+1st_Road_Number <= 65.546034 AND
+Road_Type > 6.137981 AND
+Weather_Conditions <= 2: Fatal (3.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Road_Type > 4.49722 AND
+Day_of_Week <= 5.082923 AND
+Junction_Detail <= 6.277174 AND
+1st_Road_Number <= 28.479453 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions <= 5: Slight (12.0/1.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Road_Type > 4.49722 AND
+Day_of_Week <= 5.082923 AND
+Junction_Detail <= 6.277174 AND
+Day_of_Week > 1.499519 AND
+Date <= 21.490903 AND
+Weather_Conditions > 7.496074 AND
+Date <= 6.499276: Serious (5.0)
+
+Month <= 1 AND
+LSOA_of_Accident_Location > 1012649 AND
+Road_Type > 4.49722 AND
+Day_of_Week <= 5.082923 AND
+Junction_Detail <= 5.499658 AND
+Date <= 16.498874 AND
+Day_of_Week > 1.499519 AND
+Road_Type <= 6.445885 AND
+Weather_Conditions > 6: Slight (4.0)
+
+Date <= 3 AND
+Road_Type > 4.49722 AND
+Latitude <= 51.452671 AND
+Light_Conditions <= 6.48371 AND
+Time > 20.283333: Serious (8.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 4.996179 AND
+Number_of_Casualties <= 1.499539 AND
+Latitude > 52.910435 AND
+Road_Type > 2.499619 AND
+?Accident_Index <= 32175509 AND
+Month <= 9.499975 AND
+Junction_Detail > 1.49993 AND
+Date <= 15 AND
+Date > 5.48958: Serious (10.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 4.996179 AND
+Number_of_Casualties <= 1.499539 AND
+?Accident_Index <= 43124109 AND
+Latitude <= 52.272778 AND
+Month > 1.496172 AND
+Date > 4.496123: Slight (35.0/5.0)
+
+Latitude > 55.560608 AND
+?Accident_Index <= 9726712 AND
+Special_Conditions_at_Site <= 1 AND
+Weather_Conditions <= 3.496148 AND
+?Accident_Index > 9705905: Slight (8.0)
+
+Date <= 3 AND
+Road_Type > 4.49722 AND
+Weather_Conditions > 2.476127 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Latitude <= 53.789957: Slight (15.0/1.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 4.996179 AND
+Date > 22.497284 AND
+Month <= 4.499713: Serious (28.0/6.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Latitude <= 53.385648 AND
+Time > 16.748988 AND
+Junction_Detail > 5.644179 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 3: Slight (6.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Latitude > 53.625102 AND
+LSOA_of_Accident_Location <= 1011903.983 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 6.130113 AND
+Junction_Detail > 1.49993 AND
+?Accident_Index <= 130168463.6: Serious (17.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Special_Conditions_at_Site > 0.62991 AND
+Day_of_Week <= 6.499698 AND
+LSOA_of_Accident_Location > 1015535 AND
+Number_of_Casualties <= 1.499539: Serious (12.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.98263 AND
+Time <= 8.912522 AND
+LSOA_of_Accident_Location > 1026588.264: Slight (14.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Road_Type > 4.49722 AND
+?Accident_Index <= 470905464 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions > 6.752576 AND
+Time > 19.956658: Slight (7.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.98263 AND
+Weather_Conditions > 1.329692 AND
+Road_Type > 1.494493 AND
+Road_Type > 4.319616 AND
+Time <= 15.766667 AND
+Time > 10.716667: Serious (18.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Month > 9.992712 AND
+Month > 11.496329 AND
+Junction_Detail > 2 AND
+?Accident_Index > 20121702: Serious (7.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 6 AND
+Day_of_Week > 1.826401 AND
+Month <= 1.188366 AND
+Day_of_Week <= 6.499698 AND
+Special_Conditions_at_Site <= 3.36222 AND
+Junction_Detail <= 1.49993 AND
+Weather_Conditions <= 1.499993 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+1st_Road_Number > 0.497929 AND
+1st_Road_Number <= 1079: Slight (16.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.98263 AND
+Weather_Conditions <= 1.329692 AND
+Road_Type <= 4.49722 AND
+Month > 9.499975: Slight (5.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.98263 AND
+Weather_Conditions <= 1.329692 AND
+Junction_Detail <= 0.366828 AND
+LSOA_of_Accident_Location <= 1031778 AND
+Month <= 10.49564 AND
+Number_of_Casualties > 1.499539 AND
+Number_of_Casualties <= 3.499753 AND
+LSOA_of_Accident_Location > 1001437.111: Serious (37.0/12.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Month > 9.992712 AND
+Month > 11.496329 AND
+Junction_Detail <= 0.499232 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions <= 5.495928 AND
+Road_Type > 4.49722 AND
+Time > 18.374877: Slight (8.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Month > 9.992712 AND
+Month > 11.496329 AND
+Junction_Detail <= 0.499232 AND
+Weather_Conditions <= 5.495928 AND
+Day_of_Week <= 5.498792 AND
+Date <= 19 AND
+Weather_Conditions <= 1.499993 AND
+?Accident_Index > 11304418.95 AND
+?Accident_Index <= 520400032: Serious (13.0/1.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Special_Conditions_at_Site > 0.497703 AND
+LSOA_of_Accident_Location > 1018945: Slight (13.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.98263 AND
+Number_of_Casualties <= 1.499539 AND
+Time <= 18.815488 AND
+Junction_Detail <= 1.49993 AND
+Road_Type > 6.445885 AND
+Month <= 3.498975: Slight (3.0)
+
+Light_Conditions <= 1.00492 AND
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 3.98263 AND
+Number_of_Casualties <= 1.499539 AND
+Time <= 18.815488 AND
+Junction_Detail <= 1.49993 AND
+Junction_Detail <= 0.499232: Slight (132.0/65.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Month > 9.992712 AND
+Day_of_Week <= 5.027341 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Day_of_Week > 1.499519 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 3 AND
+Day_of_Week <= 4.498985 AND
+Month <= 10.49564: Slight (13.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Month > 10.901183 AND
+Day_of_Week <= 5.276402 AND
+Number_of_Casualties <= 4.491847 AND
+?Accident_Index > 262781.2342 AND
+Month > 11.496329 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539: Slight (12.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.497886 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail <= 4.49657 AND
+Latitude <= 52.674233 AND
+Weather_Conditions <= 1.499993: Slight (13.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Month > 10.808428 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week > 5.498792 AND
+Weather_Conditions <= 6 AND
+?Accident_Index <= 171226144.8: Serious (9.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 6 AND
+Day_of_Week > 1.826401 AND
+Day_of_Week <= 6.040077 AND
+Date <= 15.370934 AND
+Number_of_Casualties > 3.499753: Serious (8.0/2.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Month > 10.901183 AND
+Road_Type > 2.499619 AND
+Road_Type <= 4.49722 AND
+Junction_Detail <= 3.995453 AND
+Number_of_Casualties <= 4.491847 AND
+Month <= 11.496329 AND
+Number_of_Casualties <= 1.499539 AND
+Time <= 17.789232: Slight (9.0/1.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Road_Type > 4.49722 AND
+?Accident_Index <= 470905464 AND
+Weather_Conditions <= 2.036423 AND
+1st_Road_Number <= 11.496059 AND
+1st_Road_Number <= 7.37776 AND
+Number_of_Casualties <= 3.499753 AND
+Number_of_Casualties > 1.499539 AND
+Latitude <= 52.632605: Slight (6.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 6 AND
+Weather_Conditions <= 2.283758 AND
+Day_of_Week > 1.826401 AND
+Day_of_Week <= 6.040077 AND
+Date <= 15.370934 AND
+Month > 11.496329 AND
+Junction_Detail <= 1.49993 AND
+Weather_Conditions > 1.499993 AND
+Latitude > 51.483642: Serious (3.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Road_Type > 4.49722 AND
+?Accident_Index <= 470905464 AND
+Weather_Conditions <= 2.036423 AND
+Day_of_Week <= 6.040077 AND
+Light_Conditions > 6.48371 AND
+Date <= 14: Serious (4.0)
+
+Month <= 1 AND
+Latitude <= 53.382601 AND
+Weather_Conditions <= 4.289102 AND
+Weather_Conditions <= 2.381334 AND
+Number_of_Casualties <= 3.499753 AND
+Road_Type <= 4.49722 AND
+Date > 12.491888: Slight (10.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4173 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 6 AND
+Weather_Conditions <= 2.283758 AND
+Day_of_Week > 1.826401 AND
+Day_of_Week <= 6.040077 AND
+Month > 11.693082 AND
+Weather_Conditions <= 1.499993 AND
+Latitude > 50.941518 AND
+Date > 9.498355: Slight (12.0/1.0)
+
+Day_of_Week <= 3.000702 AND
+Day_of_Week > 2.993228 AND
+Month > 9.515707 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.499619: Serious (7.0/1.0)
+
+Light_Conditions > 5.991772 AND
+1st_Road_Number <= 4167 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 6 AND
+Weather_Conditions <= 2.283758 AND
+Day_of_Week > 1.826401 AND
+Day_of_Week <= 6.040077 AND
+Date <= 15.370934 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties > 1.499539 AND
+Road_Type <= 6.445885 AND
+Time > 1.083333 AND
+Latitude > 52.424496: Serious (15.0/1.0)
+
+Day_of_Week <= 3.000702 AND
+Day_of_Week > 2.993228 AND
+Month > 9.515707 AND
+?Accident_Index <= 22906258 AND
+Light_Conditions > 2.49976: Slight (12.0)
+
+Time <= 3 AND
+Junction_Detail > 2.879125 AND
+Light_Conditions > 5.971766 AND
+Day_of_Week <= 6.499698: Serious (9.0/1.0)
+
+Latitude > 55.560608 AND
+?Accident_Index <= 9771201 AND
+Special_Conditions_at_Site > 2: Serious (6.0/1.0)
+
+Day_of_Week > 3.000702 AND
+Day_of_Week <= 3.997303: Fatal (215.0)
+
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 2.993228 AND
+Road_Type > 4.49722 AND
+Light_Conditions > 3.953333 AND
+LSOA_of_Accident_Location > 1006110 AND
+Day_of_Week <= 3.498872 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 4.498857: Serious (56.0/18.0)
+
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 2.993228 AND
+Road_Type > 4.49722 AND
+Light_Conditions > 5.546385 AND
+Carriageway_Hazards > 1: Serious (5.0/1.0)
+
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 2.993228 AND
+Road_Type > 4.49722 AND
+?Accident_Index > 6312552.142 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 3.953333 AND
+Light_Conditions <= 5.491594 AND
+LSOA_of_Accident_Location > 1001127.674 AND
+Light_Conditions <= 4.498857 AND
+Junction_Detail <= 4.49657 AND
+Latitude <= 51.981074: Slight (17.0/1.0)
+
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 2.993228 AND
+Road_Type > 4.49722 AND
+Day_of_Week > 3.498872 AND
+Weather_Conditions <= 2.476127 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type <= 6 AND
+Latitude <= 50.919959: Serious (18.0/2.0)
+
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 2.993228 AND
+Road_Type > 4.49722 AND
+?Accident_Index > 6312552.142 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 3.498872 AND
+Junction_Detail > 2.976714 AND
+Date <= 28.492735 AND
+Time <= 19.833333: Slight (125.0/54.0)
+
+Day_of_Week <= 4.00236 AND
+Day_of_Week > 2.993228 AND
+Road_Type > 4.49722 AND
+Light_Conditions > 3.953333 AND
+Junction_Detail <= 6.467865 AND
+LSOA_of_Accident_Location > 1006110 AND
+Weather_Conditions <= 1.499993 AND
+LSOA_of_Accident_Location > 1008534.862 AND
+Day_of_Week > 3.498872 AND
+Number_of_Casualties > 1.499539 AND
+Time > 4.041984 AND
+Time <= 22.436534: Serious (14.0)
+
+Day_of_Week > 4.00236 AND
+Day_of_Week <= 4.996179: Fatal (227.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 4.49722 AND
+Month > 10.49564 AND
+Month <= 11.496329 AND
+Day_of_Week > 3.498872 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Day_of_Week <= 4.498985 AND
+Number_of_Casualties > 1.499539 AND
+?Accident_Index > 31080902.41: Slight (7.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 4.49722 AND
+Day_of_Week > 3.498872 AND
+Weather_Conditions > 4.495361 AND
+Day_of_Week > 4.498985: Serious (8.0/1.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties > 3.499753 AND
+Number_of_Casualties <= 6 AND
+Number_of_Casualties <= 5.46505 AND
+Date > 22.497284: Serious (6.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 4.49722 AND
+Weather_Conditions > 1.499993 AND
+Weather_Conditions > 7.271622: Slight (5.0/1.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 4.49722 AND
+Weather_Conditions > 1.499993 AND
+Date > 23.499009 AND
+Special_Conditions_at_Site <= 2 AND
+Number_of_Casualties > 1.499539 AND
+Weather_Conditions <= 3 AND
+1st_Road_Number <= 1079: Serious (3.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 10.49564 AND
+Month <= 11.496329 AND
+Road_Type > 4.49722 AND
+Day_of_Week > 4.498985 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Number_of_Casualties > 1.499539: Slight (6.0/1.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 4.49722 AND
+Weather_Conditions > 1.499993 AND
+Number_of_Casualties > 1.499539 AND
+Carriageway_Hazards <= 3.373495 AND
+Day_of_Week <= 4.498985 AND
+Day_of_Week > 3.498872 AND
+1st_Road_Number <= 1057: Slight (5.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 2.499418 AND
+Day_of_Week > 3.498872 AND
+Day_of_Week > 4.498985 AND
+Number_of_Casualties > 1.499539 AND
+Special_Conditions_at_Site <= 2 AND
+Weather_Conditions <= 1.499993 AND
+Time <= 14.5: Serious (18.0/2.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 4.49722 AND
+Weather_Conditions > 2.476127 AND
+Weather_Conditions <= 3.496148: Slight (6.0/1.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 2.476127 AND
+Number_of_Casualties > 1.499539: Serious (6.0/1.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Date <= 1.482434 AND
+LSOA_of_Accident_Location > 1012251 AND
+Month <= 9.499975: Slight (9.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 4.683036 AND
+Day_of_Week <= 3.498872 AND
+Light_Conditions > 3.498551: Slight (22.0/11.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Light_Conditions <= 1.00492 AND
+Junction_Detail > 6.872808 AND
+Month > 2.497337 AND
+Road_Type > 3.99252 AND
+Month <= 9.499975 AND
+Number_of_Casualties <= 3 AND
+Weather_Conditions <= 1.499993 AND
+Month > 4.499713 AND
+Month > 5.49952: Serious (20.0/9.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 4.683036 AND
+Day_of_Week <= 3.498872 AND
+Month <= 8.496962 AND
+Date <= 10: Slight (13.0/1.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 9.499975 AND
+Month <= 11.496329 AND
+Day_of_Week <= 4.498985 AND
+Day_of_Week > 3.498872 AND
+Weather_Conditions <= 1.499993: Slight (7.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 9.499975 AND
+Month <= 11.496329 AND
+Month > 10.49564 AND
+1st_Road_Number <= 3115 AND
+Weather_Conditions <= 3 AND
+Date <= 21.490903 AND
+Weather_Conditions <= 1.499993 AND
+Light_Conditions <= 2.49976: Serious (5.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 9.499975 AND
+Month <= 11.496329 AND
+Month > 10.49564 AND
+Weather_Conditions <= 3 AND
+Date > 11: Slight (8.0)
+
+Day_of_Week <= 5.000206 AND
+Day_of_Week > 2.993228 AND
+Junction_Detail <= 0.227308 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 1.499993 AND
+Date <= 27.496686 AND
+1st_Road_Number <= 4137 AND
+LSOA_of_Accident_Location <= 1009688: Serious (6.0)
+
+Day_of_Week > 5.000206 AND
+Day_of_Week <= 5.999787: Fatal (246.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Light_Conditions > 3.997569 AND
+LSOA_of_Accident_Location > 1006770.774 AND
+Weather_Conditions > 6.472645 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Light_Conditions <= 4.498857 AND
+Junction_Detail <= 4.49657 AND
+?Accident_Index <= 20014001: Slight (6.0/1.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Latitude <= 53.378416 AND
+Weather_Conditions <= 2 AND
+?Accident_Index <= 609234132 AND
+Time <= 1.370168 AND
+Day_of_Week > 3.498872 AND
+Time <= 1.023323: Slight (16.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Light_Conditions <= 1.00492 AND
+Weather_Conditions <= 1.035634 AND
+Junction_Detail > 6.467865 AND
+1st_Road_Number > 358.362139: Serious (16.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Junction_Detail <= 0.094804 AND
+?Accident_Index <= 610050809 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 1.975225 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.499619 AND
+Weather_Conditions <= 3.496148 AND
+?Accident_Index > 11304418.95 AND
+Latitude > 51.879399: Serious (5.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Weather_Conditions <= 2 AND
+Light_Conditions <= 1.00492 AND
+Weather_Conditions <= 1.035634 AND
+Number_of_Casualties > 1.499539 AND
+Day_of_Week <= 3.498872 AND
+Road_Type > 4.49722 AND
+?Accident_Index <= 32248109 AND
+1st_Road_Number > 3: Slight (13.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Light_Conditions > 3.997569 AND
+LSOA_of_Accident_Location > 1006770.774 AND
+Junction_Detail > 2.591848 AND
+Road_Type <= 4.49722 AND
+?Accident_Index > 14385509: Serious (8.0/1.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Junction_Detail <= 0.094804 AND
+?Accident_Index <= 610050809 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 1.975225 AND
+Road_Type <= 4.49722 AND
+Road_Type > 2.499619: Slight (8.0/1.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Junction_Detail <= 0.094804 AND
+?Accident_Index <= 610050809 AND
+Number_of_Casualties <= 2.499418 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 2.476127 AND
+Weather_Conditions > 3.496148 AND
+1st_Road_Number <= 3163.383413 AND
+Month > 8.496962: Serious (6.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Weather_Conditions <= 2 AND
+Latitude <= 53.377222 AND
+?Accident_Index <= 610050809 AND
+Light_Conditions > 5.971766 AND
+Road_Type > 4.49722 AND
+Junction_Detail > 1.49993 AND
+Number_of_Casualties <= 2.499418 AND
+Light_Conditions <= 6.48371 AND
+Junction_Detail > 7: Serious (5.0/1.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Weather_Conditions <= 2 AND
+Latitude <= 53.377222 AND
+?Accident_Index <= 610050809 AND
+Light_Conditions > 5.971766 AND
+Junction_Detail > 0.499232: Slight (25.0/11.0)
+
+Day_of_Week <= 6 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Weather_Conditions <= 2 AND
+Light_Conditions <= 1.00492 AND
+Weather_Conditions <= 1.035634: Serious (499.0/250.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 16.723138 AND
+Weather_Conditions > 3.564095 AND
+Road_Type > 4.49722 AND
+Junction_Detail <= 7 AND
+Month <= 11.496329 AND
+Junction_Detail <= 1.49993: Serious (8.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 16.723138 AND
+Month > 10.191269 AND
+Number_of_Casualties <= 6 AND
+Day_of_Week <= 5.498792 AND
+Month <= 11.496329 AND
+Weather_Conditions <= 1.499993: Slight (11.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 16.723138 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+?Accident_Index <= 30027569.59: Serious (6.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 16.723138 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Weather_Conditions <= 6 AND
+Weather_Conditions > 1.499993 AND
+Road_Type > 4.49722 AND
+Month <= 10.49564: Slight (6.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 16.723138 AND
+Latitude > 53.767547 AND
+Latitude <= 55.97269 AND
+Number_of_Casualties > 2.499418 AND
+Day_of_Week <= 5.498792: Serious (5.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 16.723138 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Weather_Conditions <= 6 AND
+Day_of_Week <= 1.499519: Slight (4.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 16.723138 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Weather_Conditions > 6: Slight (4.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+?Accident_Index > 6136641.62 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail > 2.714624 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Weather_Conditions <= 3.012777 AND
+Road_Type > 4.49722 AND
+Month <= 9.499975 AND
+Weather_Conditions > 1.499993 AND
+Junction_Detail <= 7 AND
+Latitude <= 54.050461 AND
+LSOA_of_Accident_Location <= 1030204: Slight (13.0/1.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+Time > 21.438992 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties > 1.499539 AND
+Road_Type > 4.49722: Serious (23.0/8.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+LSOA_of_Accident_Location > 1008812 AND
+Day_of_Week <= 6.037399 AND
+Junction_Detail > 2.714624 AND
+Number_of_Casualties <= 1.499539 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Day_of_Week <= 4.498985 AND
+Weather_Conditions <= 6.472645 AND
+Weather_Conditions <= 3 AND
+Road_Type > 4.49722: Slight (41.0/14.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+1st_Road_Number <= 2.083919 AND
+Latitude <= 53.342965 AND
+Carriageway_Hazards <= 3.373495 AND
+Weather_Conditions <= 5.495928 AND
+Road_Type > 2.499619 AND
+?Accident_Index > 460078428: Slight (14.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+LSOA_of_Accident_Location > 1008812 AND
+Day_of_Week <= 6.037399 AND
+Road_Type > 2.499619 AND
+Date <= 17.270589 AND
+Date > 5.956094 AND
+Weather_Conditions > 1.499993 AND
+Date > 13: Serious (8.0)
+
+Light_Conditions > 3.997569 AND
+Light_Conditions <= 4.00248 AND
+LSOA_of_Accident_Location > 1008812 AND
+Day_of_Week <= 6.037399 AND
+Road_Type > 2.499619 AND
+Date <= 17.270589 AND
+Date > 5.956094 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 3.499753: Serious (134.0/61.0)
+
+Day_of_Week > 6.99994 AND
+Time > 17.740954 AND
+Month > 1.496172 AND
+?Accident_Index <= 4545101: Slight (7.0)
+
+Day_of_Week > 6.99994 AND
+Time > 17.740954 AND
+Light_Conditions > 6.48371 AND
+Number_of_Casualties > 2: Fatal (3.0)
+
+Day_of_Week > 6.99994 AND
+Time > 17.740954 AND
+Month > 1.496172 AND
+Weather_Conditions <= 1.205008 AND
+Month <= 11.496329 AND
+Light_Conditions <= 2.49976 AND
+Junction_Detail <= 1.49993 AND
+Month <= 7.499013 AND
+Number_of_Casualties <= 1.499539: Serious (5.0)
+
+Day_of_Week > 6.99994 AND
+Time > 17.740954 AND
+Month > 1.496172 AND
+Weather_Conditions <= 1.205008 AND
+Month <= 11.496329 AND
+Road_Type > 4.49722 AND
+?Accident_Index > 11304418.95 AND
+Month <= 7.499013 AND
+Light_Conditions > 5 AND
+Latitude > 52.010188: Slight (14.0)
+
+Day_of_Week > 6.99994 AND
+Junction_Detail > 2.866565 AND
+Weather_Conditions <= 6 AND
+?Accident_Index <= 444102421.5 AND
+Road_Type > 2.499619 AND
+Weather_Conditions <= 1.499993 AND
+Light_Conditions <= 2.49976 AND
+Month <= 9: Serious (12.0)
+
+Day_of_Week > 6.99994 AND
+Junction_Detail > 2.866565 AND
+Light_Conditions > 3.500732 AND
+Light_Conditions <= 4.200971 AND
+Weather_Conditions > 1.499993 AND
+Junction_Detail > 4.49657: Serious (3.0)
+
+Day_of_Week > 6.99994 AND
+Junction_Detail > 2.866565 AND
+Weather_Conditions <= 3 AND
+Light_Conditions > 3.500732 AND
+Light_Conditions <= 4.200971 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type > 4.49722 AND
+LSOA_of_Accident_Location > 1019363.443 AND
+Time > 2.25: Slight (7.0)
+
+Light_Conditions > 5.971766 AND
+Weather_Conditions > 2.188843 AND
+Weather_Conditions > 2.781803 AND
+Carriageway_Hazards <= 0.60712 AND
+Number_of_Casualties <= 2.499418 AND
+?Accident_Index > 9772105 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 6.48371 AND
+Time <= 21.868964: Slight (14.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Time > 17.740954 AND
+Light_Conditions > 4.498857 AND
+Date > 3.878662 AND
+Junction_Detail <= 1.49993 AND
+?Accident_Index > 43057386.7: Serious (17.0/2.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1026609.416 AND
+Carriageway_Hazards <= 0.540633 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 4.495361 AND
+1st_Road_Number <= 601 AND
+Time <= 20.183333 AND
+Weather_Conditions > 1.499993: Serious (7.0/1.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1026609.416 AND
+Carriageway_Hazards <= 0.540633 AND
+Weather_Conditions <= 1.108383 AND
+?Accident_Index <= 7709168.029 AND
+Date <= 27.496686: Serious (20.0/2.0)
+
+Day_of_Week > 6.99994 AND
+Junction_Detail > 2.866565 AND
+Weather_Conditions > 3: Slight (7.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Junction_Detail > 2.866565 AND
+Light_Conditions > 3.500732 AND
+Number_of_Casualties > 1.499539 AND
+Light_Conditions <= 4.498857: Slight (6.0)
+
+Day_of_Week > 6.99994 AND
+Time > 17.740954 AND
+Number_of_Casualties <= 3.499753 AND
+Month > 1.496172 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Weather_Conditions <= 1.205008 AND
+Road_Type > 4.49722: Serious (35.0/13.0)
+
+Light_Conditions > 5.971766 AND
+1st_Road_Number > 4106.42509 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.004117 AND
+Special_Conditions_at_Site <= 1.746225 AND
+Weather_Conditions > 1.499993 AND
+?Accident_Index > 31080902.41: Serious (4.0)
+
+Light_Conditions > 5.971766 AND
+1st_Road_Number > 4106.42509 AND
+Weather_Conditions > 1.499993 AND
+Day_of_Week <= 3: Fatal (5.0)
+
+Light_Conditions > 5.971766 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.511142 AND
+LSOA_of_Accident_Location > 1024772: Serious (6.0)
+
+Light_Conditions > 5.971766 AND
+Day_of_Week > 1.910198 AND
+Day_of_Week <= 6.040077 AND
+Carriageway_Hazards <= 0.408964 AND
+Weather_Conditions > 2.476127 AND
+Month > 4.499713: Slight (9.0)
+
+Light_Conditions > 5.971766 AND
+Day_of_Week > 1.910198 AND
+Day_of_Week <= 6.040077 AND
+Road_Type > 4.49722 AND
+Junction_Detail <= 1.263598 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week > 5.498792 AND
+Weather_Conditions <= 1.499993: Serious (31.0/9.0)
+
+Time <= 3 AND
+Time > 2.85: Serious (8.0)
+
+Light_Conditions > 1.00492 AND
+Light_Conditions <= 3.997569: Fatal (267.0)
+
+Time > 15.322014 AND
+Day_of_Week <= 6.014565 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Road_Type <= 2.499619 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type > 1.494493 AND
+1st_Road_Number > 11: Serious (6.0)
+
+Time > 15.322014 AND
+Day_of_Week <= 6.014565 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Day_of_Week <= 5.498792 AND
+Day_of_Week > 4.498985 AND
+Latitude <= 54.699879 AND
+Road_Type > 4.49722 AND
+Junction_Detail <= 6.467865 AND
+Weather_Conditions <= 2.476127 AND
+Number_of_Casualties <= 3.499753 AND
+Number_of_Casualties <= 2.499418 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Junction_Detail <= 4.49657 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail <= 1.49993 AND
+Latitude > 52.071725: Serious (10.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 2.49976 AND
+Month > 4.499713 AND
+?Accident_Index <= 11304418.95: Slight (13.0)
+
+Time > 15.322014 AND
+Day_of_Week <= 6.014565 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards <= 0.408964 AND
+Day_of_Week <= 5.498792 AND
+Weather_Conditions > 3.496148 AND
+Light_Conditions > 2.49976: Serious (5.0)
+
+Time > 15.322014 AND
+Day_of_Week <= 6.014565 AND
+Day_of_Week > 2.993228 AND
+Carriageway_Hazards > 0.408964 AND
+Special_Conditions_at_Site <= 0.540569 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type <= 4.49722: Slight (5.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 4.898638 AND
+Light_Conditions <= 6.48371 AND
+Light_Conditions <= 5.491594 AND
+?Accident_Index <= 131451909: Serious (3.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 2.49976 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail <= 0.499232: Slight (5.0/1.0)
+
+Time > 15.322014 AND
+Day_of_Week <= 6.014565 AND
+Day_of_Week > 2.993228 AND
+Road_Type > 4.49722 AND
+Day_of_Week <= 5.498792 AND
+1st_Road_Number <= 325 AND
+Day_of_Week <= 3.498872 AND
+Light_Conditions <= 5: Slight (9.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 4.898638 AND
+Light_Conditions <= 6.48371 AND
+Light_Conditions <= 5.491594 AND
+?Accident_Index <= 444102421.5: Slight (2.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 4.898638 AND
+Light_Conditions <= 6.48371 AND
+Light_Conditions > 5.491594 AND
+Weather_Conditions > 1.499993 AND
+Date > 12 AND
+?Accident_Index <= 37043999: Serious (3.0/1.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 4.898638 AND
+Light_Conditions <= 6.48371 AND
+Light_Conditions <= 5.491594: Serious (2.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 5.3975 AND
+Light_Conditions <= 6.48371 AND
+Weather_Conditions > 1.499993 AND
+Month <= 6: Slight (2.0)
+
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 5.3975 AND
+Light_Conditions <= 6.48371 AND
+Weather_Conditions <= 1.499993 AND
+Month <= 7.499013: Serious (24.0/8.0)
+
+Light_Conditions <= 4.00248 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Light_Conditions > 2.49976 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Month <= 8.496962 AND
+1st_Road_Number <= 1017 AND
+?Accident_Index > 9701412 AND
+Date > 19: Serious (10.0/1.0)
+
+Light_Conditions <= 4.00248 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Number_of_Casualties > 1.499539 AND
+Date <= 20.496776 AND
+Light_Conditions > 2.49976 AND
+?Accident_Index <= 365026502.4: Slight (4.0)
+
+Light_Conditions <= 4.00248 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Light_Conditions <= 2.49976 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Month > 3.498975 AND
+Weather_Conditions > 1.499993 AND
+Date > 25.487671 AND
+Time > 11.940179: Serious (3.0)
+
+Light_Conditions <= 4.00248 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Number_of_Casualties > 1.499539 AND
+Date <= 20.496776 AND
+Weather_Conditions <= 1.499993: Serious (57.0/21.0)
+
+Day_of_Week <= 1 AND
+Light_Conditions <= 4.029586 AND
+?Accident_Index > 14209309 AND
+Latitude > 53.136585 AND
+Month <= 6.49484 AND
+Junction_Detail <= 4.200549 AND
+Month > 4.499713: Serious (13.0)
+
+Day_of_Week > 6.99994 AND
+LSOA_of_Accident_Location <= 1026468.809 AND
+Light_Conditions <= 4.200971 AND
+Light_Conditions > 2.49976 AND
+Date <= 30.476096 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Weather_Conditions > 1.499993 AND
+Time > 1.370168: Slight (5.0)
+
+Day_of_Week > 6.99994 AND
+Light_Conditions <= 4.133867 AND
+Month <= 9.304589 AND
+LSOA_of_Accident_Location <= 1025466 AND
+Month > 1.496172 AND
+Light_Conditions > 2.49976 AND
+LSOA_of_Accident_Location > 1009355 AND
+Road_Type <= 4.49722 AND
+Time <= 22.233333: Slight (8.0)
+
+Day_of_Week <= 1 AND
+Light_Conditions <= 4.029586 AND
+Latitude <= 51.240581 AND
+Carriageway_Hazards <= 3 AND
+Latitude > 50.807708: Serious (17.0)
+
+Day_of_Week > 6.99994 AND
+Light_Conditions <= 4.133867 AND
+Month <= 9.304589 AND
+Light_Conditions <= 2.49976 AND
+Date > 8.497461 AND
+1st_Road_Number > 460 AND
+Month > 5.49952 AND
+Junction_Detail <= 0.499232 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539: Serious (6.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Light_Conditions <= 4.133867 AND
+Latitude <= 51.970319 AND
+Did_Police_Officer_Attend_Scene_of_Accident <= 1.497886 AND
+Light_Conditions > 2.49976 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type > 4.49722 AND
+Latitude > 51.385751: Serious (9.0/1.0)
+
+Day_of_Week <= 1 AND
+Light_Conditions <= 4.029586 AND
+Light_Conditions > 2.49976 AND
+Carriageway_Hazards <= 3.997976 AND
+Latitude <= 52.039649 AND
+Road_Type > 2.499619 AND
+Junction_Detail <= 3.995453 AND
+Number_of_Casualties <= 1.499539: Slight (8.0)
+
+Weather_Conditions > 1.992977 AND
+Weather_Conditions <= 2 AND
+Road_Type <= 2.499619 AND
+Number_of_Casualties <= 1.499539: Slight (8.0)
+
+Day_of_Week <= 1 AND
+Light_Conditions <= 4.029586 AND
+Light_Conditions > 2.49976 AND
+Carriageway_Hazards <= 3.997976 AND
+Number_of_Casualties <= 1.499539 AND
+Road_Type > 2.499619: Serious (12.0/2.0)
+
+Day_of_Week > 2.993228 AND
+Day_of_Week <= 6 AND
+Carriageway_Hazards <= 0.408964 AND
+Junction_Detail <= 0.094804 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 2.476127 AND
+Number_of_Casualties <= 1.499539: Slight (3.0)
+
+Day_of_Week > 2.993228 AND
+Day_of_Week <= 6 AND
+Carriageway_Hazards <= 0.408964 AND
+Junction_Detail <= 0.094804 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 5.498792 AND
+Road_Type > 4.49722 AND
+LSOA_of_Accident_Location <= 1000765 AND
+Time <= 20.15: Fatal (2.0)
+
+Day_of_Week > 2.993228 AND
+Day_of_Week <= 6 AND
+Carriageway_Hazards <= 0.408964 AND
+Light_Conditions > 5.971766 AND
+Road_Type > 4.49722 AND
+Junction_Detail <= 3.995453 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail <= 1.49993 AND
+Number_of_Casualties <= 1.499539: Serious (43.0/20.0)
+
+Day_of_Week <= 1 AND
+Light_Conditions <= 4.029586 AND
+?Accident_Index > 14209309 AND
+LSOA_of_Accident_Location > 1029952: Serious (10.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type <= 4.49722 AND
+LSOA_of_Accident_Location <= 1028503 AND
+Latitude > 52.196537: Serious (17.0/2.0)
+
+Day_of_Week <= 1 AND
+Light_Conditions <= 4.029586 AND
+Month > 4.871191 AND
+Weather_Conditions <= 4.495361 AND
+Number_of_Casualties > 4.491847: Serious (7.0/2.0)
+
+Day_of_Week <= 1 AND
+Light_Conditions <= 4.029586 AND
+Month > 4.871191 AND
+Weather_Conditions <= 4.495361 AND
+Weather_Conditions > 1.499993 AND
+LSOA_of_Accident_Location > 1000525 AND
+Special_Conditions_at_Site <= 0.826552 AND
+Junction_Detail <= 5.499658 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539: Slight (6.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1027356 AND
+?Accident_Index <= 7709168.029 AND
+Date <= 20.568716 AND
+Number_of_Casualties <= 2.499418 AND
+Month > 5.517248: Fatal (10.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1026609.416 AND
+Latitude <= 51.298306: Slight (16.0/1.0)
+
+Day_of_Week <= 1 AND
+Latitude <= 51.286602 AND
+Month > 3.154447 AND
+Date > 14: Fatal (8.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1026609.416 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 1.499993: Serious (5.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1026609.416 AND
+Number_of_Casualties > 1.499539 AND
+Month > 2.497337 AND
+Weather_Conditions > 3.496148 AND
+Time <= 14.124267: Serious (4.0)
+
+Day_of_Week <= 1 AND
+Weather_Conditions > 1.09043 AND
+Weather_Conditions > 1.723067 AND
+Special_Conditions_at_Site <= 0.826552 AND
+Light_Conditions > 4.761376 AND
+Weather_Conditions <= 3.276031: Slight (7.0/1.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1001505: Slight (9.0)
+
+Day_of_Week <= 1 AND
+Road_Type <= 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+?Accident_Index <= 491963793.7 AND
+Light_Conditions > 5: Serious (5.0/1.0)
+
+Day_of_Week <= 1 AND
+Road_Type <= 4.49722 AND
+LSOA_of_Accident_Location > 1013945: Slight (7.0/1.0)
+
+Day_of_Week <= 1 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions <= 1.09043 AND
+Number_of_Casualties > 1.499539 AND
+Latitude > 53.485447 AND
+LSOA_of_Accident_Location <= 1022961 AND
+?Accident_Index <= 930003895: Fatal (3.0/1.0)
+
+Day_of_Week <= 1 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions <= 1.09043 AND
+Number_of_Casualties > 1.499539 AND
+Month > 2.497337 AND
+Light_Conditions <= 2.49976: Slight (28.0/8.0)
+
+Weather_Conditions > 1.992977 AND
+Weather_Conditions <= 2 AND
+?Accident_Index <= 440169925 AND
+Number_of_Casualties <= 4.491847 AND
+Road_Type > 4.49722: Slight (178.0/93.0)
+
+Time <= 2.757164 AND
+Weather_Conditions > 2.276213 AND
+Time > 0.846348: Fatal (3.0)
+
+Time <= 2.757164 AND
+Month <= 2.286407 AND
+LSOA_of_Accident_Location <= 1026864 AND
+Day_of_Week > 6: Slight (8.0)
+
+Time <= 2.757164 AND
+Time > 2.4 AND
+?Accident_Index > 6249034.115: Serious (13.0)
+
+Junction_Detail > 5.961639 AND
+?Accident_Index <= 14180409 AND
+Light_Conditions > 2.49976 AND
+Number_of_Casualties > 1.499539: Serious (4.0)
+
+Weather_Conditions > 1.000189 AND
+Weather_Conditions <= 1.992977: Fatal (83.0)
+
+LSOA_of_Accident_Location > 1031799 AND
+Number_of_Casualties <= 2.499418 AND
+Date <= 27.496686 AND
+Day_of_Week <= 3.498872: Fatal (15.0)
+
+Day_of_Week <= 1 AND
+Number_of_Casualties <= 2.499418 AND
+?Accident_Index <= 20047702 AND
+Number_of_Casualties <= 1.499539 AND
+Junction_Detail <= 5 AND
+1st_Road_Number <= 522: Slight (13.0/2.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type > 4.49722 AND
+Did_Police_Officer_Attend_Scene_of_Accident > 1.511142 AND
+?Accident_Index > 189803079.4: Slight (4.0)
+
+Junction_Detail > 5.961639 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 4.491847 AND
+Day_of_Week <= 2.097208 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 2.49976 AND
+Month > 3.498975 AND
+Month <= 8.496962 AND
+Junction_Detail <= 6.467865: Slight (12.0/1.0)
+
+Day_of_Week > 6.99994 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 4.200971 AND
+LSOA_of_Accident_Location > 1021247 AND
+?Accident_Index > 22907334: Serious (15.0/1.0)
+
+Junction_Detail > 7.965686 AND
+Light_Conditions <= 5.491594 AND
+Day_of_Week > 3.498872 AND
+Month <= 6.420987: Serious (8.0)
+
+Day_of_Week <= 1 AND
+Number_of_Casualties <= 2.499418 AND
+Weather_Conditions > 1.703345 AND
+Number_of_Casualties > 1.499539: Slight (4.0/1.0)
+
+Time <= 2.054452 AND
+Weather_Conditions <= 1.499993 AND
+Light_Conditions <= 6.225986 AND
+?Accident_Index > 6015227 AND
+Junction_Detail <= 0.499232 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 2.499418 AND
+1st_Road_Number > 54.496248 AND
+Latitude <= 55.037874 AND
+Light_Conditions > 4.498857: Serious (12.0)
+
+Light_Conditions > 4.00248 AND
+Light_Conditions <= 5.971766 AND
+Junction_Detail <= 2.91424 AND
+Day_of_Week <= 6.986463 AND
+Carriageway_Hazards <= 0.800541 AND
+Road_Type > 4.49722 AND
+Latitude <= 55.643319: Fatal (60.0/2.0)
+
+Date > 22.986484 AND
+?Accident_Index <= 6321809 AND
+Pedestrian_Crossing-Human_Control <= 0.424778 AND
+LSOA_of_Accident_Location <= 1028736 AND
+Road_Type > 4.49722 AND
+Month > 4.914546: Serious (7.0)
+
+Date > 22.986484 AND
+Day_of_Week <= 6.006727 AND
+Day_of_Week > 1.922876 AND
+?Accident_Index <= 4537054 AND
+Month <= 3.191658: Serious (6.0/1.0)
+
+Date > 22.986484 AND
+Day_of_Week <= 6.006727 AND
+Day_of_Week > 1.922876 AND
+Latitude > 51.014959 AND
+Number_of_Casualties <= 2.499418 AND
+Carriageway_Hazards <= 0.493453 AND
+Day_of_Week > 2.788951 AND
+Special_Conditions_at_Site <= 2 AND
+Weather_Conditions <= 8.462735 AND
+Number_of_Casualties > 1.499539 AND
+Day_of_Week > 4.498985 AND
+Latitude > 51.851553: Slight (8.0)
+
+Date > 22.986484 AND
+Day_of_Week <= 6.006727 AND
+Day_of_Week > 1.922876 AND
+Latitude > 51.014959 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week > 4.498985 AND
+Road_Type > 2.499619 AND
+Weather_Conditions <= 8.462735 AND
+Weather_Conditions <= 1.499993 AND
+Day_of_Week > 5.498792 AND
+Junction_Detail <= 0.499232: Serious (6.0)
+
+Date > 22.986484 AND
+Day_of_Week <= 6.006727 AND
+Day_of_Week > 1.922876 AND
+Latitude > 51.014959 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions > 1.499993 AND
+Road_Type > 3.498605 AND
+Date <= 27.496686: Slight (4.0)
+
+Date > 22.986484 AND
+Day_of_Week <= 6.006727 AND
+Day_of_Week > 1.922876 AND
+Latitude > 51.014959 AND
+Number_of_Casualties <= 1.499539 AND
+Weather_Conditions <= 1.499993 AND
+Junction_Detail > 2.760168 AND
+LSOA_of_Accident_Location > 1024787: Slight (7.0)
+
+Day_of_Week <= 1 AND
+Weather_Conditions > 2.20484 AND
+Number_of_Casualties <= 4: Fatal (3.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1027356 AND
+Road_Type > 4.49722 AND
+Carriageway_Hazards <= 0.829562 AND
+Light_Conditions > 4.498857 AND
+Number_of_Casualties > 1.499539 AND
+LSOA_of_Accident_Location > 1020919: Slight (5.0/1.0)
+
+Day_of_Week <= 1 AND
+LSOA_of_Accident_Location <= 1027129 AND
+Road_Type > 4.49722 AND
+Carriageway_Hazards <= 0.829562 AND
+Number_of_Casualties <= 5.46505 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 2.999168 AND
+1st_Road_Number <= 613 AND
+Date <= 5.48958: Serious (9.0)
+
+Month <= 2.001384 AND
+Road_Type <= 4.49722 AND
+Junction_Detail > 1.639239 AND
+Road_Type > 2.012553: Fatal (3.0)
+
+Month <= 2.001384 AND
+Road_Type <= 4.49722 AND
+LSOA_of_Accident_Location <= 1031209 AND
+Junction_Detail <= 2 AND
+Month <= 1.496172: Serious (5.0)
+
+Month <= 2.001384 AND
+Month > 1.988055 AND
+Junction_Detail > 2 AND
+Day_of_Week > 1.499519 AND
+?Accident_Index > 31080902.41: Slight (11.0)
+
+Day_of_Week <= 1 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 4.498857 AND
+Date > 21: Slight (8.0)
+
+Junction_Detail > 0.043051 AND
+Junction_Detail <= 0.962905: Fatal (27.0)
+
+Carriageway_Hazards > 0.381084 AND
+Carriageway_Hazards <= 1.823421: Fatal (9.0/1.0)
+
+Junction_Detail <= 1.007391 AND
+Junction_Detail > 0.499232 AND
+Carriageway_Hazards <= 1 AND
+Road_Type > 2 AND
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Time > 5.789183 AND
+Number_of_Casualties <= 2.499418 AND
+LSOA_of_Accident_Location > 1012401: Serious (7.0)
+
+Month <= 2.001384 AND
+Road_Type <= 4.49722 AND
+Light_Conditions <= 5 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week > 4 AND
+?Accident_Index > 14385509: Slight (3.0/1.0)
+
+Junction_Detail <= 1.007391 AND
+Junction_Detail > 0.499232 AND
+Road_Type > 2 AND
+LSOA_of_Accident_Location > 1001702.503: Slight (11.0/1.0)
+
+Month <= 2.001384 AND
+Road_Type <= 4.49722: Serious (9.0/1.0)
+
+Junction_Detail > 3.071402 AND
+Junction_Detail <= 5.961639: Fatal (46.0/3.0)
+
+Month > 4.999776 AND
+Month <= 6.03083 AND
+Day_of_Week <= 2.20161 AND
+Carriageway_Hazards <= 1 AND
+Road_Type > 1.494493 AND
+Road_Type > 4.49722 AND
+Light_Conditions <= 2.49976 AND
+Day_of_Week <= 1.499519 AND
+?Accident_Index > 31021206: Slight (15.0/1.0)
+
+Junction_Detail > 2.916302 AND
+Number_of_Casualties > 3.499753 AND
+Junction_Detail <= 4.49657 AND
+Month <= 6.49484: Slight (8.0/1.0)
+
+Month > 4.999776 AND
+Light_Conditions > 2.49976 AND
+Day_of_Week <= 1.910198 AND
+Latitude > 52.384793: Serious (7.0/1.0)
+
+Month > 4.999776 AND
+Light_Conditions > 2.49976 AND
+Day_of_Week <= 1.910198 AND
+Day_of_Week <= 1.159555 AND
+Month > 7.499013: Fatal (5.0/1.0)
+
+Month > 4.999776 AND
+Light_Conditions > 2.49976 AND
+Weather_Conditions > 1.499993 AND
+Carriageway_Hazards <= 1 AND
+Date > 5 AND
+Weather_Conditions <= 3 AND
+Junction_Detail <= 1.49993 AND
+Light_Conditions > 5 AND
+?Accident_Index > 464864036: Serious (5.0)
+
+Month > 4.999776 AND
+Day_of_Week <= 2.000829 AND
+Day_of_Week > 1.982676 AND
+Number_of_Casualties <= 3.499753 AND
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 2.499418: Serious (11.0/2.0)
+
+Month > 4.999776 AND
+Day_of_Week <= 2.000829 AND
+Weather_Conditions > 1.499993 AND
+Date <= 25: Slight (8.0)
+
+Month > 4.999776 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions > 2.49976 AND
+Day_of_Week <= 2.961338 AND
+Day_of_Week <= 2.266855 AND
+Date > 21.231547: Slight (8.0)
+
+Junction_Detail > 2.916302: Slight (209.0/127.0)
+
+Junction_Detail > 1.007391: Fatal (33.0)
+
+Number_of_Casualties > 2.499418 AND
+Junction_Detail > 0.499232 AND
+Latitude <= 52.04908: Serious (2.0)
+
+Road_Type <= 4.49722 AND
+Day_of_Week <= 2.961338 AND
+?Accident_Index > 22907334: Fatal (5.0/1.0)
+
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 5.188362 AND
+Date > 23.499009 AND
+Weather_Conditions <= 1.499993 AND
+Light_Conditions > 2.49976 AND
+Special_Conditions_at_Site <= 2 AND
+Date > 27.496686 AND
+Time <= 20.75: Fatal (4.0/1.0)
+
+Road_Type <= 4.49722 AND
+Number_of_Casualties <= 5.188362 AND
+Special_Conditions_at_Site <= 2 AND
+Carriageway_Hazards <= 3.997976 AND
+1st_Road_Number <= 1232.057587 AND
+Light_Conditions <= 4.062413 AND
+Date > 21.490903: Slight (9.0)
+
+1st_Road_Number <= 24.042241 AND
+Weather_Conditions <= 6.472645 AND
+Weather_Conditions <= 3 AND
+Day_of_Week <= 1.311989: Serious (8.0/1.0)
+
+1st_Road_Number <= 24.042241 AND
+Weather_Conditions <= 6.472645 AND
+Weather_Conditions <= 3 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 5.491594 AND
+Day_of_Week <= 5.498792: Slight (7.0/1.0)
+
+Month > 4.999776 AND
+Carriageway_Hazards > 1 AND
+1st_Road_Number > 163.303279: Slight (4.0)
+
+1st_Road_Number <= 24.042241 AND
+Weather_Conditions <= 6.472645 AND
+Weather_Conditions <= 3 AND
+Day_of_Week <= 5.498792 AND
+Day_of_Week > 2.499744: Serious (7.0/1.0)
+
+Month > 4.999776 AND
+Date <= 3.122756: Slight (10.0/2.0)
+
+Road_Type <= 4.49722 AND
+Special_Conditions_at_Site <= 2 AND
+Carriageway_Hazards <= 1 AND
+Day_of_Week <= 4.498985 AND
+Date <= 17.494509: Slight (5.0)
+
+Road_Type <= 4.49722 AND
+Special_Conditions_at_Site <= 2 AND
+Carriageway_Hazards <= 1 AND
+Light_Conditions > 4.062413 AND
+Light_Conditions > 5.219139 AND
+Number_of_Casualties <= 1.499539 AND
+Month <= 8.496962: Serious (3.0)
+
+Light_Conditions > 2.49976 AND
+Day_of_Week <= 6.041876 AND
+1st_Road_Number <= 4248.31083 AND
+LSOA_of_Accident_Location > 1026211 AND
+?Accident_Index <= 470901618: Serious (15.0/1.0)
+
+Time <= 1.00075 AND
+LSOA_of_Accident_Location <= 1019066: Serious (8.0)
+
+LSOA_of_Accident_Location > 1025212.532 AND
+Road_Type > 4.49722 AND
+Day_of_Week > 2.000829 AND
+Light_Conditions <= 5 AND
+LSOA_of_Accident_Location <= 1029671: Fatal (17.0/1.0)
+
+Light_Conditions > 4.062413 AND
+Carriageway_Hazards <= 1 AND
+Date <= 7.987711: Fatal (8.0)
+
+Day_of_Week > 6.986463 AND
+Road_Type <= 4.49722 AND
+Time <= 10.836296: Fatal (5.0/1.0)
+
+Day_of_Week > 6.986463 AND
+Weather_Conditions <= 1.499993 AND
+Road_Type > 4.49722 AND
+Number_of_Casualties <= 1.499539 AND
+Latitude > 51.053635 AND
+Date <= 27 AND
+Light_Conditions > 4.498857 AND
+Date > 11: Serious (7.0)
+
+Day_of_Week > 6.986463 AND
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 1.499539 AND
+Latitude <= 52.458418: Slight (13.0/1.0)
+
+Number_of_Casualties > 4.491847 AND
+Date > 11.487722: Serious (6.0/1.0)
+
+Road_Type <= 4.49722 AND
+Special_Conditions_at_Site <= 2 AND
+Carriageway_Hazards <= 1 AND
+?Accident_Index <= 43110189.22: Serious (11.0/1.0)
+
+Road_Type <= 4.49722 AND
+Special_Conditions_at_Site <= 2 AND
+Light_Conditions > 4.062413: Fatal (5.0/1.0)
+
+Road_Type <= 4.49722 AND
+Time > 18.397811 AND
+Date > 10: Slight (7.0/1.0)
+
+Day_of_Week > 6.986463 AND
+Weather_Conditions > 2.823421 AND
+Weather_Conditions <= 8.462735 AND
+?Accident_Index > 9381904.246: Slight (5.0)
+
+Weather_Conditions > 7.149387 AND
+Weather_Conditions > 7.672017 AND
+Day_of_Week <= 6.499698: Serious (5.0)
+
+Day_of_Week > 6.986463 AND
+Weather_Conditions > 2.823421: Fatal (4.0/1.0)
+
+Day_of_Week > 6.986463 AND
+Date <= 22.497284 AND
+Light_Conditions > 5 AND
+Latitude <= 51.739175: Serious (2.0)
+
+Day_of_Week > 6.986463 AND
+Light_Conditions > 4.498857 AND
+Time <= 6.183333: Fatal (3.0)
+
+Day_of_Week > 6.986463 AND
+Light_Conditions <= 4.498857 AND
+Date <= 30.476096 AND
+Light_Conditions > 2.49976 AND
+Date <= 10: Serious (7.0)
+
+Day_of_Week > 6.986463 AND
+Light_Conditions > 2.49976 AND
+Number_of_Casualties <= 2.499418: Slight (6.0)
+
+Day_of_Week > 6.986463 AND
+Light_Conditions <= 2.49976 AND
+?Accident_Index <= 196892763.8 AND
+?Accident_Index <= 20024360.24: Serious (21.0/6.0)
+
+Day_of_Week > 6.041876 AND
+Day_of_Week <= 6.986463: Fatal (18.0)
+
+Number_of_Casualties > 3.499753 AND
+Number_of_Casualties > 4.491847: Slight (4.0/1.0)
+
+Number_of_Casualties > 3.499753 AND
+?Accident_Index <= 189803079.4: Fatal (3.0)
+
+Weather_Conditions > 1.499993 AND
+Month > 8.496962 AND
+Month > 11.496329: Slight (3.0/1.0)
+
+Weather_Conditions > 1.499993 AND
+Month <= 8.496962 AND
+Light_Conditions <= 2.49976 AND
+Number_of_Casualties > 1.499539 AND
+1st_Road_Number <= 309: Slight (5.0)
+
+Weather_Conditions > 1.499993 AND
+Month <= 8.234965 AND
+Light_Conditions <= 2.49976 AND
+1st_Road_Number <= 3533: Fatal (7.0)
+
+Date > 22.873856 AND
+Date <= 30.476096 AND
+Number_of_Casualties <= 1.499539 AND
+Day_of_Week <= 4 AND
+1st_Road_Number <= 6026: Slight (18.0/2.0)
+
+Time > 13.968689 AND
+Date <= 15.398213 AND
+Day_of_Week <= 6.499698 AND
+1st_Road_Number > 91.40571 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 2.499418 AND
+1st_Road_Number <= 3756.078479 AND
+Month <= 8.496962: Serious (6.0)
+
+Date <= 12.385403 AND
+Month <= 8.496962 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 2.49976 AND
+Month <= 4.911285 AND
+?Accident_Index > 47617294.8: Fatal (9.0/1.0)
+
+Date <= 12.385403 AND
+Road_Type > 4.49722 AND
+Month <= 8.496962: Slight (14.0/1.0)
+
+Road_Type <= 4.49722 AND
+LSOA_of_Accident_Location <= 1017062: Slight (2.0/1.0)
+
+Number_of_Casualties > 1.499539 AND
+Number_of_Casualties <= 3.499753 AND
+Day_of_Week > 1.730647 AND
+Day_of_Week <= 5.498792 AND
+Light_Conditions <= 2.49976: Serious (10.0/2.0)
+
+Weather_Conditions > 1.499993 AND
+?Accident_Index <= 609244642: Serious (2.0)
+
+Number_of_Casualties <= 3.499753 AND
+Number_of_Casualties > 2.499418 AND
+Latitude > 52.47217: Fatal (7.0/2.0)
+
+Number_of_Casualties <= 3.499753 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Date > 8.497461 AND
+Light_Conditions <= 4.903914 AND
+?Accident_Index > 22902005 AND
+?Accident_Index <= 37043999: Serious (6.0/1.0)
+
+Number_of_Casualties <= 1.499539 AND
+Date > 16.325793 AND
+?Accident_Index <= 43192107.34: Fatal (7.0/1.0)
+
+Date > 22.497284 AND
+Number_of_Casualties > 1.499539 AND
+Month > 3.498975 AND
+Date <= 29.471619: Serious (6.0/1.0)
+
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 3.499753 AND
+Light_Conditions <= 6.225986 AND
+Number_of_Casualties <= 2.499418 AND
+Date <= 10.888899 AND
+Latitude > 51.345513: Slight (5.0)
+
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 3.499753 AND
+Light_Conditions <= 6.225986 AND
+Number_of_Casualties <= 2.499418 AND
+Number_of_Casualties <= 1.499539 AND
+Light_Conditions <= 4.903914 AND
+Light_Conditions <= 2.49976 AND
+Month > 8.496962: Serious (6.0/1.0)
+
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties > 2.499418 AND
+Number_of_Casualties <= 3.499753: Serious (4.0/1.0)
+
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 3 AND
+LSOA_of_Accident_Location > 1001389 AND
+Month > 2.497337 AND
+Latitude <= 51.002896: Serious (5.0/1.0)
+
+LSOA_of_Accident_Location <= 1001389: Serious (4.0)
+
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 3 AND
+Date > 22.497284 AND
+Number_of_Casualties > 1.499539: Slight (4.0)
+
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Number_of_Casualties <= 3 AND
+Date > 17.022344 AND
+Light_Conditions > 4.513732: Fatal (6.0)
+
+Road_Type > 4.49722 AND
+Weather_Conditions <= 1.499993 AND
+Date <= 17.494509 AND
+LSOA_of_Accident_Location > 1014314: Slight (7.0/1.0)
+
+Number_of_Casualties <= 3 AND
+Date <= 18.683485: Fatal (7.0)
+
+Number_of_Casualties <= 3 AND
+Time <= 16.333333: Serious (5.0)
+
+Number_of_Casualties <= 3: Fatal (3.0)
+
+: Slight (3.0/1.0)
+
+Number of Rules  : 	699
+
+
+Time taken to build model: 50.57 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       17231               71.1466 %
+Incorrectly Classified Instances      6988               28.8534 %
+Kappa statistic                          0.5609
+Mean absolute error                      0.2116
+Root mean squared error                  0.3733
+Relative absolute error                 48.1418 %
+Root relative squared error             79.6297 %
+Total Number of Instances            24219     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.723    0.265    0.619      0.723    0.667      0.447    0.794     0.604     Slight
+                 0.553    0.180    0.637      0.553    0.592      0.386    0.775     0.634     Serious
+                 0.913    0.010    0.969      0.913    0.940      0.920    0.963     0.944     Fatal
+Weighted Avg.    0.711    0.167    0.718      0.711    0.712      0.549    0.831     0.705     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 6541 2435   68 |    a = Slight
+ 3812 4870  117 |    b = Serious
+  212  344 5820 |    c = Fatal
+
